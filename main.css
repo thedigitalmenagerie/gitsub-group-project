@@ -13,17 +13,19 @@ main {
 /* <!-- LEFT SIDE CONTAINER --> */
 #left-container {
   display: flex;
-  flex-flow: column wrap;
+  justify-content: flex-end;
   border: 1px solid hotpink;
   padding: 1em;
-  width: 30%;
+  width: 20%;
 }
 
 #profile-container {
   display: flex;
   flex-flow: column wrap;
+  justify-content: center;
   border: 1px solid blue;
   padding: 2em;
+  width: 80%;
 }
 
 
@@ -57,7 +59,7 @@ main {
   justify-content: center;
   border: 1px solid blue;
   width: 90%;
-  height: 50%;
+  height: 55%;
   margin-bottom: 1em;
   padding: .5em;
 }
@@ -92,7 +94,7 @@ main {
 #create-project-container {
   border: 1px solid blue;
   width: 90%;
-  height: 20%;
+  height: 30%;
   padding: 2em;
 }
 
@@ -112,4 +114,3 @@ main {
 #footer-container li {
   margin: 1.5em;
 }
-
