@@ -1,21 +1,21 @@
-console.log('CONNECTED');
+console.log('CONNECTED .');
 
 const arrNavBar = [{
     overview: [{
         linkIcon: './images/Overview (open book).webp',
-        link: '',
+        link: 'index.html',
     }],
     repositories: [{
         linkIcon: './images/Repo (Closed Book).webp',
-        link: '',
+        link: 'repo.html',
     }],
     projects: [{
         linkIcon: './images/Projects (Graph).webp',
-        link: '',
+        link: 'projects.html',
     }],
     packages: [{
         linkIcon: './images/Packages (box).webp',
-        link: '',
+        link: 'packages.html',
     }],
 }];
 
@@ -303,6 +303,37 @@ const arrRepositories = [{
 
 //#endRepository
 
+//#Projects
+const projectCount = 3;
+const arrProjects = [{
+        projectID: 0,
+        projectName: 'Example1',
+        projectDescription: 'No description',
+        projectLastUpdate: '2021-02-07', //YYYYMMDD https://www.w3schools.com/js/js_date_formats.asp
+        projectPrivate: true,
+        projectOpen: true,
+    },
+    {
+        projectID: 1,
+        projectName: 'my-goals',
+        projectDescription: 'No description',
+        projectLastUpdate: '2021-02-07', //YYYYMMDD https://www.w3schools.com/js/js_date_formats.asp
+        projectPrivate: false,
+        projectOpen: true,
+    },
+    {
+        projectID: 2,
+        projectName: 'Sample My Goals',
+        projectDescription: '',
+        projectLastUpdate: '2021-02-07', //YYYYMMDD https://www.w3schools.com/js/js_date_formats.asp
+        projectPrivate: false,
+        projectOpen: true,
+    },
+]
+
+
+//#endProjects
+
 //#Footer
 
 const arrFooter = [{
@@ -353,93 +384,100 @@ const arrFooter = [{
 
 
 //#endFooter
-const arrCardTypes = ['Pinned',
-    'Packages',
-    'Repos',
-    'Projects',
-];
 
-const currentPage = arrCardTypes[0];
-
-
-const PrintBio = () => {
+const PrintProfile = () => {
     let developerFormForm = ` `;
 
-    PrintToDom('#bio-form', developerFormForm);
+    PrintToDom('#profile-container', developerFormForm);
 }
 const PrintNavBar = () => {
     let navBar = ` `;
 
-    PrintToDom('#Nav-Bar', navBar);
+    PrintToDom('#nav-container', navBar);
 }
 
 
 
-const PrintPinnedProjects = () => {
-    let pinnedProjects = ` `;
+const PrintPinnedCards = () => {
+    let pinnedCards = `  `;
 
-    // call = BuildStudentCard(projectCards, divID)
-    // BuildStudentCard(arrRepositories, arrRepositories[0] );
-
-    PrintToDom('#This is the tag for the ', pinnedProjects);
-}
-const GetPinnedCard = () => {
-    return `make pin Card `;
-}
+    arrRepositories.forEach((card) => {
 
 
 
+        //Each pinned card is here
+        domString += `
 
-const PrintRepoFormWithSearchBar = () => {
-    let reposFormWithSearchBar = ` `;
 
-    PrintToDom('#this is the tag for the repos', reposFormWithSearchBar);
-}
-const GetRepoCard = () => {
-    return `Make the Repo card `;
-}
-const PrintCreateNewRepoForm = () => {
-    let newRepoForm = ` `;
 
-    PrintToDom('#new-repo-form', newRepoForm);
-}
-const ClearNewRepoForm = () => {
-    // Clear Repo form here
+                     `;
+
+    })
+
+    PrintToDom('#top-row', pinnedCards);
 }
 
+const PrintRepoCardsWithSearchBar = () => {
+    // add search bar to the top of the page
+    let repoCardsWithSearchBar = `   `;
 
+    arrRepositories.forEach((card) => {
+
+
+
+        //Each Repo card is here
+        repoCardsWithSearchBar += `
+
+
+
+                     `;
+
+    })
+
+    PrintToDom('#top-row', repoCardsWithSearchBar);
+}
 
 
 const PrintProjectsFormWithSearchBar = () => {
-    let projectFormWithSearchBar = ` `;
+    // add search bar to the top of the page
+    let projectCardsWithSearchBar = `   `;
 
-    PrintToDom('#this is the tag for the project ', projectFormWithSearchBar);
-}
-const GetProjectCard = () => {
-    return `Make the project card `;
-}
-const PrintCreateNewProjectForm = () => {
-    let newProjectForm = ` `;
-
-    PrintToDom('#new-project-form', newProjectForm);
-}
-const ClearCreateNewProjectForm = () => {
-    // Clear Project form here
-}
+    arrProjects.forEach((card) => {
 
 
 
+        //Each Project card is here 
+        projectCardsWithSearchBar += `
 
-const GetPackageCard = () => {
-    return `make Packages Card `;
+
+
+                     `;
+
+    })
+
+    PrintToDom('#top-row', projectCardsWithSearchBar);
 }
 
 
-const PrintFooterBar = () => {
-    let footerBar = ` `;
+const PrintPackagesCards = () => {
+    let packageCards = `  `;
 
-    PrintToDom('#Footer-Bar', footerBar);
+    arrPackages.forEach((card) => {
+
+
+
+        //Each Package card is here
+        domString += `
+
+
+
+                     `;
+
+    })
+
+    PrintToDom('#top-row', packageCards);
 }
+
 
 // Print to DOM HERE 
 // Print output to DOM = Document Object Model
@@ -452,29 +490,9 @@ const PrintToDom = (divID, textToPrint) => {
 
 
 
-const BuildStudentCard = (cards, divID) => {
-    let domString = '';
-
-    cards.forEach((card) => {
-
-        if (divID === arrCardTypes[0]) {
-            domString += `${GetPinnedCard(card)}`;
-        } else if (divID === arrCardTypes[1]) {
-            domString += `${GetRepoCard(card)}`;
-        } else if (divID === arrCardTypes[2]) {
-            domString += `${GetProjectCard(card)}`;
-        } else if (divID === arrCardTypes[3]) {
-            domString += `${GetPackageCard(card)}`;
-        }
-    })
-
-    PrintToDom(divID, domString);
-}
-
 // Add New Project 
 
 // Add new Repo
-
 
 // Delete project
 
@@ -487,11 +505,10 @@ const BuildStudentCard = (cards, divID) => {
 // Button Events
 
 const ButtonEvents = () => {
-    //     document.querySelector('#btnStartSorting').addEventListener('click', PrintStudentForm);
-    //     document.querySelector(sortedNamesID).addEventListener('click', expelStudent);
-    //     document.querySelector('form').addEventListener('submit', GetFirstYearsInfo);
-    //     document.querySelector('#btnSortStudentBy').addEventListener('click', GetFirstYearsInfo);
-    //     document.querySelector('#btnAscendingDescending').addEventListener('click', GetFirstYearsInfo);
+    //     document.querySelector('#nav-bar-pinned-id').addEventListener('click', PrintPinnedCards);
+    //     document.querySelector('#nav-bar-repo-id').addEventListener('click', PrintRepoCardsWithSearchBar);
+    //     document.querySelector('#nav-bar-projects-id').addEventListener('click', PrintProjectsFormWithSearchBar);
+    //     document.querySelector('#nav-bar-packages-id').addEventListener('click', PrintPackagesCards);
 }
 
 // init call()
