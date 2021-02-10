@@ -10,119 +10,203 @@
 
             <!-- BODY CONTAINER -->
 <body>
+
             <!-- MAIN CONTAINER -->
   <main>
-  
-           <!-- OUTER CONTAINER -->
-    <div id="outer-container">
 
-          <!-- LEFT SIDE CONTAINER -->
-      <section id="left-container">
 
-        <div id="profile-container">
-          <h4 id="name">Monica Powel</h4>
-          <h6 id="handle">M00nica</h6>
-          <p id="profile-bio">Hello, This is me</p>
-          <a href="#">location</a>
-          <a href="#">email</a>
-          <a href="#">about-bio</a>
-          <a href="#">twitter</a>
-          <h3 id="highlights">Highlights</h3>
-          <p id="highlights-text">this is a paragraph about hightlights</p>
-          <a href="#">Artic</a>
-          <a href="#">GitStar</a>
-          <a href="#">Pro</a>
-          <h3 id="highlights">Organizations</h3>
-          <h3 id="highlights">Sponsors</h3>
-        </div>
+            <!-- OUTER CONTAINER | CONTAINS LEFT & RIGHT CONTAINERS-->
+    <div class="container outer-container" id="outer-container">
 
-      </section>
 
-            <!-- RIGHT SIDE CONTAINER-->
-      <div id="right-container">
+            <!-- LEFT SIDE CONTAINER | CONTAINS PROFILE SECTION-->
+      <div class="container left-container" id="left-container">
 
-        <section id="nav-container">
+
+            <!-- PROFILE CONTAINER -->
+        <div class="container profile-container" id="profile-container">
+
+
+           <!-- IMAGE, DESCRIPTION, HANDLE, BIO -->
+          <img src="./images/Dr. T..jpg" id="profile-pic"alt="Photo of Dr. T.">
+            <h>Dr. T.</h>
+            <h6 id="handle">dope-2021</h6>
+            <p id="profile-bio">Hello, My name is Dr. T. I'm the best teacher at Nashville Software School. <p>
+
+
+           <!-- FOLLOW BUTTONS -->
+          <div class="container" id="profile-buttons">
+            <a href="#" class="btn btn-secondary btn-sm" id="follow-btn">Folow</a>
+            <a href="#" class="btn btn-secondary btn-sm" id="sponsor-btn">Sponsor</a>
+            <a href="#" class="btn btn-secondary btn-sm" id="more-btn">...</a>
+            <br>
+          </div>
+
+
+          <!-- CONTACT ME LINKS -->
+            <a href="#">NYC, NY</a>
+            <a href="#">email</a>
+            <a href="#">about-bio</a>
+            <a href="#">twitter</a>
+            <br>
+
+       
+          <!-- HIGHLIGHTS -->
+            <h6>Highlights</h6>
+              <a href="#">Artic</a>
+              <a href="#">GitStar</a>
+              <a href="#">Pro</a>
+            <br>
+
+       
+          <!-- ORGANIZATION LINKS-->
+            <h6>Organizations</h6>
+           <div class="container" id="organization-profiles">
+             <img src="./images/Dr. T..jpg" id="organization-icon-images" alt="placeholder image">
+             <img src="./images/Dr. T..jpg" id="organization-icon-images" alt="placeholder image">
+             <img src="./images/Dr. T..jpg" id="organization-icon-images" alt="placeholder image">
+           </div>
+           
+
+            <!-- SPONSOR PROFILES-->
+              <h6>Sponsors</h6>
+             <div class="container" id="sponsor-profiles">
+               <div class="sponsor-top-row">
+                <img src="./images/Dr. T..jpg" id="sponsor-icon-images" alt="placeholder image">
+                <img src="./images/Dr. T..jpg" id="sponsor-icon-images" alt="placeholder image">
+                <img src="./images/Dr. T..jpg" id="sponsor-icon-images" alt="placeholder image">
+                <img src="./images/Dr. T..jpg" id="sponsor-icon-images" alt="placeholder image">
+              </div>
+
+              <div class="sponsor-bottom-row">
+                <img src="./images/Dr. T..jpg" id="sponsor-icon-images" alt="placeholder image">
+                <img src="./images/Dr. T..jpg" id="sponsor-icon-images" alt="placeholder image">
+                <img src="./images/Dr. T..jpg" id="sponsor-icon-images" alt="placeholder image">
+                <img src="./images/Dr. T..jpg" id="sponsor-icon-images" alt="placeholder image">
+              </div>
+    
+            </div>
+
+          </div>
+      </div>
+
+
+            <!-- RIGHT SIDE CONTAINER | CONTAINS NAV, OVERVIEW CARDS, FORMS SECTIONS-->
+      <div class="container right-container" id="right-container">
+
+
+            <!-- NAV CONTAINER | *** HONEY-RAE CODE HERE-->
+        <div class="container nav-container" id="nav-container">
           <ul>
-            <li><a href="#"></a>Overview</li>
+            <li><a href="index.html"></a>Overview</li>
             <li><a href="#"></a>Repositories</li>
             <li><a href="#"></a>Projects</li>
             <li><a href="#"></a>Packages</li>
           </ul>
-        </section>
+        </div>
 
-            <!-- REPO CONTAINER -->
-        <section id="repo-container">
+            <!-- OVERVIEW CONTAINER -->
+        <div class="container overview-container" id="overview-container">
 
-           <!-- TOP ROW -->
-          <div class="top-row">
 
-            <!-- TOP ROW CARDS-->
-            <div class="column">
-              <div id="repo-card">
-                <h4>Repo 1</h4>
-                <p>descripton here</p>
-                <button>Delete</button>
+            <!-- CARD CONTAINER -->
+          <div class="row align-items-start top-row" id="top-row">
+
+
+            <!-- TOP ROW CARDS | CARDS 1, 2, 3 -->
+            <div class="col">
+              <div class="card overview-card" id="overview-card">
+                <div class="card-body" id="overview-card-body">
+                  <h6 class="card-title">Docker</h6>
+                  <p class="overview-card-text">With supporting text below as a natural lead-in to additional content.
+                    With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.
+                  </p>
+                  <a href="#" class="btn btn-secondary btn-sm" id="overview-btn">Learn More</a>
+                </div>
               </div>
             </div>
-            <div class="column">
-              <div id="repo-card">
-                <h4>Repo 2</h4>
-                <p>descripton here</p>
-                <button>Delete</button>
+            <div class="col">
+              <div class="card overview-card" id="overview-card">
+                <div class="card-body" id="overview-card-body">
+                  <h6 class="card-title">Docker</h6>
+                  <p class="overview-card-text">With supporting text below as a natural lead-in to additional content.
+                    With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.
+                  </p>                  
+                  <a href="#" class="btn btn-secondary btn-sm" id="overview-btn">Learn More</a>
+                </div>
               </div>
             </div>
-            <div class="column">
-              <div id="repo-card">
-                <h4>Repo 3</h4>
-                <p>descripton here</p>
-                <button>Delete</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- BOTTOM ROW -->
-          <div class="bottom-row">
-
-          <!-- BOTTOM ROW CARDS-->
-            <div class="column">
-              <div id="repo-card">
-                <h4>Repo 4</h4>
-                <p>descripton here</p>
-                <button>Delete</button>
-              </div>
-            </div>
-            <div class="column">
-              <div id="repo-card">
-                <h4>Repo 5</h4>
-                <p>descripton here</p>
-                <button>Delete</button>
-              </div>
-            </div>
-            <div class="column">
-              <div id="repo-card">
-                <h4>Repo 6</h4>
-                <p>descripton here</p>
-                <button>Delete</button>
+            <div class="col">
+              <div class="card overview-card" id="overview-card">
+                <div class="card-body" id="overview-card-body">
+                  <h6 class="card-title">Docker</h6>
+                  <p class="overview-card-text">With supporting text below as a natural lead-in to additional content.
+                    With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.
+                  </p>                  
+                  <a href="#" class="btn btn-secondary btn-sm" id="overview-btn">Learn More</a>
+                </div>
               </div>
             </div>
           </div>
-    
-        </section>
 
-            <!-- CREATE NEW PROJECT CONTAINER -->
-        <section id="create-project-container">
-          <h2 id="create-project-title">Create New Projects</h2>
-          <p id="new-project-text">description of new projects here</p>
+            <!-- BOTTOM ROW CONTAINER -->
+          <div class="row align-items-start bottom-row" id="bottom-row">
+
+
+            <!--BOTTOM ROW CARDS | CARDS 4, 5, 6-->
+            <div class="col">
+              <div class="card overview-card" id="overview-card">
+                <div class="card-body" id="overview-card-body">
+                  <h6 class="card-title">Docker</h6>
+                  <p class="overview-card-text">With supporting text below as a natural lead-in to additional content.
+                    With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.
+                  </p>                  
+                  <a href="#" class="btn btn-secondary btn-sm" id="overview-btn">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card overview-card" id="overview-card">
+                <div class="card-body" id="overview-card-body">
+                  <h6 class="card-title">Docker</h6>
+                  <p class="overview-card-text">With supporting text below as a natural lead-in to additional content.
+                    With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.
+                  </p>                  
+                  <a href="#" class="btn btn-secondary btn-sm" id="overview-btn">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card overview-card" id="overview-card">
+                <div class="card-body" id="overview-card-body">
+                  <h6 class="card-title">Docker</h6>
+                  <p class="overview-card-text">With supporting text below as a natural lead-in to additional content.
+                    With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.
+                  </p>                  
+                  <a href="#" class="btn btn-secondary btn-sm" id="overview-btn">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+
+         <!-- CREATE NEW PROJECT CONTAINER | ***LINDSEY'S FORM HERE**** -->
+         <div class="container create-project-container" id="create-project-container">
+          <h4 id="create-project-title">STRETCH GOAL SECTION</h4>
+          <p id="new-project-text">LINDSEY FORM HERE ON EACH PAGE</p>
           <form action="">place form here</form>
-        </section>
+         </div>
 
+        <!-- END RIGHT CONTAINER --> 
       </div>
-    
+         <!-- END OUTER CONTAINER -->  
     </div>
 
 
-          <!-- FOOTER CONTAINER -->
-    <div id="footer-container">
+        <!-- FOOTER CONTAINER | *** HONEY-RAE CODE HERE--> 
+    <div class="container footer-container" id="footer-container">
       <ul>
         <li><a href="https://docs.github.com/en/github/site-policy/github-terms-of-service">Terms</a></li>
         <li><a href="https://docs.github.com/en/github/site-policy/github-privacy-statement"></a>Privacy</li>
@@ -138,7 +222,6 @@
         <li><a href="https://github.com/about"></a>About</li>
       </ul>
     </div>
-
 
   </main>
 
