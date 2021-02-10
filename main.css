@@ -147,6 +147,24 @@ a {
   font-size: .7em;
 }
 
+/* <!-- FORMS --> */
+
+form {
+  width: 800px;
+  margin: 0 auto;
+  /* border: 1px red solid; */
+}
+
+form label {
+  font-weight: 600;
+} 
+
+form a {
+  text-decoration: none;
+  color: #38e038;
+  font-size: 1rem;
+}
+
 
 
 /* <!-- FOOTER CONTAINER --> */
@@ -169,4 +187,10 @@ a {
 
 li a {
   font-size: 1em;
+}
+
+/* Icons */
+
+#github-icon {
+  width: 2em;
 }
