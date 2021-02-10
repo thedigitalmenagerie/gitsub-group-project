@@ -3,19 +3,19 @@ console.log('CONNECTED');
 const arrNavBar = [{
     overview: [{
         linkIcon: './images/Overview (open book).webp',
-        link: '',
+        link: 'index.html',
     }],
     repositories: [{
         linkIcon: './images/Repo (Closed Book).webp',
-        link: '',
+        link: 'repo.html',
     }],
     projects: [{
         linkIcon: './images/Projects (Graph).webp',
-        link: '',
+        link: 'projects.html',
     }],
     packages: [{
         linkIcon: './images/Packages (box).webp',
-        link: '',
+        link: 'packages.html',
     }],
 }];
 
