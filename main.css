@@ -107,10 +107,8 @@ a {
   margin-bottom: 1em;
 }
 
-#nav-container li {
-  list-style-type: none;
-  display: inline;
-  margin: 1em;
+#navbar-brand {
+
 }
 
 #overview-container {
@@ -121,15 +119,16 @@ a {
   width: 100%;
   height: 55%;
   margin-bottom: 1em;
-  padding: .5em;
+
 }
 
 #create-project-container {
   border: 1px solid blue;
   width: 100%;
-  height: 30%;
-  padding: 2em;
+  height: 31%;
 }
+
+
 
 
 
@@ -147,12 +146,12 @@ a {
   font-size: .7em;
 }
 
+
+
 /* <!-- FORMS --> */
 
 form {
-  width: 800px;
-  margin: 0 auto;
-  /* border: 1px red solid; */
+  border: 1px red solid;
 }
 
 form label {
@@ -165,6 +164,25 @@ form a {
   font-size: 1rem;
 }
 
+#h3-title {
+  font-size: 1.5em;
+}
+
+#form-label-name {
+  font-size: .8em;
+}
+
+#form-text {
+  font-size: .8em;
+}
+
+#form-description-title {
+  font-size: .8em;
+}
+
+#form-btn {
+  font-size: 12px;
+}
 
 
 /* <!-- FOOTER CONTAINER --> */
