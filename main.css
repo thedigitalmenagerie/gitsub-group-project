@@ -7,35 +7,95 @@ main {
 #outer-container {
   display: flex;
   justify-content: center;
-  margin: 5em;
+  height: 900px;
 }
 
+
+
 /* <!-- LEFT SIDE CONTAINER --> */
+
 #left-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   border: 1px solid hotpink;
-  padding: 1em;
   width: 20%;
+  margin-left: 5em; 
 }
 
 #profile-container {
   display: flex;
   flex-flow: column wrap;
-  justify-content: center;
+  align-content: flex-start;
   border: 1px solid blue;
-  padding: 2em;
   width: 100%;
+  padding: 1em;
+}
+
+#profile-pic {
+  width: 80%;
+  border-radius: 50%;
+  border-bottom: 1em;
+  margin-bottom: 2em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
+
+#profile-bio {
+  font-size: 12px;
+  margin-bottom: 1em;
+}
+
+#profile-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1em;
+}
+
+.btn-sm {
+  font-size: 10px;
+}
+
+#organization-profiles {
+  margin-bottom: 1em;
+}
+
+#organization-icon-images {
+  width: 20%;
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+
+#sponsors {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+#sponsor-profiles {
+  display: flex;
+  flex-flow: column wrap;
 }
 
 
+#sponsor-icon-images {
+  width: 20%;
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+
+
+
 /* <!-- RIGHT SIDE CONTAINER --> */
+
 #right-container {
   display: flex;
   flex-flow: column wrap;
   border: 1px solid hotpink;
-  padding: 1em;
-  margin-left: 2em;
+  padding: .5em;
   width: 70%;
 }
 
@@ -43,7 +103,7 @@ main {
   display: flex;
   justify-content: flex-start;
   border: 1px solid blue;
-  width: 90%;
+  width: 100%;
   margin-bottom: 1em;
 }
 
@@ -53,52 +113,44 @@ main {
   margin: 1em;
 }
 
-#repo-container {
+#overview-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   border: 1px solid blue;
-  width: 90%;
+  width: 100%;
   height: 55%;
   margin-bottom: 1em;
   padding: .5em;
 }
 
-/* <!-- CARDS --> */
-
-#repo-card {
-  width: 13em;
-  height: 8em;
-  margin: .5em;
-}
-
-#repo-card-text {
-  font-size: 12px;
-}
-
-.column {
-  float: left;
-  width: 13em;
-  height: 8em;
-  border: 1px solid black;
-  margin: .5em;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
 #create-project-container {
   border: 1px solid blue;
-  width: 90%;
+  width: 100%;
   height: 30%;
   padding: 2em;
 }
 
+
+
+/* <!-- CARDS --> */
+
+#overview-card {
+  width: 16.8em;
+}
+
+.overview-card-text {
+  font-size: 10px;
+}
+
+#overview-btn {
+  font-size: .7em;
+}
+
+
+
 /* <!-- FOOTER CONTAINER --> */
+
 #footer-container {
   display: flex;
   justify-content: space-around;
@@ -113,4 +165,8 @@ main {
 
 #footer-container li {
   margin: 1.5em;
+}
+
+li a {
+  font-size: 1em;
 }
