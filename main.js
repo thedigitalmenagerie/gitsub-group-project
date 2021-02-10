@@ -158,3 +158,360 @@ const person = {
 // Group -- https://github.com/nss-evening-cohort-14/gitsub-e14-1-devs-to-ever-dev/projects 
 // HR https://github.com/users/thedigitalmenagerie/projects/1
 // LS https://github.com/lindseysatterfield/sorting-hat/projects/1
+
+
+//#Packages
+
+const arrPackagesTypes = [{
+        packageIcon: '',
+        packageType: 'Docker',
+    },
+    {
+        packageIcon: '',
+        packageType: 'Apache Maven',
+    },
+    {
+        packageIcon: '',
+        packageType: 'NuGet',
+    },
+    {
+        packageIcon: '',
+        packageType: 'RubyGems',
+    },
+    {
+        packageIcon: '',
+        packageType: 'npm',
+    },
+    {
+        packageIcon: '',
+        packageType: 'Containers',
+    }
+];
+
+let packagesID = 6;
+const arrPackages = [{
+        packagesID: 0,
+        packagesDescription: '',
+        packagesLink: '',
+        packagesAlpha: true,
+        typeOfPackage: arrPackagesTypes[0],
+    },
+    {
+        packagesID: 1,
+        packagesDescription: '',
+        packagesLink: '',
+        packagesAlpha: true,
+        typeOfPackage: arrPackagesTypes[0],
+    },
+    {
+        packagesID: 2,
+        packagesDescription: '',
+        packagesLink: '',
+        packagesAlpha: true,
+        typeOfPackage: arrPackagesTypes[0],
+    },
+    {
+        packagesID: 3,
+        packagesDescription: '',
+        packagesLink: '',
+        packagesAlpha: true,
+        typeOfPackage: arrPackagesTypes[0],
+    },
+    {
+        packagesID: 4,
+        packagesDescription: '',
+        packagesLink: '',
+        packagesAlpha: true,
+        typeOfPackage: arrPackagesTypes[0],
+    },
+    {
+        packagesID: 5,
+        packagesDescription: '',
+        packagesLink: '',
+        packagesAlpha: true,
+        typeOfPackage: arrPackagesTypes[0],
+    },
+
+
+];
+
+//#endPackages
+
+//#Repository
+
+const arrRepoLocations = [
+    'netlify',
+    'Jamstack',
+    'Lorem-ipsum-generator',
+    'medical',
+    'serverless',
+    'react',
+    'countdown',
+    'hacktoberfest',
+    'http',
+    'status-codes',
+    'gifts',
+    'rihanna',
+    'donation',
+    'landing-page'
+];
+
+let repositoryID = 4;
+const arrRepositories = [{
+        repoID = 0,
+        repoTitle: '',
+        repoLink: '',
+        repoDescription: '',
+        arrListOfButtons: ['netlify', 'Jamstack', '', ''],
+        repoLanguage: '',
+        starsCount: 0,
+        // this is needed here three dot Icon
+        pinned: false,
+        repoMTILicense: true,
+        issuesNeedHelp: '',
+        repoLastUpdate: '2021-02-07', //YYYYMMDD https://www.w3schools.com/js/js_date_formats.asp
+    },
+    {
+        repoID = 1,
+        repoTitle: '',
+        repoLink: '',
+        repoDescription: '',
+        arrListOfButtons: ['', '', '', ''],
+        repoLanguage: '',
+        starsCount: 0,
+        // this is needed here three dot Icon
+        pinned: false,
+        repoMTILicense: true,
+        issuesNeedHelp: '',
+        repoLastUpdate: '2021-02-07', //YYYYMMDD https://www.w3schools.com/js/js_date_formats.asp
+    },
+    {
+        repoID = 2,
+        repoTitle: '',
+        repoLink: '',
+        repoDescription: '',
+        arrListOfButtons: ['', '', '', ''],
+        repoLanguage: '',
+        starsCount: 0,
+        // this is needed here three dot Icon
+        pinned: false,
+        repoMTILicense: true,
+        issuesNeedHelp: '',
+        repoLastUpdate: '2021-02-07', //YYYYMMDD https://www.w3schools.com/js/js_date_formats.asp
+    },
+    {
+        repoID = 3,
+        repoTitle: '',
+        repoLink: '',
+        repoDescription: '',
+        arrListOfButtons: ['', '', '', ''],
+        repoLanguage: '',
+        starsCount: 0,
+        // this is needed here three dot Icon
+        pinned: false,
+        repoMTILicense: true,
+        issuesNeedHelp: '',
+        repoLastUpdate: '2021-02-07', //YYYYMMDD https://www.w3schools.com/js/js_date_formats.asp
+    },
+]
+
+//#endRepository
+
+//#Footer
+
+const arrFooter = [{
+        footerItem: 'Terms',
+        footerItemLink: '',
+    },
+    {
+        footerItem: 'Privacy',
+        footerItemLink: '',
+    },
+    {
+        footerItem: 'Security',
+        footerItemLink: '',
+    },
+    {
+        footerItem: 'Status',
+        footerItemLink: '',
+    },
+    {
+        footerItem: 'Help',
+        footerItemLink: '',
+    },
+    {
+        footerItem: 'Contact GitHub',
+        footerItemLink: '',
+    },
+    {
+        footerItem: 'Pricing',
+        footerItemLink: '',
+    },
+    {
+        footerItem: 'API',
+        footerItemLink: '',
+    },
+    {
+        footerItem: 'Training',
+        footerItemLink: '',
+    },
+    {
+        footerItem: 'Blog',
+        footerItemLink: '',
+    },
+    {
+        footerItem: 'About',
+        footerItemLink: '',
+    },
+];
+
+
+//#endFooter
+const arrCardTypes = ['Pinned',
+    'Packages',
+    'Repos',
+    'Projects',
+];
+
+const currentPage = arrCardTypes[0];
+
+
+const PrintBio = () => {
+    let developerFormForm = ` `;
+
+    PrintToDom('#bio-form', developerFormForm);
+}
+const PrintNavBar = () => {
+    let navBar = ` `;
+
+    PrintToDom('#Nav-Bar', navBar);
+}
+
+
+
+const PrintPinnedProjects = () => {
+    let pinnedProjects = ` `;
+
+    // call = BuildStudentCard(projectCards, divID)
+    // BuildStudentCard(arrRepositories, arrRepositories[0] );
+
+    PrintToDom('#This is the tag for the ', pinnedProjects);
+}
+const GetPinnedCard = () => {
+    return `make pin Card `;
+}
+
+
+
+
+const PrintRepoFormWithSearchBar = () => {
+    let reposFormWithSearchBar = ` `;
+
+    PrintToDom('#this is the tag for the repos', reposFormWithSearchBar);
+}
+const GetRepoCard = () => {
+    return `Make the Repo card `;
+}
+const PrintCreateNewRepoForm = () => {
+    let newRepoForm = ` `;
+
+    PrintToDom('#new-repo-form', newRepoForm);
+}
+const ClearNewRepoForm = () => {
+    // Clear Repo form here
+}
+
+
+
+
+const PrintProjectsFormWithSearchBar = () => {
+    let projectFormWithSearchBar = ` `;
+
+    PrintToDom('#this is the tag for the project ', projectFormWithSearchBar);
+}
+const GetProjectCard = () => {
+    return `Make the project card `;
+}
+const PrintCreateNewProjectForm = () => {
+    let newProjectForm = ` `;
+
+    PrintToDom('#new-project-form', newProjectForm);
+}
+const ClearCreateNewProjectForm = () => {
+    // Clear Project form here
+}
+
+
+
+
+const GetPackageCard = () => {
+    return `make Packages Card `;
+}
+
+
+const PrintFooterBar = () => {
+    let footerBar = ` `;
+
+    PrintToDom('#Footer-Bar', footerBar);
+}
+
+// Print to DOM HERE 
+// Print output to DOM = Document Object Model
+// divID = targeted ID to print to 
+// textToPrint = the text we want to output to the specified ID
+const PrintToDom = (divID, textToPrint) => {
+    const selectedDiv = document.querySelector(divID);
+    selectedDiv.innerHTML = textToPrint;
+}
+
+
+
+const BuildStudentCard = (cards, divID) => {
+    let domString = '';
+
+    cards.forEach((card) => {
+
+        if (divID === arrCardTypes[0]) {
+            domString += `${GetPinnedCard(card)}`;
+        } else if (divID === arrCardTypes[1]) {
+            domString += `${GetRepoCard(card)}`;
+        } else if (divID === arrCardTypes[2]) {
+            domString += `${GetProjectCard(card)}`;
+        } else if (divID === arrCardTypes[3]) {
+            domString += `${GetPackageCard(card)}`;
+        }
+    })
+
+    PrintToDom(divID, domString);
+}
+
+// Add New Project 
+
+// Add new Repo
+
+
+// Delete project
+
+// Delete Repo
+
+// Handle search bar 
+
+// Handle Sorting
+
+// Button Events
+
+const ButtonEvents = () => {
+    //     document.querySelector('#btnStartSorting').addEventListener('click', PrintStudentForm);
+    //     document.querySelector(sortedNamesID).addEventListener('click', expelStudent);
+    //     document.querySelector('form').addEventListener('submit', GetFirstYearsInfo);
+    //     document.querySelector('#btnSortStudentBy').addEventListener('click', GetFirstYearsInfo);
+    //     document.querySelector('#btnAscendingDescending').addEventListener('click', GetFirstYearsInfo);
+}
+
+// init call()
+
+const init = () => {
+    // ButtonEvents();
+}
+
+init();
