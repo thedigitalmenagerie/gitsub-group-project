@@ -188,3 +188,9 @@ form a {
 li a {
   font-size: 1em;
 }
+
+/* Icons */
+
+#github-icon {
+  width: 2em;
+}
