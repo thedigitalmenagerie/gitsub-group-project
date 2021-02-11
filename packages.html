@@ -29,12 +29,31 @@
                 <div class="container profile-container" id="profile-container">
 
 
+            <!-- RIGHT SIDE CONTAINER | CONTAINS NAV, OVERVIEW CARDS, FORMS SECTIONS -->
+      <div class="container right-container" id="right-container">
+
                     <!-- IMAGE, DESCRIPTION, HANDLE, BIO -->
                     <img src="./images/Dr. T..jpg" id="profile-pic" alt="Photo of Dr. T.">
                     <h>Dr. T.</h>
                     <h6 id="handle">dope-2021</h6>
                     <p id="profile-bio">Hello, My name is Dr. T. I'm the best teacher at Nashville Software School.
                         <p>
+
+            <!-- NAV CONTAINER -->
+        <div class="container nav-container" id="nav-container">
+          <section id="nav-container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light"><a class="navbar-brand" href="index.html">Overview</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item active"><a class="nav-link" href="repo.html">Repositories</a></li>
+                  <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                  <li class="nav-item"><a class="nav-link" href="packages.html">Packages<span class="sr-only">(current)</span></a></li>
+                </ul>
+              </div>
+            </nav>
+          </section>
+        </div>
 
 
                             <!-- FOLLOW BUTTONS -->
@@ -245,32 +264,31 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="main.js"></script>
 
-    <!-- CREATE NEW PROJECT CONTAINER | ***LINDSEY'S FORM HERE**** -->
-    <div class="container create-project-container" id="create-project-container">
-        <h4 id="create-project-title">STRETCH GOAL SECTION</h4>
-        <p id="new-project-text">LINDSEY FORM HERE ON EACH PAGE</p>
-        <form class="packages-form pb-3">
-            <h3>Create a new project</h3>
-            <p>Coordinate, track, and update your work in one place, so projects stay transparent and on schedule.</p>
-            <div class="form-group col-md-6 mb-3">
-                <label for="inputProjectBoard" class="mb-1">Project Board</label>
-                <input type="text" class="form-control" id="inputProjectBoard" placeholder="Example 2">
-            </div>
-            <div class="form-group mb-5 col-md-10">
-                <label for="packagesFormTextarea" class="mb-1">Description (optional)</label>
-                <textarea class="form-control" id="packages-textarea" rows="5"></textarea>
-            </div>
-            <button type="submit" class="btn btn-success">Create Project</button>
-        </form>
-    </div>
 
-    <!-- END RIGHT CONTAINER -->
-    </div>
-    <!-- END OUTER CONTAINER -->
+               <!-- CREATE NEW PROJECT CONTAINER -->
+
+        <div class="container create-project-container" id="create-project-container">
+          <form class="repos-form pb-4">
+            <h3 id="h3-title">Create a new package</h3>
+            <div class="form-group col-md-6 mb-1">
+              <label for="inputRepositoryName" class="mb-1" id="form-label-name">Project Board</label>
+              <input type="text" class="form-control" id="inputRepositoryName" required></div>
+              <p id="form-text">Coordinate, track, and update your work in one place, so projects stay transparent and on schedule.</p>
+              <div class="form-group col-md-9 mb-1">
+              <label for="inputDescription" class="mb-1" id="form-description-title">Description (optional)</label>
+              <textarea class="form-control" id="overview-textarea" rows="5"></textarea></div>
+            <button type="submit" class="btn btn-success mb-1" id="form-btn">Create Package</button>
+          </form>
+         </div>
+
+        <!-- END RIGHT CONTAINER --> 
+      </div>
+         <!-- END OUTER CONTAINER -->  
     </div>
 
 
-    <!-- FOOTER CONTAINER | *** HONEY-RAE CODE HERE-->
+        <!-- FOOTER CONTAINER --> 
+
     <div class="container footer-container" id="footer-container">
         <ul>
             <li><a href="https://docs.github.com/en/github/site-policy/github-terms-of-service">Terms</a></li>
