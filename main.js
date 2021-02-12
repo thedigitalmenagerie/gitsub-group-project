@@ -90,7 +90,7 @@ const arrSponsors = [{
         sponsorPicture: '/images/Avatar (sponsors).webp',
         sponsorLink: 'https://github.com/caseywalker',
     },
-]
+];
 
 const person = {
     personName: 'Dr. Teresa Vasquez',
@@ -122,28 +122,6 @@ const person = {
     },
     sponsors: arrSponsors,
 }
-
-
-// LINKS
-
-// 5 packages
-
-// docker link -- https://www.docker.com/?utm_source=google&utm_medium=cpc&utm_campaign=dockerhomepage&utm_content=namer&utm_term=dockerhomepage&utm_budget=growth&gclid=Cj0KCQiAgomBBhDXARIsAFNyUqP7IuAWd7M9yGrY-D87ikBbLpSR4Mzd2RQtHIDalzpNadyjAlyg4kYaAoT_EALw_wcB
-// docker container link -- https://www.docker.com/resources/what-container?gclid=Cj0KCQiAgomBBhDXARIsAFNyUqMwxmzuSjtAKHOeyuUainBg3qxEksx9tDeBia3gWtnVAslZoQS32kAaApuBEALw_wcB
-// rubygems link -- https://rubygems.org/
-// nuget link -- https://www.nuget.org/
-// apache maven link -- https://maven.apache.org/
-
-// 10 Repos (6 Overview/ 4 Repo Page)
-
-// Honey-Rae -- https://github.com/thedigitalmenagerie/sorting-hat , https://github.com/thedigitalmenagerie/pet-adoption
-// Lindsey https://github.com/lindseysatterfield/sorting-hat , https://github.com/lindseysatterfield/pet-adoption
-
-// 6 Project Boards
-
-// Group -- https://github.com/nss-evening-cohort-14/gitsub-e14-1-devs-to-ever-dev/projects 
-// HR https://github.com/users/thedigitalmenagerie/projects/1
-// LS https://github.com/lindseysatterfield/sorting-hat/projects/1
 
 
 //#Packages
@@ -244,7 +222,7 @@ const arrRepoLocations = [
 
 let repositoryID = 4;
 const arrRepositories = [{
-        repoID = 0,
+        repoID: 0,
         repoTitle: '',
         repoLink: 'https://github.com/thedigitalmenagerie/sorting-hat',
         repoDescription: '',
@@ -258,7 +236,7 @@ const arrRepositories = [{
         repoLastUpdate: '2021-02-07', //YYYYMMDD https://www.w3schools.com/js/js_date_formats.asp
     },
     {
-        repoID = 1,
+        repoID: 1,
         repoTitle: '',
         repoLink: 'https://github.com/thedigitalmenagerie/pet-adoption',
         repoDescription: '',
@@ -272,7 +250,7 @@ const arrRepositories = [{
         repoLastUpdate: '2021-02-07', //YYYYMMDD https://www.w3schools.com/js/js_date_formats.asp
     },
     {
-        repoID = 2,
+        repoID: 2,
         repoTitle: '',
         repoLink: 'https://github.com/lindseysatterfield/sorting-hat ',
         repoDescription: '',
@@ -286,7 +264,7 @@ const arrRepositories = [{
         repoLastUpdate: '2021-02-07', //YYYYMMDD https://www.w3schools.com/js/js_date_formats.asp
     },
     {
-        repoID = 3,
+        repoID: 3,
         repoTitle: '',
         repoLink: 'https://github.com/lindseysatterfield/pet-adoption',
         repoDescription: '',
@@ -299,37 +277,67 @@ const arrRepositories = [{
         issuesNeedHelp: '',
         repoLastUpdate: '2021-02-07', //YYYYMMDD https://www.w3schools.com/js/js_date_formats.asp
     },
-]
+];
 
 //#endRepository
 
 //#Projects
-const projectCount = 3;
+const projectCount = 6;
 const arrProjects = [{
         projectID: 0,
-        projectName: 'Example1',
-        projectDescription: 'No description',
-        projectLastUpdate: '2021-02-07', //YYYYMMDD https://www.w3schools.com/js/js_date_formats.asp
+        projectName: 'Sorting Hat',
+        projectDescription: 'Lindsey Satterfield',
+        projectLink: 'https://github.com/lindseysatterfield/sorting-hat/projects/1',
+        projectLastUpdate: './images/last updated (clock).webp', 
         projectPrivate: true,
         projectOpen: true,
     },
     {
         projectID: 1,
-        projectName: 'my-goals',
-        projectDescription: 'No description',
-        projectLastUpdate: '2021-02-07', //YYYYMMDD https://www.w3schools.com/js/js_date_formats.asp
+        projectName: 'Gitsub',
+        projectDescription: 'Group',
+        projectLink: 'https://github.com/nss-evening-cohort-14/gitsub-e14-1-devs-to-ever-dev/projects',
+        projectLastUpdate: './images/last updated (clock).webp', 
         projectPrivate: false,
         projectOpen: true,
     },
     {
         projectID: 2,
-        projectName: 'Sample My Goals',
-        projectDescription: '',
-        projectLastUpdate: '2021-02-07', //YYYYMMDD https://www.w3schools.com/js/js_date_formats.asp
+        projectName: 'Sorting Hat',
+        projectDescription: 'Honey-Rae Swan',
+        projectLink: 'https://github.com/thedigitalmenagerie/sorting-hat/projects/1',
+        projectLastUpdate: './images/last updated (clock).webp', 
         projectPrivate: false,
         projectOpen: true,
     },
-]
+    {
+        projectID: 3,
+        projectName: 'Sorting Hat',
+        projectDescription: 'Dani Crosby',
+        projectLink: 'https://github.com/danicrosby/sorting-hat/projects',
+        projectLastUpdate: './images/last updated (clock).webp', 
+        projectPrivate: false,
+        projectOpen: true,
+    },
+    {
+        projectID: 4,
+        projectName: 'My Goals',
+        projectDescription: 'Honey-Rae Swan',
+        projectLink: 'https://github.com/users/thedigitalmenagerie/projects/1',
+        projectLastUpdate: './images/last updated (clock).webp', 
+        projectPrivate: false,
+        projectOpen: true,
+    },
+    {
+        projectID: 5,
+        projectName: 'Pet Adoption',
+        projectDescription: 'Dani Crosby',
+        projectLink: 'https://github.com/danicrosby/pet-adoption/projects',
+        projectLastUpdate: './images/last updated (clock).webp', 
+        projectPrivate: false,
+        projectOpen: true,
+    },
+];
 
 
 //#endProjects
@@ -440,22 +448,19 @@ const PrintRepoCardsWithSearchBar = () => {
 
 const PrintProjectsFormWithSearchBar = () => {
     // add search bar to the top of the page
-    let projectCardsWithSearchBar = `   `;
+    let projectCardsWithSearchBar = ` `;
 
     arrProjects.forEach((card) => {
-
-
-
-        //Each Project card is here 
-        projectCardsWithSearchBar += `
-
-
-
-                     `;
-
+        projectCardsWithSearchBar += `<div class="card overview-card" id="overview-card">
+        <div class="card-body" id="overview-card-body">
+          <h6 class="card-title">${card.projectName}</h6>
+          <p class="overview-card-text" ><img src="${card.projectLastUpdate}" id="timeUpdated">${card.projectDescription}</p>
+          <a href="${card.projectLink}" class="btn btn-secondary btn-sm" id="overview-btn">Learn More</a>
+        </div>
+      </div>`;
     })
 
-    PrintToDom('#top-row', projectCardsWithSearchBar);
+    PrintToDom('#projects-top-row', projectCardsWithSearchBar);
 }
 
 
@@ -515,6 +520,7 @@ const ButtonEvents = () => {
 
 const init = () => {
     // ButtonEvents();
+    PrintProjectsFormWithSearchBar();
 }
 
 init();
