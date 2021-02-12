@@ -88,7 +88,7 @@ const arrSponsors = [{
         sponsorPicture: '/images/Avatar (sponsors).webp',
         sponsorLink: 'https://github.com/caseywalker',
     },
-]
+];
 
 const person = {
     personName: 'Dr. Teresa Vasquez',
@@ -122,6 +122,7 @@ const person = {
 }
 
 
+//#Packages
 
 const arrPackagesTypes = [{
         packageIcon: './images/docker.webp',
@@ -220,6 +221,7 @@ const arrRepoLocations = [
 let repositoryID = 4;
 const arrRepositories = [{
         repoID: 0,
+        repoTitle: '',
         repoTitle: 'greys-anatomy-lorem-ipsum-generator',
         repoLink: 'https://github.com/thedigitalmenagerie/sorting-hat',
         repoDescription: 'A lorem generator with medical terms and words from the show Grey\'s Anatomy.',
@@ -234,6 +236,7 @@ const arrRepositories = [{
     },
     {
         repoID: 1,
+        repoTitle: '',
         repoTitle: 'how-many-days-until',
         repoLink: 'https://github.com/thedigitalmenagerie/pet-adoption',
         repoDescription: 'A React countdown app of days between today and next year.',
@@ -248,6 +251,7 @@ const arrRepositories = [{
     },
     {
         repoID: 2,
+        repoTitle: '',
         repoTitle: 'httriri',
         repoLink: 'https://github.com/lindseysatterfield/sorting-hat ',
         repoDescription: 'HTTRiRi - HTTP Status Codes as Portrayed by Rihanna Gifs',
@@ -262,6 +266,7 @@ const arrRepositories = [{
     },
     {
         repoID: 3,
+        repoTitle: '',
         repoTitle: 'ambition-found-website',
         repoLink: 'https://github.com/lindseysatterfield/pet-adoption',
         repoDescription: 'Website for www.ambition.cor, micro-grant program to provide support for underrepresented people who need financial assistance purging professional development opportunities in the technology...',
@@ -274,37 +279,67 @@ const arrRepositories = [{
         issuesNeedHelp: 3,
         repoLastUpdate: '2021-02-07', //YYYYMMDD https://www.w3schools.com/js/js_date_formats.asp
     },
-]
+];
 
 //#endRepository
 
 //#Projects
-const projectCount = 3;
+const projectCount = 6;
 const arrProjects = [{
         projectID: 0,
-        projectName: 'Example1',
-        projectDescription: 'No description',
-        projectLastUpdate: '2021-02-07', //YYYYMMDD https://www.w3schools.com/js/js_date_formats.asp
+        projectName: 'Sorting Hat',
+        projectDescription: 'Lindsey Satterfield',
+        projectLink: 'https://github.com/lindseysatterfield/sorting-hat/projects/1',
+        projectLastUpdate: './images/last updated (clock).webp', 
         projectPrivate: true,
         projectOpen: true,
     },
     {
         projectID: 1,
-        projectName: 'my-goals',
-        projectDescription: 'No description',
-        projectLastUpdate: '2021-02-07', //YYYYMMDD https://www.w3schools.com/js/js_date_formats.asp
+        projectName: 'Gitsub',
+        projectDescription: 'Group',
+        projectLink: 'https://github.com/nss-evening-cohort-14/gitsub-e14-1-devs-to-ever-dev/projects',
+        projectLastUpdate: './images/last updated (clock).webp', 
         projectPrivate: false,
         projectOpen: true,
     },
     {
         projectID: 2,
-        projectName: 'Sample My Goals',
-        projectDescription: '',
-        projectLastUpdate: '2021-02-07', //YYYYMMDD https://www.w3schools.com/js/js_date_formats.asp
+        projectName: 'Sorting Hat',
+        projectDescription: 'Honey-Rae Swan',
+        projectLink: 'https://github.com/thedigitalmenagerie/sorting-hat/projects/1',
+        projectLastUpdate: './images/last updated (clock).webp', 
         projectPrivate: false,
         projectOpen: true,
     },
-]
+    {
+        projectID: 3,
+        projectName: 'Sorting Hat',
+        projectDescription: 'Dani Crosby',
+        projectLink: 'https://github.com/danicrosby/sorting-hat/projects',
+        projectLastUpdate: './images/last updated (clock).webp', 
+        projectPrivate: false,
+        projectOpen: true,
+    },
+    {
+        projectID: 4,
+        projectName: 'My Goals',
+        projectDescription: 'Honey-Rae Swan',
+        projectLink: 'https://github.com/users/thedigitalmenagerie/projects/1',
+        projectLastUpdate: './images/last updated (clock).webp', 
+        projectPrivate: false,
+        projectOpen: true,
+    },
+    {
+        projectID: 5,
+        projectName: 'Pet Adoption',
+        projectDescription: 'Dani Crosby',
+        projectLink: 'https://github.com/danicrosby/pet-adoption/projects',
+        projectLastUpdate: './images/last updated (clock).webp', 
+        projectPrivate: false,
+        projectOpen: true,
+    },
+];
 
 
 //#endProjects
@@ -406,7 +441,6 @@ const PrintRepoCardsWithSearchBar = () => {
                   <p class="overview-card-text">${card.repoDescription}</p>
                   <p class="buttons-container">${makeRepoButtons(card)}</p>
                   <p class="repoCardBottomContainer"> ${card.repoLanguage} ${card.starsCount} ${card.issuesNeedHelp} issues needs help ${card.repoLastUpdate} Updated days ago
-
                   </p>
                 </div>
               </div> `;
@@ -434,22 +468,19 @@ const makeRepoButtons = (repoCard) => {
 
 const PrintProjectsFormWithSearchBar = () => {
     // add search bar to the top of the page
-    let projectCardsWithSearchBar = `   `;
+    let projectCardsWithSearchBar = ` `;
 
     arrProjects.forEach((card) => {
-
-
-
-        //Each Project card is here 
-        projectCardsWithSearchBar += `
-
-
-
-                     `;
-
+        projectCardsWithSearchBar += `<div class="card project-card" id="project-card">
+        <div class="card-body" id="overview-card-body">
+          <h6 class="card-title">${card.projectName}</h6>
+          <p class="overview-card-text" ><img src="${card.projectLastUpdate}" id="timeUpdated">${card.projectDescription}</p>
+          <a href="${card.projectLink}" class="btn btn-secondary btn-sm" id="overview-btn">Learn More</a>
+        </div>
+      </div>`;
     })
 
-    PrintToDom('#top-row', projectCardsWithSearchBar);
+    PrintToDom('#projects-top-row', projectCardsWithSearchBar);
 }
 
 
@@ -508,8 +539,19 @@ const ButtonEvents = () => {
 // init call()
 
 const init = () => {
-    PrintRepoCardsWithSearchBar();
+    let x = location.pathname;
+
+    if (x === '/index.html') {
+
+    } else if (x === '/repo.html') {
+        PrintRepoCardsWithSearchBar();
+    } else if (x === '/projects.html') {
+        PrintProjectsFormWithSearchBar();
+    } else if (x === '/packages.html') {
+
+    }
     // ButtonEvents();
+    
 }
 
 init();
