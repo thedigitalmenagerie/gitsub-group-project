@@ -1,5 +1,3 @@
-console.log('CONNECTED .');
-
 const arrNavBar = [{
     overview: [{
         linkIcon: './images/Overview (open book).webp',
@@ -224,57 +222,61 @@ let repositoryID = 4;
 const arrRepositories = [{
         repoID: 0,
         repoTitle: '',
+        repoTitle: 'greys-anatomy-lorem-ipsum-generator',
         repoLink: 'https://github.com/thedigitalmenagerie/sorting-hat',
-        repoDescription: '',
-        arrListOfButtons: ['netlify', 'Jamstack', '', ''],
-        repoLanguage: '',
-        starsCount: 0,
+        repoDescription: 'A lorem generator with medical terms and words from the show Grey\'s Anatomy.',
+        arrListOfButtons: ['netlify', 'Jamstack', 'Lorem-ipsum-generator', 'medical', 'serverless', 'react'],
+        repoLanguage: 'javascript',
+        starsCount: 8,
         // this is needed here three dot Icon
         pinned: false,
-        repoMTILicense: true,
-        issuesNeedHelp: '',
+        repoMITLicense: false,
+        issuesNeedHelp: 1,
         repoLastUpdate: '2021-02-07', //YYYYMMDD https://www.w3schools.com/js/js_date_formats.asp
     },
     {
         repoID: 1,
         repoTitle: '',
+        repoTitle: 'how-many-days-until',
         repoLink: 'https://github.com/thedigitalmenagerie/pet-adoption',
-        repoDescription: '',
-        arrListOfButtons: ['', '', '', ''],
-        repoLanguage: '',
+        repoDescription: 'A React countdown app of days between today and next year.',
+        arrListOfButtons: ['react', 'countdown', 'hacktoberfest'],
+        repoLanguage: 'javascript',
         starsCount: 0,
         // this is needed here three dot Icon
         pinned: false,
-        repoMTILicense: true,
-        issuesNeedHelp: '',
+        repoMITLicense: true,
+        issuesNeedHelp: 0,
         repoLastUpdate: '2021-02-07', //YYYYMMDD https://www.w3schools.com/js/js_date_formats.asp
     },
     {
         repoID: 2,
         repoTitle: '',
+        repoTitle: 'httriri',
         repoLink: 'https://github.com/lindseysatterfield/sorting-hat ',
-        repoDescription: '',
-        arrListOfButtons: ['', '', '', ''],
-        repoLanguage: '',
-        starsCount: 0,
+        repoDescription: 'HTTRiRi - HTTP Status Codes as Portrayed by Rihanna Gifs',
+        arrListOfButtons: ['http', 'status-codes', 'gifts', 'rihanna', 'hacktoberfest'],
+        repoLanguage: 'TypeScript',
+        starsCount: 37,
         // this is needed here three dot Icon
         pinned: false,
-        repoMTILicense: true,
-        issuesNeedHelp: '',
+        repoMITLicense: true,
+        issuesNeedHelp: 4,
         repoLastUpdate: '2021-02-07', //YYYYMMDD https://www.w3schools.com/js/js_date_formats.asp
     },
     {
         repoID: 3,
         repoTitle: '',
+        repoTitle: 'ambition-found-website',
         repoLink: 'https://github.com/lindseysatterfield/pet-adoption',
-        repoDescription: '',
-        arrListOfButtons: ['', '', '', ''],
-        repoLanguage: '',
-        starsCount: 0,
+        repoDescription: 'Website for www.ambition.cor, micro-grant program to provide support for underrepresented people who need financial assistance purging professional development opportunities in the technology...',
+        arrListOfButtons: ['donation', 'landing-page'],
+        repoLanguage: 'javascript',
+        starsCount: 7,
         // this is needed here three dot Icon
         pinned: false,
-        repoMTILicense: true,
-        issuesNeedHelp: '',
+        repoMITLicense: true,
+        issuesNeedHelp: 3,
         repoLastUpdate: '2021-02-07', //YYYYMMDD https://www.w3schools.com/js/js_date_formats.asp
     },
 ];
@@ -427,22 +429,40 @@ const PrintPinnedCards = () => {
 
 const PrintRepoCardsWithSearchBar = () => {
     // add search bar to the top of the page
-    let repoCardsWithSearchBar = `   `;
+    let repoCardsWithSearchBar = ``;
 
     arrRepositories.forEach((card) => {
 
-
-
         //Each Repo card is here
         repoCardsWithSearchBar += `
-
-
-
-                     `;
+              <div class="card overview-card" id="${card.repoID}">
+                <div class="card-body" id="overview-card-body">
+                  <h6 class="card-title">${card.repoTitle}</h6>
+                  <p class="overview-card-text">${card.repoDescription}</p>
+                  <p class="buttons-container">${makeRepoButtons(card)}</p>
+                  <p class="repoCardBottomContainer"> ${card.repoLanguage} ${card.starsCount} ${card.issuesNeedHelp} issues needs help ${card.repoLastUpdate} Updated days ago
+                  </p>
+                </div>
+              </div> `;
 
     })
 
-    PrintToDom('#top-row', repoCardsWithSearchBar);
+    PrintToDom('#repo-top-row', repoCardsWithSearchBar);
+}
+
+const makeRepoButtons = (repoCard) => {
+    let repoButtons = ``;
+    // let indexOfRepoID = arrRepositories.findindex(cardRepoID);
+
+    // arrRepositories[indexOfRepoID].arrListOfButtons.forEach((button, i) => {
+    repoCard.arrListOfButtons.forEach((button, i) => {
+
+        repoButtons += `
+                       <a href="#" class="btn btn-secondary btn-sm" style="padding: .5em; margin: .5em" id="${i}">${button}</a>
+                       `;
+    })
+    return repoButtons;
+
 }
 
 
@@ -451,7 +471,7 @@ const PrintProjectsFormWithSearchBar = () => {
     let projectCardsWithSearchBar = ` `;
 
     arrProjects.forEach((card) => {
-        projectCardsWithSearchBar += `<div class="card overview-card" id="overview-card">
+        projectCardsWithSearchBar += `<div class="card project-card" id="project-card">
         <div class="card-body" id="overview-card-body">
           <h6 class="card-title">${card.projectName}</h6>
           <p class="overview-card-text" ><img src="${card.projectLastUpdate}" id="timeUpdated">${card.projectDescription}</p>
@@ -519,8 +539,19 @@ const ButtonEvents = () => {
 // init call()
 
 const init = () => {
+    let x = location.pathname;
+
+    if (x === '/index.html') {
+
+    } else if (x === '/repo.html') {
+        PrintRepoCardsWithSearchBar();
+    } else if (x === '/projects.html') {
+        PrintProjectsFormWithSearchBar();
+    } else if (x === '/packages.html') {
+
+    }
     // ButtonEvents();
-    PrintProjectsFormWithSearchBar();
+    
 }
 
 init();
