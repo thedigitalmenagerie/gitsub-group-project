@@ -206,12 +206,21 @@ li a {
     width: 2em;
 }
 
+
 /* Packages Section */
 #packages-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   /* border: 4px solid blue; */
+}
+/* Projects Page CSS HR */
+
+#projects-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  border: 1px solid blue;
   width: 100%;
   height: 28em;
   margin-bottom: 1em;
@@ -224,10 +233,13 @@ li a {
   max-height: 25em;
   overflow: hidden;
   overflow-y: scroll;
-  
 }
 
 #packages-icons {
+  width: 1em;
+}
+
+#timeUpdated {
   width: 1em;
 }
 
