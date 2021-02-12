@@ -1,5 +1,3 @@
-console.log('CONNECTED .');
-
 const arrNavBar = [{
     overview: [{
         linkIcon: './images/Overview (open book).webp',
@@ -124,29 +122,6 @@ const person = {
 }
 
 
-// LINKS
-
-// 5 packages
-
-// docker link -- https://www.docker.com/?utm_source=google&utm_medium=cpc&utm_campaign=dockerhomepage&utm_content=namer&utm_term=dockerhomepage&utm_budget=growth&gclid=Cj0KCQiAgomBBhDXARIsAFNyUqP7IuAWd7M9yGrY-D87ikBbLpSR4Mzd2RQtHIDalzpNadyjAlyg4kYaAoT_EALw_wcB
-// docker container link -- https://www.docker.com/resources/what-container?gclid=Cj0KCQiAgomBBhDXARIsAFNyUqMwxmzuSjtAKHOeyuUainBg3qxEksx9tDeBia3gWtnVAslZoQS32kAaApuBEALw_wcB
-// rubygems link -- https://rubygems.org/
-// nuget link -- https://www.nuget.org/
-// apache maven link -- https://maven.apache.org/
-
-// 10 Repos (6 Overview/ 4 Repo Page)
-
-// Honey-Rae -- https://github.com/thedigitalmenagerie/sorting-hat , https://github.com/thedigitalmenagerie/pet-adoption
-// Lindsey https://github.com/lindseysatterfield/sorting-hat , https://github.com/lindseysatterfield/pet-adoption
-
-// 6 Project Boards
-
-// Group -- https://github.com/nss-evening-cohort-14/gitsub-e14-1-devs-to-ever-dev/projects 
-// HR https://github.com/users/thedigitalmenagerie/projects/1
-// LS https://github.com/lindseysatterfield/sorting-hat/projects/1
-
-
-//#Packages
 
 const arrPackagesTypes = [{
         packageIcon: './images/docker.webp',
@@ -244,59 +219,59 @@ const arrRepoLocations = [
 
 let repositoryID = 4;
 const arrRepositories = [{
-        repoID = 0,
-        repoTitle: '',
+        repoID: 0,
+        repoTitle: 'greys-anatomy-lorem-ipsum-generator',
         repoLink: 'https://github.com/thedigitalmenagerie/sorting-hat',
-        repoDescription: '',
-        arrListOfButtons: ['netlify', 'Jamstack', '', ''],
-        repoLanguage: '',
-        starsCount: 0,
+        repoDescription: 'A lorem generator with medical terms and words from the show Grey\'s Anatomy.',
+        arrListOfButtons: ['netlify', 'Jamstack', 'Lorem-ipsum-generator', 'medical', 'serverless', 'react'],
+        repoLanguage: 'javascript',
+        starsCount: 8,
         // this is needed here three dot Icon
         pinned: false,
-        repoMTILicense: true,
-        issuesNeedHelp: '',
+        repoMITLicense: false,
+        issuesNeedHelp: 1,
         repoLastUpdate: '2021-02-07', //YYYYMMDD https://www.w3schools.com/js/js_date_formats.asp
     },
     {
-        repoID = 1,
-        repoTitle: '',
+        repoID: 1,
+        repoTitle: 'how-many-days-until',
         repoLink: 'https://github.com/thedigitalmenagerie/pet-adoption',
-        repoDescription: '',
-        arrListOfButtons: ['', '', '', ''],
-        repoLanguage: '',
+        repoDescription: 'A React countdown app of days between today and next year.',
+        arrListOfButtons: ['react', 'countdown', 'hacktoberfest'],
+        repoLanguage: 'javascript',
         starsCount: 0,
         // this is needed here three dot Icon
         pinned: false,
-        repoMTILicense: true,
-        issuesNeedHelp: '',
+        repoMITLicense: true,
+        issuesNeedHelp: 0,
         repoLastUpdate: '2021-02-07', //YYYYMMDD https://www.w3schools.com/js/js_date_formats.asp
     },
     {
-        repoID = 2,
-        repoTitle: '',
+        repoID: 2,
+        repoTitle: 'httriri',
         repoLink: 'https://github.com/lindseysatterfield/sorting-hat ',
-        repoDescription: '',
-        arrListOfButtons: ['', '', '', ''],
-        repoLanguage: '',
-        starsCount: 0,
+        repoDescription: 'HTTRiRi - HTTP Status Codes as Portrayed by Rihanna Gifs',
+        arrListOfButtons: ['http', 'status-codes', 'gifts', 'rihanna', 'hacktoberfest'],
+        repoLanguage: 'TypeScript',
+        starsCount: 37,
         // this is needed here three dot Icon
         pinned: false,
-        repoMTILicense: true,
-        issuesNeedHelp: '',
+        repoMITLicense: true,
+        issuesNeedHelp: 4,
         repoLastUpdate: '2021-02-07', //YYYYMMDD https://www.w3schools.com/js/js_date_formats.asp
     },
     {
-        repoID = 3,
-        repoTitle: '',
+        repoID: 3,
+        repoTitle: 'ambition-found-website',
         repoLink: 'https://github.com/lindseysatterfield/pet-adoption',
-        repoDescription: '',
-        arrListOfButtons: ['', '', '', ''],
-        repoLanguage: '',
-        starsCount: 0,
+        repoDescription: 'Website for www.ambition.cor, micro-grant program to provide support for underrepresented people who need financial assistance purging professional development opportunities in the technology...',
+        arrListOfButtons: ['donation', 'landing-page'],
+        repoLanguage: 'javascript',
+        starsCount: 7,
         // this is needed here three dot Icon
         pinned: false,
-        repoMTILicense: true,
-        issuesNeedHelp: '',
+        repoMITLicense: true,
+        issuesNeedHelp: 3,
         repoLastUpdate: '2021-02-07', //YYYYMMDD https://www.w3schools.com/js/js_date_formats.asp
     },
 ]
@@ -419,22 +394,41 @@ const PrintPinnedCards = () => {
 
 const PrintRepoCardsWithSearchBar = () => {
     // add search bar to the top of the page
-    let repoCardsWithSearchBar = `   `;
+    let repoCardsWithSearchBar = ``;
 
     arrRepositories.forEach((card) => {
 
-
-
         //Each Repo card is here
         repoCardsWithSearchBar += `
+              <div class="card overview-card" id="${card.repoID}">
+                <div class="card-body" id="overview-card-body">
+                  <h6 class="card-title">${card.repoTitle}</h6>
+                  <p class="overview-card-text">${card.repoDescription}</p>
+                  <p class="buttons-container">${makeRepoButtons(card)}</p>
+                  <p class="repoCardBottomContainer"> ${card.repoLanguage} ${card.starsCount} ${card.issuesNeedHelp} issues needs help ${card.repoLastUpdate} Updated days ago
 
-
-
-                     `;
+                  </p>
+                </div>
+              </div> `;
 
     })
 
-    PrintToDom('#top-row', repoCardsWithSearchBar);
+    PrintToDom('#repo-top-row', repoCardsWithSearchBar);
+}
+
+const makeRepoButtons = (repoCard) => {
+    let repoButtons = ``;
+    // let indexOfRepoID = arrRepositories.findindex(cardRepoID);
+
+    // arrRepositories[indexOfRepoID].arrListOfButtons.forEach((button, i) => {
+    repoCard.arrListOfButtons.forEach((button, i) => {
+
+        repoButtons += `
+                       <a href="#" class="btn btn-secondary btn-sm" style="padding: .5em; margin: .5em" id="${i}">${button}</a>
+                       `;
+    })
+    return repoButtons;
+
 }
 
 
@@ -514,6 +508,7 @@ const ButtonEvents = () => {
 // init call()
 
 const init = () => {
+    PrintRepoCardsWithSearchBar();
     // ButtonEvents();
 }
 
