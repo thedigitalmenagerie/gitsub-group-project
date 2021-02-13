@@ -611,7 +611,6 @@ const PrintPinnedCards = () => {
 const PrintRepoCardsWithSearchBar = () => {
 	// add search bar to the top of the page
 
-	// add search bar to the top of the page
 	let repoCardsWithSearchBar = ``;
 
 	arrRepositories.forEach((card) => {
@@ -806,11 +805,21 @@ const deleteProject = (e) => {
 // Button Events
 
 const ButtonEvents = () => {
-	document.querySelector('#projects-top-row').addEventListener('click', sortProjectSortButton);
-	document.querySelector('#projects-form-btn').addEventListener('click', getCreateNewProjectInfo);
-	document.querySelector('#projects-top-row').addEventListener('click', deleteProject);
-	document.querySelector('#packages-form-btn').addEventListener('click', getPackageFormInfo);
-	document.querySelector('#packages-card-container').addEventListener('click', deletePackage);
+
+	let x = location.pathname;
+
+	if (x === '/projects.html') {
+		document.querySelector('#projects-top-row').addEventListener('click', sortProjectSortButton);
+		document.querySelector('#projects-form-btn').addEventListener('click', getCreateNewProjectInfo);
+		document.querySelector('#projects-top-row').addEventListener('click', deleteProject);
+	}
+	else if (x === '/packages.html') {
+		document.querySelector('#packages-form-btn').addEventListener('click', getPackageFormInfo);
+		document.querySelector('#packages-card-container').addEventListener('click', deletePackage);
+	}
+	
+	
+
 };
 
 // init call()
