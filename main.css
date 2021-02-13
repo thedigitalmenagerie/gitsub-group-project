@@ -1,7 +1,7 @@
 main {
     display: flex;
     flex-direction: column;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 #outer-container {
@@ -16,7 +16,7 @@ main {
 #left-container {
     display: flex;
     justify-content: center;
-    border: 1px solid hotpink;
+    /* border: 1px solid hotpink; */
     width: 20%;
     height: 100%;
     margin-left: 5em;
@@ -26,7 +26,7 @@ main {
     display: flex;
     flex-flow: column wrap;
     align-content: flex-start;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 100%;
     height: 100%;
     padding: 1em;
@@ -87,13 +87,20 @@ a {
     margin-bottom: 1em;
 }
 
+#packages-icon-images {
+    width: 8%;
+    border-radius: 50%;
+    margin-bottom: .5em;
+    padding-right: .2em;
+}
+
 
 /* <!-- RIGHT SIDE CONTAINER --> */
 
 #right-container {
     display: flex;
     flex-direction: column;
-    border: 1px solid hotpink;
+    /* border: 1px solid hotpink; */
     padding: .5em;
     width: 70%;
     height: 100%;
@@ -102,7 +109,7 @@ a {
 #nav-container {
     display: flex;
     justify-content: flex-start;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 100%;
     height: 2em;
     margin-bottom: 1em;
@@ -112,14 +119,14 @@ a {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 100%;
     height: 28em;
     margin-bottom: 1em;
 }
 
 #create-project-container {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 100%;
     height: 25em;
 }
@@ -143,7 +150,7 @@ a {
 /* <!-- FORMS --> */
 
 form {
-    border: 1px red solid;
+    /* border: 1px red solid; */
 }
 
 form label {
@@ -182,7 +189,7 @@ form a {
 #footer-container {
     display: flex;
     justify-content: space-around;
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     padding: 1em;
 }
 
@@ -220,7 +227,7 @@ li a {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   width: 100%;
   height: 28em;
   margin-bottom: 1em;
