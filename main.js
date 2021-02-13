@@ -116,8 +116,7 @@ const person = {
 	personAddresses         : {
 		phisicalLocation : {
 			locationIcon    : './images/location.webp',
-			locationAddress :
-				'https://www.google.com/maps?q=nashville+tn&um=1&ie=UTF-8&sa=X&ved=2ahUKEwia5sSqu93uAhVIo1kKHZS8BdgQ_AUoAXoECBsQAw'
+			locationAddress :'https://www.google.com/maps?q=nashville+tn&um=1&ie=UTF-8&sa=X&ved=2ahUKEwia5sSqu93uAhVIo1kKHZS8BdgQ_AUoAXoECBsQAw'
 		},
 		gitHub           : {
 			gitHubIcon    : './images/location.webp',
@@ -232,8 +231,19 @@ const arrRepositories = [
 		repoID           : 0,
 		repoTitle        : 'greys-anatomy-lorem-ipsum-generator',
 		repoLink         : 'https://github.com/thedigitalmenagerie/sorting-hat',
-		repoDescription  :
-			"A lorem generator with medical terms and words from the show Grey's Anatomy.",
+		repoDescription  : "A lorem generator with medical terms and words from the show Grey's Anatomy.",
+		repoPinnedIcon   : './images/pinned-icon.png',
+		repoLanguageIcon : '../images/yellow-square.png',
+		repoStarIcon     : './images/star-icon.webp',
+		repoForkedIcon   : './images/forked-repo-icon.png',
+		repo3DotIcon     : './images/3-dot-icon.webp ',
+		repoLanguage     : 'javascript',
+		starsCount       : 8,
+		pinned           : false,
+		repoMITLicense   : false,
+		issuesNeedHelp   : 1,
+		repoLastUpdate   : '2021-02-07',
+		reposForked      : 10,
 		arrListOfButtons : [
 			'netlify',
 			'Jamstack',
@@ -242,37 +252,47 @@ const arrRepositories = [
 			'serverless',
 			'react'
 		],
-		repoLanguage     : 'javascript',
-		starsCount       : 8,
-		// this is needed here three dot Icon
-		pinned           : false,
-		repoMITLicense   : false,
-		issuesNeedHelp   : 1,
-		repoLastUpdate   : '2021-02-07' //YYYYMMDD https://www.w3schools.com/js/js_date_formats.asp
 	},
 	{
 		repoID           : 1,
 		repoTitle        : 'how-many-days-until',
 		repoLink         : 'https://github.com/thedigitalmenagerie/pet-adoption',
 		repoDescription  : 'A React countdown app of days between today and next year.',
+		repoPinnedIcon   : './images/pinned-icon.png',
+		repoLanguageIcon : '../images/yellow-square.png',
+		repoStarIcon     : './images/star-icon.webp',
+		repoForkedIcon   : './images/forked-repo-icon.png',
+		repo3DotIcon     : './images/3-dot-icon.webp ',
+		repoLanguage     : 'javascript',
+		starsCount       : 0,
+		pinned           : false,
+		repoMITLicense   : true,
+		issuesNeedHelp   : 0,
+		repoLastUpdate   : '2021-02-07',
+		reposForked      : 21,
 		arrListOfButtons : [
 			'react',
 			'countdown',
 			'hacktoberfest'
 		],
-		repoLanguage     : 'javascript',
-		starsCount       : 0,
-		// this is needed here three dot Icon
-		pinned           : false,
-		repoMITLicense   : true,
-		issuesNeedHelp   : 0,
-		repoLastUpdate   : '2021-02-07' //YYYYMMDD https://www.w3schools.com/js/js_date_formats.asp
 	},
 	{
 		repoID           : 2,
 		repoTitle        : 'httriri',
 		repoLink         : 'https://github.com/lindseysatterfield/sorting-hat ',
 		repoDescription  : 'HTTRiRi - HTTP Status Codes as Portrayed by Rihanna Gifs',
+		repoPinnedIcon   : './images/pinned-icon.png',
+		repoLanguageIcon : './images/blue-square-2.jpg',
+		repoStarIcon     : './images/star-icon.webp',
+		repoForkedIcon   : './images/forked-repo-icon.png',
+		repo3DotIcon     : './images/3-dot-icon.webp ',
+		repoLanguage     : 'TypeScript',
+		starsCount       : 37,
+		pinned           : false,
+		repoMITLicense   : true,
+		issuesNeedHelp   : 4,
+		repoLastUpdate   : '2021-02-07',
+		reposForked      : 12,
 		arrListOfButtons : [
 			'http',
 			'status-codes',
@@ -280,32 +300,185 @@ const arrRepositories = [
 			'rihanna',
 			'hacktoberfest'
 		],
-		repoLanguage     : 'TypeScript',
-		starsCount       : 37,
-		// this is needed here three dot Icon
-		pinned           : false,
-		repoMITLicense   : true,
-		issuesNeedHelp   : 4,
-		repoLastUpdate   : '2021-02-07' //YYYYMMDD https://www.w3schools.com/js/js_date_formats.asp
 	},
 	{
 		repoID           : 3,
 		repoTitle        : 'ambition-found-website',
 		repoLink         : 'https://github.com/lindseysatterfield/pet-adoption',
-		repoDescription  :
-			'Website for www.ambition.cor, micro-grant program to provide support for underrepresented people who need financial assistance purging professional development opportunities in the technology...',
+		repoDescription  : 'Website for www.ambition.cor, micro-grant program to provide support for underrepresented people who need financial assistance purging professional development opportunities in the technology...',
+		repoPinnedIcon   : './images/pinned-icon.png',
+		repoLanguageIcon : '../images/yellow-square.png',
+		repoStarIcon     : './images/star-icon.webp',
+		repoForkedIcon   : './images/forked-repo-icon.png',
+		repo3DotIcon     : './images/3-dot-icon.webp',
+		repoLanguage     : 'javascript',
+		starsCount       : 7,
+		pinned           : false,
+		repoMITLicense   : true,
+		issuesNeedHelp   : 3,
+		repoLastUpdate   : '2021-02-07',
+		reposForked      : 45,
 		arrListOfButtons : [
 			'donation',
 			'landing-page'
 		],
-		repoLanguage     : 'javascript',
-		starsCount       : 7,
-		// this is needed here three dot Icon
+	},
+	{
+		repoID           : 4,
+		repoTitle        : 'honey-rae-sorting-hat',
+		repoLink         : 'https://github.com/thedigitalmenagerie/sorting-hat',
+		repoDescription  : "A lorem generator with medical terms and words from the show Grey's Anatomy.",
+		repoPinnedIcon   : './images/pinned-icon.png',
+		repoLanguageIcon : './images/red-square.png',
+		repoStarIcon     : './images/star-icon.webp',
+		repoForkedIcon   : './images/forked-repo-icon.png',
+		repo3DotIcon     : './images/3-dot-icon.webp',
+		repoLanguage     : 'HTML',
+		starsCount       : 8,
+		pinned           : true,
+		repoMITLicense   : false,
+		issuesNeedHelp   : 1,
+		repoLastUpdate   : '2021-02-07',
+		reposForked      : 11,
+		arrListOfButtons : [
+			'netlify',
+			'Jamstack',
+			'Lorem-ipsum-generator',
+			'medical',
+			'serverless',
+			'react'
+		],
+	},
+	{
+		repoID           : 5,
+		repoTitle        : 'ls-sorting-hat',
+		repoLink         : 'https://github.com/lindseysatterfield/sorting-hat',
+		repoDescription  : "A lorem generator with medical terms and words from the show Grey's Anatomy.",
+		repoPinnedIcon   : './images/pinned-icon.png',
+		repoLanguageIcon : './images/blue-square-2.jpg',
+		repoStarIcon     : './images/star-icon.webp',
+		repoForkedIcon   : './images/forked-repo-icon.png',
+		repo3DotIcon     : './images/3-dot-icon.webp',
+		repoLanguage     : 'Typescript',
+		starsCount       : 8,
 		pinned           : false,
-		repoMITLicense   : true,
-		issuesNeedHelp   : 3,
-		repoLastUpdate   : '2021-02-07' //YYYYMMDD https://www.w3schools.com/js/js_date_formats.asp
-	}
+		repoMITLicense   : false,
+		issuesNeedHelp   : 1,
+		repoLastUpdate   : '2021-02-07',
+		reposForked      : 51,
+		arrListOfButtons : [
+			'netlify',
+			'Jamstack',
+			'Lorem-ipsum-generator',
+			'medical',
+			'serverless',
+			'react'
+		],
+	},
+	{
+		repoID           : 6,
+		repoTitle        : 'lindsey-pet-adoption',
+		repoLink         : 'https://github.com/lindseysatterfield/pet-adoption',
+		repoDescription  : "A lorem generator with medical terms and words from the show Grey's Anatomy.",
+		repoPinnedIcon   : './images/pinned-icon.png',
+		repoLanguageIcon : './images/red-square.png',
+		repoStarIcon     : './images/star-icon.webp',
+		repoForkedIcon   : './images/forked-repo-icon.png',
+		repo3DotIcon     : './images/3-dot-icon.webp',
+		repoLanguage     : 'HTML',
+		starsCount       : 8,
+		pinned           : true,
+		repoMITLicense   : false,
+		issuesNeedHelp   : 1,
+		repoLastUpdate   : '2021-02-07',
+		reposForked      : 7,
+		arrListOfButtons : [
+			'netlify',
+			'Jamstack',
+			'Lorem-ipsum-generator',
+			'medical',
+			'serverless',
+			'react'
+		],
+	},
+	{
+		repoID           : 7,
+		repoTitle        : 'dc-personal-bio-stie',
+		repoLink         : 'https://github.com/danicrosby/personal-bio-site',
+		repoDescription  : "A lorem generator with medical terms and words from the show Grey's Anatomy.",
+		repoPinnedIcon   : './images/pinned-icon.png',
+		repoLanguageIcon : '../images/yellow-square.png',
+		repoStarIcon     : './images/star-icon.webp',
+		repoForkedIcon   : './images/forked-repo-icon.png',
+		repo3DotIcon     : './images/3-dot-icon.webp',
+		repoLanguage     : 'javascript',
+		starsCount       : 8,
+		pinned           : true,
+		repoMITLicense   : false,
+		issuesNeedHelp   : 1,
+		repoLastUpdate   : '2021-02-07',
+		reposForked      : 11,
+		arrListOfButtons : [
+			'netlify',
+			'Jamstack',
+			'Lorem-ipsum-generator',
+			'medical',
+			'serverless',
+			'react'
+		],
+	},
+	{
+		repoID           : 8,
+		repoTitle        : 'dani-sorting-hat',
+		repoLink         : 'https://github.com/danicrosby/sorting-hat',
+		repoDescription  : "A lorem generator with medical terms and words from the show Grey's Anatomy.",
+		repoPinnedIcon   : './images/pinned-icon.png',
+		repoLanguageIcon : './images/red-square.png',
+		repoStarIcon     : './images/star-icon.webp',
+		repoForkedIcon   : './images/forked-repo-icon.png',
+		repo3DotIcon     : './images/3-dot-icon.webp',
+		repoLanguage     : 'HTML',
+		starsCount       : 8,
+		pinned           : false,
+		repoMITLicense   : false,
+		issuesNeedHelp   : 1,
+		repoLastUpdate   : '2021-02-07',
+		reposForked      : 16,
+		arrListOfButtons : [
+			'netlify',
+			'Jamstack',
+			'Lorem-ipsum-generator',
+			'medical',
+			'serverless',
+			'react'
+		],
+	},
+	{
+		repoID           : 9,
+		repoTitle        : 'juan-sorting-hat',
+		repoLink         : 'https://github.com/JuanDavila1101/sorting-hat',
+		repoDescription  : "A lorem generator with medical terms and words from the show Grey's Anatomy.",
+		repoPinnedIcon   : './images/pinned-icon.png',
+		repoLanguageIcon : './images/blue-square-2.jpg',
+		repoStarIcon     : './images/star-icon.webp',
+		repoForkedIcon   : './images/forked-repo-icon.png',
+		repo3DotIcon     : './images/3-dot-icon.webp',
+		repoLanguage     : 'Typescript',
+		starsCount       : 8,
+		pinned           : true,
+		repoMITLicense   : false,
+		issuesNeedHelp   : 1,
+		repoLastUpdate   : '2021-02-07',
+		reposForked      : 60,
+				arrListOfButtons : [
+			'netlify',
+			'Jamstack',
+			'Lorem-ipsum-generator',
+			'medical',
+			'serverless',
+			'react'
+		],
+	},
 ];
 
 //#endRepository
@@ -438,15 +611,28 @@ const PrintPinnedCards = () => {
 	let pinnedCards = `  `;
 
 	arrRepositories.forEach((card) => {
-		//Each pinned card is here
-		domString += `
 
-
-
-                     `;
+		if (card.pinned === true) {
+			pinnedCards += `
+					<div class="card text-white bg-dark pinned-card" id="${card.repoID}" style="width: 27rem; height: 10em; margin: .2em">
+						<div class="card-body" id="overview-card-body">
+								<h6 class="card-title"><img src="${card.repoPinnedIcon}" style="width: 1em">${card.repoTitle}</h6>
+								<p class="overview-card-text">${card.repoDescription}</p>
+								<hr>
+								<div class="repoCardBottomContainer">
+									<div>
+										<img src="${card.repoLanguageIcon}" id="pinned-icons">${card.repoLanguage}
+										<img src="${card.repoStarIcon}" id="pinned-icons">${card.starsCount}
+										<img src="${card.repoForkedIcon}" id="pinned-icons">${card.reposForked}
+									</div>
+								</div>
+						</div>
+					</div>`;
+		}
+		
 	});
 
-	PrintToDom('#top-row', pinnedCards);
+	PrintToDom('#pinned-cards', pinnedCards);
 };
 
 const PrintRepoCardsWithSearchBar = () => {
@@ -607,8 +793,9 @@ const ButtonEvents = () => {
 
 const init = () => {
 	let x = location.pathname;
-
+	
 	if (x === '/index.html') {
+		PrintPinnedCards();
 	}
 	else if (x === '/repo.html') {
 		PrintRepoCardsWithSearchBar();
