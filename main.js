@@ -233,7 +233,7 @@ const arrRepositories = [
 		repoLink         : 'https://github.com/thedigitalmenagerie/sorting-hat',
 		repoDescription  : "A lorem generator with medical terms and words from the show Grey's Anatomy.",
 		repoPinnedIcon   : './images/pinned-icon.png',
-		repoLanguageIcon : './images/yellow-dot.jpg',
+		repoLanguageIcon : '../images/yellow-square.png',
 		repoStarIcon     : './images/star-icon.webp',
 		repoForkedIcon   : './images/forked-repo-icon.png',
 		repo3DotIcon     : './images/3-dot-icon.webp ',
@@ -259,7 +259,7 @@ const arrRepositories = [
 		repoLink         : 'https://github.com/thedigitalmenagerie/pet-adoption',
 		repoDescription  : 'A React countdown app of days between today and next year.',
 		repoPinnedIcon   : './images/pinned-icon.png',
-		repoLanguageIcon : './images/yellow-dot.jpg',
+		repoLanguageIcon : '../images/yellow-square.png',
 		repoStarIcon     : './images/star-icon.webp',
 		repoForkedIcon   : './images/forked-repo-icon.png',
 		repo3DotIcon     : './images/3-dot-icon.webp ',
@@ -282,7 +282,7 @@ const arrRepositories = [
 		repoLink         : 'https://github.com/lindseysatterfield/sorting-hat ',
 		repoDescription  : 'HTTRiRi - HTTP Status Codes as Portrayed by Rihanna Gifs',
 		repoPinnedIcon   : './images/pinned-icon.png',
-		repoLanguageIcon : './images/blue-dot.jpg',
+		repoLanguageIcon : './images/blue-square-2.jpg',
 		repoStarIcon     : './images/star-icon.webp',
 		repoForkedIcon   : './images/forked-repo-icon.png',
 		repo3DotIcon     : './images/3-dot-icon.webp ',
@@ -307,10 +307,10 @@ const arrRepositories = [
 		repoLink         : 'https://github.com/lindseysatterfield/pet-adoption',
 		repoDescription  : 'Website for www.ambition.cor, micro-grant program to provide support for underrepresented people who need financial assistance purging professional development opportunities in the technology...',
 		repoPinnedIcon   : './images/pinned-icon.png',
-		repoLanguageIcon : './images/yellow-dot.jpg',
+		repoLanguageIcon : '../images/yellow-square.png',
 		repoStarIcon     : './images/star-icon.webp',
 		repoForkedIcon   : './images/forked-repo-icon.png',
-		repo3DotIcon     : './images/3-dot-icon.webp ',
+		repo3DotIcon     : './images/3-dot-icon.webp',
 		repoLanguage     : 'javascript',
 		starsCount       : 7,
 		pinned           : false,
@@ -329,10 +329,10 @@ const arrRepositories = [
 		repoLink         : 'https://github.com/thedigitalmenagerie/sorting-hat',
 		repoDescription  : "A lorem generator with medical terms and words from the show Grey's Anatomy.",
 		repoPinnedIcon   : './images/pinned-icon.png',
-		repoLanguageIcon : './images/red-dot.jpg',
+		repoLanguageIcon : './images/red-square.png',
 		repoStarIcon     : './images/star-icon.webp',
 		repoForkedIcon   : './images/forked-repo-icon.png',
-		repo3DotIcon     : './images/3-dot-icon.webp ',
+		repo3DotIcon     : './images/3-dot-icon.webp',
 		repoLanguage     : 'HTML',
 		starsCount       : 8,
 		pinned           : true,
@@ -355,10 +355,10 @@ const arrRepositories = [
 		repoLink         : 'https://github.com/lindseysatterfield/sorting-hat',
 		repoDescription  : "A lorem generator with medical terms and words from the show Grey's Anatomy.",
 		repoPinnedIcon   : './images/pinned-icon.png',
-		repoLanguageIcon : './images/blue-dot.jpg',
+		repoLanguageIcon : './images/blue-square-2.jpg',
 		repoStarIcon     : './images/star-icon.webp',
 		repoForkedIcon   : './images/forked-repo-icon.png',
-		repo3DotIcon     : './images/3-dot-icon.webp ',
+		repo3DotIcon     : './images/3-dot-icon.webp',
 		repoLanguage     : 'Typescript',
 		starsCount       : 8,
 		pinned           : false,
@@ -381,10 +381,10 @@ const arrRepositories = [
 		repoLink         : 'https://github.com/lindseysatterfield/pet-adoption',
 		repoDescription  : "A lorem generator with medical terms and words from the show Grey's Anatomy.",
 		repoPinnedIcon   : './images/pinned-icon.png',
-		repoLanguageIcon : './images/red-dot.jpg',
+		repoLanguageIcon : './images/red-square.png',
 		repoStarIcon     : './images/star-icon.webp',
 		repoForkedIcon   : './images/forked-repo-icon.png',
-		repo3DotIcon     : './images/3-dot-icon.webp ',
+		repo3DotIcon     : './images/3-dot-icon.webp',
 		repoLanguage     : 'HTML',
 		starsCount       : 8,
 		pinned           : true,
@@ -407,13 +407,13 @@ const arrRepositories = [
 		repoLink         : 'https://github.com/danicrosby/personal-bio-site',
 		repoDescription  : "A lorem generator with medical terms and words from the show Grey's Anatomy.",
 		repoPinnedIcon   : './images/pinned-icon.png',
-		repoLanguageIcon : './images/yellow-dot.jpg',
+		repoLanguageIcon : '../images/yellow-square.png',
 		repoStarIcon     : './images/star-icon.webp',
 		repoForkedIcon   : './images/forked-repo-icon.png',
-		repo3DotIcon     : './images/3-dot-icon.webp ',
+		repo3DotIcon     : './images/3-dot-icon.webp',
 		repoLanguage     : 'javascript',
 		starsCount       : 8,
-		pinned           : false,
+		pinned           : true,
 		repoMITLicense   : false,
 		issuesNeedHelp   : 1,
 		repoLastUpdate   : '2021-02-07',
@@ -433,13 +433,13 @@ const arrRepositories = [
 		repoLink         : 'https://github.com/danicrosby/sorting-hat',
 		repoDescription  : "A lorem generator with medical terms and words from the show Grey's Anatomy.",
 		repoPinnedIcon   : './images/pinned-icon.png',
-		repoLanguageIcon : './images/red-dot.jpg',
+		repoLanguageIcon : './images/red-square.png',
 		repoStarIcon     : './images/star-icon.webp',
 		repoForkedIcon   : './images/forked-repo-icon.png',
-		repo3DotIcon     : './images/3-dot-icon.webp ',
+		repo3DotIcon     : './images/3-dot-icon.webp',
 		repoLanguage     : 'HTML',
 		starsCount       : 8,
-		pinned           : true,
+		pinned           : false,
 		repoMITLicense   : false,
 		issuesNeedHelp   : 1,
 		repoLastUpdate   : '2021-02-07',
@@ -459,10 +459,10 @@ const arrRepositories = [
 		repoLink         : 'https://github.com/JuanDavila1101/sorting-hat',
 		repoDescription  : "A lorem generator with medical terms and words from the show Grey's Anatomy.",
 		repoPinnedIcon   : './images/pinned-icon.png',
-		repoLanguageIcon : './images/blue-dot.jpg',
+		repoLanguageIcon : './images/blue-square-2.jpg',
 		repoStarIcon     : './images/star-icon.webp',
 		repoForkedIcon   : './images/forked-repo-icon.png',
-		repo3DotIcon     : './images/3-dot-icon.webp ',
+		repo3DotIcon     : './images/3-dot-icon.webp',
 		repoLanguage     : 'Typescript',
 		starsCount       : 8,
 		pinned           : true,
@@ -616,12 +616,16 @@ const PrintPinnedCards = () => {
 			pinnedCards += `
 					<div class="card text-white bg-dark pinned-card" id="${card.repoID}" style="width: 27rem; height: 10em; margin: .2em">
 						<div class="card-body" id="overview-card-body">
-								<h6 class="card-title">${card.repoTitle}</h6>
+								<h6 class="card-title"><img src="${card.repoPinnedIcon}" style="width: 1em">${card.repoTitle}</h6>
 								<p class="overview-card-text">${card.repoDescription}</p>
-								<p class="repoCardBottomContainer"> 
-								${card.repoLanguageIcon}${card.repoLanguage}
-								${card.repoStarIcon}${card.starsCount}
-								${card.repoForkedIcon}${card.reposForked}</p>
+								<hr>
+								<div class="repoCardBottomContainer">
+									<div>
+										<img src="${card.repoLanguageIcon}" id="pinned-icons">${card.repoLanguage}
+										<img src="${card.repoStarIcon}" id="pinned-icons">${card.starsCount}
+										<img src="${card.repoForkedIcon}" id="pinned-icons">${card.reposForked}
+									</div>
+								</div>
 						</div>
 					</div>`;
 		}

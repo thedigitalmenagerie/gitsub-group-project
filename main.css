@@ -36,7 +36,7 @@ main {
     width: 80%;
     border-radius: 50%;
     border-bottom: 1em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 a {
@@ -47,7 +47,8 @@ a {
 
 #profile-bio {
     font-size: 12px;
-    margin-bottom: 1em;
+    margin-top: .5em;
+    margin-bottom: .5em;
 }
 
 #profile-buttons {
@@ -158,7 +159,7 @@ a {
 /* <!-- FORMS --> */
 
 form {
-    border: 1px red solid;
+    /* border: 1px red solid; */
 }
 
 form label {
@@ -197,7 +198,7 @@ form a {
 #footer-container {
     display: flex;
     justify-content: space-around;
-    border: 1px solid orange;
+    border-top: 1px solid orange;
     padding: 1em;
 }
 
@@ -208,6 +209,7 @@ form a {
 
 #footer-container li {
     margin: 1.5em;
+    color: darkgrey;
 }
 
 li a {
@@ -220,6 +222,14 @@ li a {
 #github-icon {
     width: 2em;
 }
+
+#pinned-icons {
+    width: 1em;
+    margin: 1em;
+    color: darkgrey;
+}
+
+
 
 
 /* Packages Section */
