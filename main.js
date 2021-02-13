@@ -136,7 +136,7 @@ const person = {
 
 //#Packages
 
-let packagesID = 6;
+let packagesCount = 6;
 const arrPackages = [
 	{
 		packagesID          : 0,
@@ -690,18 +690,29 @@ const PrintProjectsFormWithSearchBar = () => {
 
 const PrintPackagesCards = () => {
 	let packageCards = `  `;
-
 	arrPackages.forEach((card) => {
 		//Each Package card is here
-		packageCards += `
-    
-      <div class="card package-card" id="${card.packagesID}" style="flex: 1 0 25%; width: 16.8em; margin: .5em 1em">
+		if (card.packageIcon === '') {
+			packageCards += `
+        <div class="card package-card" id="${card.packagesID}" style="flex: 0 0 25%; width: 16.8em; margin: .5em 1em">
+        <div class="card-body" id="overview-card-body">
+          <h6 class="card-title">${card.packageType}</h6>
+          <p class="overview-card-text">${card.packagesDescription}</p>
+          <button type="button" class="btn btn-danger btn-sm" id="${card.packagesID}">Delete</button>
+        </div>
+      </div>`;
+		}
+		else {
+			packageCards += `
+      <div class="card package-card" id="${card.packagesID}" style="flex: 0 0 25%; width: 16.8em; margin: .5em 1em;">
         <div class="card-body" id="overview-card-body">
           <h6 class="card-title"><img src="${card.packageIcon}" id="packages-icons" alt="${card.packageType} icon"> ${card.packageType}</h6>
           <p class="overview-card-text">${card.packagesDescription}</p>
           <a href="${card.packagesLink}" class="btn btn-secondary btn-sm" id="overview-btn">Learn More</a>
+          <button type="button" class="btn btn-danger btn-sm" id="${card.packagesID}">Delete</button>
         </div>
       </div>`;
+		}
 	});
 
 	PrintToDom('#packages-card-container', packageCards);
@@ -714,6 +725,45 @@ const PrintPackagesCards = () => {
 const PrintToDom = (divID, textToPrint) => {
 	const selectedDiv = document.querySelector(divID);
 	selectedDiv.innerHTML = textToPrint;
+};
+
+// Add new package card from form
+const getPackageFormInfo = (e) => {
+	e.preventDefault();
+
+	let packagesID = packagesCount++;
+	const packageType = document.querySelector('#packagesInputRepositoryName').value;
+	const packagesDescription = document.querySelector('#packages-textarea').value;
+
+	const formInputObject = {
+		packagesID,
+		packageIcon         : '',
+		packageType,
+		packagesDescription,
+		packagesLink        : '',
+		packagesAlpha       : ''
+	};
+
+	arrPackages.push(formInputObject);
+	PrintPackagesCards();
+
+	document.querySelector('.packages-form').reset();
+};
+
+const deletePackage = (e) => {
+	const targetType = e.target.type;
+	const targetIdNumber = parseInt(e.target.id);
+
+	if (targetType === 'button') {
+		let indexOfPackages = arrPackages.findIndex(
+			(package) => package.packagesID === targetIdNumber
+		);
+		if (indexOfPackages !== -1) {
+			arrPackages.splice(indexOfPackages, 1);
+		}
+	}
+
+	PrintPackagesCards();
 };
 
 // Add New Project
@@ -735,6 +785,8 @@ const ButtonEvents = () => {
 	//     document.querySelector('#nav-bar-repo-id').addEventListener('click', PrintRepoCardsWithSearchBar);
 	//     document.querySelector('#nav-bar-projects-id').addEventListener('click', PrintProjectsFormWithSearchBar);
 	//     document.querySelector('#nav-bar-packages-id').addEventListener('click', PrintPackagesCards);
+	document.querySelector('#packages-form-btn').addEventListener('click', getPackageFormInfo);
+	document.querySelector('#packages-card-container').addEventListener('click', deletePackage);
 };
 
 // init call()
@@ -754,6 +806,7 @@ const init = () => {
 	else if (x === '/packages.html') {
 		PrintPackagesCards();
 	}
+	ButtonEvents();
 };
 
 init();
