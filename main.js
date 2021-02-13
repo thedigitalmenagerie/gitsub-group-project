@@ -311,7 +311,7 @@ const arrRepositories = [
 //#endRepository
 
 //#Projects
-const projectCount = 6;
+let projectCount = 6;
 const arrProjects = [
 	{
 		projectID          : 0,
@@ -319,8 +319,6 @@ const arrProjects = [
 		projectDescription : 'Lindsey Satterfield',
 		projectLink        : 'https://github.com/lindseysatterfield/sorting-hat/projects/1',
 		projectLastUpdate  : './images/last updated (clock).webp',
-		projectPrivate     : true,
-		projectOpen        : true
 	},
 	{
 		projectID          : 1,
@@ -329,8 +327,6 @@ const arrProjects = [
 		projectLink        :
 			'https://github.com/nss-evening-cohort-14/gitsub-e14-1-devs-to-ever-dev/projects',
 		projectLastUpdate  : './images/last updated (clock).webp',
-		projectPrivate     : false,
-		projectOpen        : true
 	},
 	{
 		projectID          : 2,
@@ -338,8 +334,6 @@ const arrProjects = [
 		projectDescription : 'Honey-Rae Swan',
 		projectLink        : 'https://github.com/thedigitalmenagerie/sorting-hat/projects/1',
 		projectLastUpdate  : './images/last updated (clock).webp',
-		projectPrivate     : false,
-		projectOpen        : true
 	},
 	{
 		projectID          : 3,
@@ -347,8 +341,6 @@ const arrProjects = [
 		projectDescription : 'Dani Crosby',
 		projectLink        : 'https://github.com/danicrosby/sorting-hat/projects',
 		projectLastUpdate  : './images/last updated (clock).webp',
-		projectPrivate     : false,
-		projectOpen        : true
 	},
 	{
 		projectID          : 4,
@@ -356,8 +348,6 @@ const arrProjects = [
 		projectDescription : 'Honey-Rae Swan',
 		projectLink        : 'https://github.com/users/thedigitalmenagerie/projects/1',
 		projectLastUpdate  : './images/last updated (clock).webp',
-		projectPrivate     : false,
-		projectOpen        : true
 	},
 	{
 		projectID          : 5,
@@ -365,8 +355,6 @@ const arrProjects = [
 		projectDescription : 'Dani Crosby',
 		projectLink        : 'https://github.com/danicrosby/pet-adoption/projects',
 		projectLastUpdate  : './images/last updated (clock).webp',
-		projectPrivate     : false,
-		projectOpen        : true
 	}
 ];
 
@@ -440,9 +428,6 @@ const PrintPinnedCards = () => {
 	arrRepositories.forEach((card) => {
 		//Each pinned card is here
 		domString += `
-
-
-
                      `;
 	});
 
@@ -486,15 +471,14 @@ const makeRepoButtons = (repoCard) => {
 };
 
 const PrintProjectsFormWithSearchBar = () => {
-	// add search bar to the top of the page
-	let projectCardsWithSearchBar = ` `;
+	let projectCardsWithSearchBar = `<div><button type="button" class="btn btn-secondary btn-sm" id="sortButton">Sort</button></div><input id="projectSearchbar" onkeyup="searchProject" type="text" name="search" placeholder="Search projects..">`;
 
 	arrProjects.forEach((card) => {
-		projectCardsWithSearchBar += `<div class="card project-card" id="project-card">
+		projectCardsWithSearchBar += `<div class="card project-card" id="${card.projectID}">
         <div class="card-body" id="overview-card-body">
-          <h6 class="card-title">${card.projectName}</h6>
-          <p class="overview-card-text" ><img src="${card.projectLastUpdate}" id="timeUpdated">${card.projectDescription}</p>
-          <a href="${card.projectLink}" class="btn btn-secondary btn-sm" id="overview-btn">Learn More</a>
+          <h6 class="card-title"><a href="${card.projectLink}">${card.projectName}</a></h6>
+          <p class="overview-card-text"><img src="${card.projectLastUpdate}" id="timeUpdated">${card.projectDescription}</p>
+					<button type="button" class="btn btn-secondary btn-sm" id="${card.projectID}">Delete</button>
         </div>
       </div>`;
 	});
@@ -532,9 +516,62 @@ const PrintToDom = (divID, textToPrint) => {
 
 // Add New Project
 
+const getCreateNewProjectInfo = (e) => {
+	// e.preventDefault();
+	let projectID = projectCount++;
+	const projectName = document.querySelector('#inputProjectName').value;
+	const projectDescription = document.querySelector('#inputProjectDescription').value;
+	const projectLink = document.querySelector('#inputProjectLink').value;
+	const projectLastUpdate = './images/last updated (clock).webp';
+
+	const projectObj = {
+		projectID,
+		projectName,
+		projectDescription,
+		projectLink,
+		projectLastUpdate,
+	}
+
+	arrProjects.push(projectObj);
+	PrintProjectsFormWithSearchBar();
+
+}
+
 // Add new Repo
 
+// Sort Projects
+
+const sortProjectSortButton = (e) => {
+	const targetType = e.target.type;
+	if (targetType === 'button') {
+		arrProjects.sort((a, b) => (a.projectName.toUpperCase() > b.projectName.toUpperCase() ? -1 : 1));
+	}
+	PrintProjectsFormWithSearchBar();
+}
+
+const searchProjectsSearchBar = (e) => {
+	const input = document.querySelector('#projectSearchbar').value
+	input = input.toLowerCase();
+	let x = document.querySelector
+}
+
 // Delete project
+
+const deleteProject = (e) => {
+	e.preventDefault();
+	const targetType = e.target.type;
+	const targetId = Number(e.target.id);
+
+	if (targetType === 'button') {
+		const indexOfProject = arrProjects.findIndex((project) => project.projectID === targetId);
+		if (indexOfProject !== -1) {
+			arrProjects.splice(indexOfProject, 1);
+		}
+		
+	}
+
+	PrintProjectsFormWithSearchBar();
+};
 
 // Delete Repo
 
@@ -549,12 +586,18 @@ const ButtonEvents = () => {
 	//     document.querySelector('#nav-bar-repo-id').addEventListener('click', PrintRepoCardsWithSearchBar);
 	//     document.querySelector('#nav-bar-projects-id').addEventListener('click', PrintProjectsFormWithSearchBar);
 	//     document.querySelector('#nav-bar-packages-id').addEventListener('click', PrintPackagesCards);
+	document.querySelector('#projects-top-row').addEventListener('click', sortProjectSortButton);
+	document.querySelector('#projects-form-btn').addEventListener('click', getCreateNewProjectInfo);
+	document.querySelector('#projects-top-row').addEventListener('click', deleteProject);
 };
 
 // init call()
 
 const init = () => {
+
 	let x = location.pathname;
+
+	ButtonEvents();
 
 	if (x === '/index.html') {
 	}
@@ -567,9 +610,8 @@ const init = () => {
 	else if (x === '/packages.html') {
 		PrintPackagesCards();
 	}
+	
+
 };
 
 init();
-
-
-///pushing to main - delete this comment --dani

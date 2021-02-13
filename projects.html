@@ -36,7 +36,7 @@
 
            <!-- FOLLOW BUTTONS -->
           <div class="container" id="profile-buttons">
-            <a href="#" class="btn btn-secondary btn-sm" id="follow-btn">Folow</a>
+            <a href="#" class="btn btn-secondary btn-sm" id="follow-btn">Follow</a>
             <a href="#" class="btn btn-secondary btn-sm" id="sponsor-btn">Sponsor</a>
             <a href="#" class="btn btn-secondary btn-sm" id="more-btn">...</a>
             <br>
@@ -114,6 +114,9 @@
             <!-- OVERVIEW CONTAINER -->
         <div class="container projects-container" id="projects-container">
 
+          <!-- SORT BUTTON CONTAINER -->
+          <div class="row align-items-sm-end projects-top-row" id="projects-sort">
+          </div>
 
             <!-- CARD CONTAINER -->
           <div class="row align-items-start projects-top-row" id="projects-top-row">
@@ -123,18 +126,19 @@
              <!-- CREATE NEW PROJECT CONTAINER -->
 
         <div class="container create-project-container" id="create-project-container">
-          <form class="repos-form pb-4">
+          <form class="projects-form pb-4">
             <h3 id="h3-title">Create a new project</h3>
             <div class="form-group col-md-6 mb-1">
-              <label for="inputRepositoryName" class="mb-1" id="form-label-name">Project Board</label>
-              <input type="text" class="form-control" id="inputRepositoryName" required></div>
-              <p id="form-text">Coordinate, track, and update your work in one place, so projects stay transparent and on schedule.</p>
-              <div class="form-group col-md-9 mb-1">
-              <label for="inputDescription" class="mb-1" id="form-description-title">Description (optional)</label>
-              <textarea class="form-control" id="overview-textarea" rows="5"></textarea></div>
-            <button type="submit" class="btn btn-success mb-1" id="form-btn">Create Project</button>
+              <label for="inputProjectName" class="mb-1" id="form-label-name">Project Title</label>
+              <input type="text" class="form-control" id="inputProjectName" required></div>
+              <label for="inputProjectDescription" class="mb-1" id="form-label-name">Author Name</label>
+              <input type="text" class="form-control" id="inputProjectDescription" required>
+              <label for="inputProjectLink" class="mb-1" id="form-label-name">Project</label>
+              <input type="text" class="form-control" id="inputProjectLink" required>
+            <button type="submit" class="btn btn-success mb-1" id="projects-form-btn">Create Project</button>
+            </div>
           </form>
-         </div>
+        </div>
 
         <!-- END RIGHT CONTAINER --> 
       </div>
