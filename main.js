@@ -116,8 +116,7 @@ const person = {
 	personAddresses         : {
 		phisicalLocation : {
 			locationIcon    : './images/location.webp',
-			locationAddress :
-				'https://www.google.com/maps?q=nashville+tn&um=1&ie=UTF-8&sa=X&ved=2ahUKEwia5sSqu93uAhVIo1kKHZS8BdgQ_AUoAXoECBsQAw'
+			locationAddress :'https://www.google.com/maps?q=nashville+tn&um=1&ie=UTF-8&sa=X&ved=2ahUKEwia5sSqu93uAhVIo1kKHZS8BdgQ_AUoAXoECBsQAw'
 		},
 		gitHub           : {
 			gitHubIcon    : './images/location.webp',
@@ -137,70 +136,55 @@ const person = {
 
 //#Packages
 
-let packagesID = 6;
+let packagesCount = 6;
 const arrPackages = [
 	{
 		packagesID          : 0,
 		packageIcon         : './images/docker.webp',
 		packageType         : 'Docker',
-		packagesDescription :
-			'A software platform used for building applications based on containers -- small and lightweight execution environments.',
-		packagesLink        :
-			'https://www.docker.com/?utm_source=google&utm_medium=cpc&utm_campaign=dockerhomepage&utm_content=namer&utm_term=dockerhomepage&utm_budget=growth&gclid=Cj0KCQiAgomBBhDXARIsAFNyUqP7IuAWd7M9yGrY-D87ikBbLpSR4Mzd2RQtHIDalzpNadyjAlyg4kYaAoT_EALw_wcB',
+		packagesDescription :'A software platform used for building applications based on containers -- small and lightweight execution environments.',
+		packagesLink        :'https://www.docker.com/?utm_source=google&utm_medium=cpc&utm_campaign=dockerhomepage&utm_content=namer&utm_term=dockerhomepage&utm_budget=growth&gclid=Cj0KCQiAgomBBhDXARIsAFNyUqP7IuAWd7M9yGrY-D87ikBbLpSR4Mzd2RQtHIDalzpNadyjAlyg4kYaAoT_EALw_wcB',
 		packagesAlpha       : true
-		// typeOfPackage       : arrPackagesTypes[0]
 	},
 	{
 		packagesID          : 1,
 		packageIcon         : './images/apache maven (feather).webp',
 		packageType         : 'Apache Maven',
-		packagesDescription :
-			'A default package manager used for the Java programming language and the Java runtime environment.',
+		packagesDescription : 'A default package manager used for the Java programming language and the Java runtime environment.',
 		packagesLink        : 'https://maven.apache.org/',
 		packagesAlpha       : true
-		// typeOfPackage       : arrPackagesTypes[1]
 	},
 	{
 		packagesID          : 2,
 		packageIcon         : './images/nuget-256.webp',
 		packageType         : 'NuGet',
-		packagesDescription :
-			'A free and open source package manager used for Microsoft development platforms uncluding .NET.',
+		packagesDescription : 'A free and open source package manager used for Microsoft development platforms uncluding .NET.',
 		packagesLink        : 'https://www.nuget.org/',
 		packagesAlpha       : true
-		// typeOfPackage       : arrPackagesTypes[2]
 	},
 	{
 		packagesID          : 3,
 		packageIcon         : './images/ruby.webp',
 		packageType         : 'RubyGems',
-		packagesDescription :
-			'A standard format for distributing Ruby programs and libraries used for the Ruby programming language.',
+		packagesDescription : 'A standard format for distributing Ruby programs and libraries used for the Ruby programming language.',
 		packagesLink        : 'https://rubygems.org/',
 		packagesAlpha       : true
-		// typeOfPackage       : arrPackagesTypes[3]
 	},
 	{
 		packagesID          : 4,
 		packageIcon         : './images/npm.webp',
 		packageType         : 'npm',
-		packagesDescription :
-			'A package manager for JavaScript included with Node.js npm makes it easy for developers to share and reuse code.',
+		packagesDescription : 'A package manager for JavaScript included with Node.js npm makes it easy for developers to share and reuse code.',
 		packagesLink        : 'https://www.nuget.org/',
 		packagesAlpha       : true
-		// typeOfPackage       : arrPackagesTypes[4]
 	},
 	{
 		packagesID          : 5,
 		packageIcon         : './images/docker.webp',
 		packageType         : 'Containers',
-		packagesDescription :
-			'A single place for your team to manage Docker images and decide who can see and access your images.',
-
-		packagesLink        :
-			'https://www.docker.com/resources/what-container?gclid=Cj0KCQiAgomBBhDXARIsAFNyUqMwxmzuSjtAKHOeyuUainBg3qxEksx9tDeBia3gWtnVAslZoQS32kAaApuBEALw_wcB',
+		packagesDescription : 'A single place for your team to manage Docker images and decide who can see and access your images.',
+		packagesLink        : 'https://www.docker.com/resources/what-container?gclid=Cj0KCQiAgomBBhDXARIsAFNyUqMwxmzuSjtAKHOeyuUainBg3qxEksx9tDeBia3gWtnVAslZoQS32kAaApuBEALw_wcB',
 		packagesAlpha       : false
-		// typeOfPackage       : arrPackagesTypes[5]
 	}
 ];
 
@@ -232,8 +216,19 @@ const arrRepositories = [
 		repoID           : 0,
 		repoTitle        : 'greys-anatomy-lorem-ipsum-generator',
 		repoLink         : 'https://github.com/thedigitalmenagerie/sorting-hat',
-		repoDescription  :
-			"A lorem generator with medical terms and words from the show Grey's Anatomy.",
+		repoDescription  : "A lorem generator with medical terms and words from the show Grey's Anatomy.",
+		repoPinnedIcon   : './images/pinned-icon.png',
+		repoLanguageIcon : '../images/yellow-square.png',
+		repoStarIcon     : './images/star-icon.webp',
+		repoForkedIcon   : './images/forked-repo-icon.png',
+		repo3DotIcon     : './images/3-dot-icon.webp ',
+		repoLanguage     : 'javascript',
+		starsCount       : 8,
+		pinned           : false,
+		repoMITLicense   : false,
+		issuesNeedHelp   : 1,
+		repoLastUpdate   : '2021-02-07',
+		reposForked      : 10,
 		arrListOfButtons : [
 			'netlify',
 			'Jamstack',
@@ -242,37 +237,47 @@ const arrRepositories = [
 			'serverless',
 			'react'
 		],
-		repoLanguage     : 'javascript',
-		starsCount       : 8,
-		// this is needed here three dot Icon
-		pinned           : false,
-		repoMITLicense   : false,
-		issuesNeedHelp   : 1,
-		repoLastUpdate   : '2021-02-07' //YYYYMMDD https://www.w3schools.com/js/js_date_formats.asp
 	},
 	{
 		repoID           : 1,
 		repoTitle        : 'how-many-days-until',
 		repoLink         : 'https://github.com/thedigitalmenagerie/pet-adoption',
 		repoDescription  : 'A React countdown app of days between today and next year.',
+		repoPinnedIcon   : './images/pinned-icon.png',
+		repoLanguageIcon : '../images/yellow-square.png',
+		repoStarIcon     : './images/star-icon.webp',
+		repoForkedIcon   : './images/forked-repo-icon.png',
+		repo3DotIcon     : './images/3-dot-icon.webp ',
+		repoLanguage     : 'javascript',
+		starsCount       : 0,
+		pinned           : false,
+		repoMITLicense   : true,
+		issuesNeedHelp   : 0,
+		repoLastUpdate   : '2021-02-07',
+		reposForked      : 21,
 		arrListOfButtons : [
 			'react',
 			'countdown',
 			'hacktoberfest'
 		],
-		repoLanguage     : 'javascript',
-		starsCount       : 0,
-		// this is needed here three dot Icon
-		pinned           : false,
-		repoMITLicense   : true,
-		issuesNeedHelp   : 0,
-		repoLastUpdate   : '2021-02-07' //YYYYMMDD https://www.w3schools.com/js/js_date_formats.asp
 	},
 	{
 		repoID           : 2,
 		repoTitle        : 'httriri',
 		repoLink         : 'https://github.com/lindseysatterfield/sorting-hat ',
 		repoDescription  : 'HTTRiRi - HTTP Status Codes as Portrayed by Rihanna Gifs',
+		repoPinnedIcon   : './images/pinned-icon.png',
+		repoLanguageIcon : './images/blue-square-2.jpg',
+		repoStarIcon     : './images/star-icon.webp',
+		repoForkedIcon   : './images/forked-repo-icon.png',
+		repo3DotIcon     : './images/3-dot-icon.webp ',
+		repoLanguage     : 'TypeScript',
+		starsCount       : 37,
+		pinned           : false,
+		repoMITLicense   : true,
+		issuesNeedHelp   : 4,
+		repoLastUpdate   : '2021-02-07',
+		reposForked      : 12,
 		arrListOfButtons : [
 			'http',
 			'status-codes',
@@ -280,32 +285,185 @@ const arrRepositories = [
 			'rihanna',
 			'hacktoberfest'
 		],
-		repoLanguage     : 'TypeScript',
-		starsCount       : 37,
-		// this is needed here three dot Icon
-		pinned           : false,
-		repoMITLicense   : true,
-		issuesNeedHelp   : 4,
-		repoLastUpdate   : '2021-02-07' //YYYYMMDD https://www.w3schools.com/js/js_date_formats.asp
 	},
 	{
 		repoID           : 3,
 		repoTitle        : 'ambition-found-website',
 		repoLink         : 'https://github.com/lindseysatterfield/pet-adoption',
-		repoDescription  :
-			'Website for www.ambition.cor, micro-grant program to provide support for underrepresented people who need financial assistance purging professional development opportunities in the technology...',
+		repoDescription  : 'Website for www.ambition.cor, micro-grant program to provide support for underrepresented people who need financial assistance purging professional development opportunities in the technology...',
+		repoPinnedIcon   : './images/pinned-icon.png',
+		repoLanguageIcon : '../images/yellow-square.png',
+		repoStarIcon     : './images/star-icon.webp',
+		repoForkedIcon   : './images/forked-repo-icon.png',
+		repo3DotIcon     : './images/3-dot-icon.webp',
+		repoLanguage     : 'javascript',
+		starsCount       : 7,
+		pinned           : false,
+		repoMITLicense   : true,
+		issuesNeedHelp   : 3,
+		repoLastUpdate   : '2021-02-07',
+		reposForked      : 45,
 		arrListOfButtons : [
 			'donation',
 			'landing-page'
 		],
-		repoLanguage     : 'javascript',
-		starsCount       : 7,
-		// this is needed here three dot Icon
+	},
+	{
+		repoID           : 4,
+		repoTitle        : 'honey-rae-sorting-hat',
+		repoLink         : 'https://github.com/thedigitalmenagerie/sorting-hat',
+		repoDescription  : "A lorem generator with medical terms and words from the show Grey's Anatomy.",
+		repoPinnedIcon   : './images/pinned-icon.png',
+		repoLanguageIcon : './images/red-square.png',
+		repoStarIcon     : './images/star-icon.webp',
+		repoForkedIcon   : './images/forked-repo-icon.png',
+		repo3DotIcon     : './images/3-dot-icon.webp',
+		repoLanguage     : 'HTML',
+		starsCount       : 8,
+		pinned           : true,
+		repoMITLicense   : false,
+		issuesNeedHelp   : 1,
+		repoLastUpdate   : '2021-02-07',
+		reposForked      : 11,
+		arrListOfButtons : [
+			'netlify',
+			'Jamstack',
+			'Lorem-ipsum-generator',
+			'medical',
+			'serverless',
+			'react'
+		],
+	},
+	{
+		repoID           : 5,
+		repoTitle        : 'ls-sorting-hat',
+		repoLink         : 'https://github.com/lindseysatterfield/sorting-hat',
+		repoDescription  : "A lorem generator with medical terms and words from the show Grey's Anatomy.",
+		repoPinnedIcon   : './images/pinned-icon.png',
+		repoLanguageIcon : './images/blue-square-2.jpg',
+		repoStarIcon     : './images/star-icon.webp',
+		repoForkedIcon   : './images/forked-repo-icon.png',
+		repo3DotIcon     : './images/3-dot-icon.webp',
+		repoLanguage     : 'Typescript',
+		starsCount       : 8,
 		pinned           : false,
-		repoMITLicense   : true,
-		issuesNeedHelp   : 3,
-		repoLastUpdate   : '2021-02-07' //YYYYMMDD https://www.w3schools.com/js/js_date_formats.asp
-	}
+		repoMITLicense   : false,
+		issuesNeedHelp   : 1,
+		repoLastUpdate   : '2021-02-07',
+		reposForked      : 51,
+		arrListOfButtons : [
+			'netlify',
+			'Jamstack',
+			'Lorem-ipsum-generator',
+			'medical',
+			'serverless',
+			'react'
+		],
+	},
+	{
+		repoID           : 6,
+		repoTitle        : 'lindsey-pet-adoption',
+		repoLink         : 'https://github.com/lindseysatterfield/pet-adoption',
+		repoDescription  : "A lorem generator with medical terms and words from the show Grey's Anatomy.",
+		repoPinnedIcon   : './images/pinned-icon.png',
+		repoLanguageIcon : './images/red-square.png',
+		repoStarIcon     : './images/star-icon.webp',
+		repoForkedIcon   : './images/forked-repo-icon.png',
+		repo3DotIcon     : './images/3-dot-icon.webp',
+		repoLanguage     : 'HTML',
+		starsCount       : 8,
+		pinned           : true,
+		repoMITLicense   : false,
+		issuesNeedHelp   : 1,
+		repoLastUpdate   : '2021-02-07',
+		reposForked      : 7,
+		arrListOfButtons : [
+			'netlify',
+			'Jamstack',
+			'Lorem-ipsum-generator',
+			'medical',
+			'serverless',
+			'react'
+		],
+	},
+	{
+		repoID           : 7,
+		repoTitle        : 'dc-personal-bio-stie',
+		repoLink         : 'https://github.com/danicrosby/personal-bio-site',
+		repoDescription  : "A lorem generator with medical terms and words from the show Grey's Anatomy.",
+		repoPinnedIcon   : './images/pinned-icon.png',
+		repoLanguageIcon : '../images/yellow-square.png',
+		repoStarIcon     : './images/star-icon.webp',
+		repoForkedIcon   : './images/forked-repo-icon.png',
+		repo3DotIcon     : './images/3-dot-icon.webp',
+		repoLanguage     : 'javascript',
+		starsCount       : 8,
+		pinned           : true,
+		repoMITLicense   : false,
+		issuesNeedHelp   : 1,
+		repoLastUpdate   : '2021-02-07',
+		reposForked      : 11,
+		arrListOfButtons : [
+			'netlify',
+			'Jamstack',
+			'Lorem-ipsum-generator',
+			'medical',
+			'serverless',
+			'react'
+		],
+	},
+	{
+		repoID           : 8,
+		repoTitle        : 'dani-sorting-hat',
+		repoLink         : 'https://github.com/danicrosby/sorting-hat',
+		repoDescription  : "A lorem generator with medical terms and words from the show Grey's Anatomy.",
+		repoPinnedIcon   : './images/pinned-icon.png',
+		repoLanguageIcon : './images/red-square.png',
+		repoStarIcon     : './images/star-icon.webp',
+		repoForkedIcon   : './images/forked-repo-icon.png',
+		repo3DotIcon     : './images/3-dot-icon.webp',
+		repoLanguage     : 'HTML',
+		starsCount       : 8,
+		pinned           : false,
+		repoMITLicense   : false,
+		issuesNeedHelp   : 1,
+		repoLastUpdate   : '2021-02-07',
+		reposForked      : 16,
+		arrListOfButtons : [
+			'netlify',
+			'Jamstack',
+			'Lorem-ipsum-generator',
+			'medical',
+			'serverless',
+			'react'
+		],
+	},
+	{
+		repoID           : 9,
+		repoTitle        : 'juan-sorting-hat',
+		repoLink         : 'https://github.com/JuanDavila1101/sorting-hat',
+		repoDescription  : "A lorem generator with medical terms and words from the show Grey's Anatomy.",
+		repoPinnedIcon   : './images/pinned-icon.png',
+		repoLanguageIcon : './images/blue-square-2.jpg',
+		repoStarIcon     : './images/star-icon.webp',
+		repoForkedIcon   : './images/forked-repo-icon.png',
+		repo3DotIcon     : './images/3-dot-icon.webp',
+		repoLanguage     : 'Typescript',
+		starsCount       : 8,
+		pinned           : true,
+		repoMITLicense   : false,
+		issuesNeedHelp   : 1,
+		repoLastUpdate   : '2021-02-07',
+		reposForked      : 60,
+				arrListOfButtons : [
+			'netlify',
+			'Jamstack',
+			'Lorem-ipsum-generator',
+			'medical',
+			'serverless',
+			'react'
+		],
+	},
 ];
 
 //#endRepository
@@ -426,12 +584,28 @@ const PrintPinnedCards = () => {
 	let pinnedCards = `  `;
 
 	arrRepositories.forEach((card) => {
-		//Each pinned card is here
-		domString += `
-                     `;
+
+		if (card.pinned === true) {
+			pinnedCards += `
+					<div class="card text-white bg-dark pinned-card" id="${card.repoID}" style="width: 27rem; height: 10em; margin: .2em">
+						<div class="card-body" id="overview-card-body">
+								<h6 class="card-title"><img src="${card.repoPinnedIcon}" style="width: 1em">${card.repoTitle}</h6>
+								<p class="overview-card-text">${card.repoDescription}</p>
+								<hr>
+								<div class="repoCardBottomContainer">
+									<div>
+										<img src="${card.repoLanguageIcon}" id="pinned-icons">${card.repoLanguage}
+										<img src="${card.repoStarIcon}" id="pinned-icons">${card.starsCount}
+										<img src="${card.repoForkedIcon}" id="pinned-icons">${card.reposForked}
+									</div>
+								</div>
+						</div>
+					</div>`;
+		}
+		
 	});
 
-	PrintToDom('#top-row', pinnedCards);
+	PrintToDom('#pinned-cards', pinnedCards);
 };
 
 const PrintRepoCardsWithSearchBar = () => {
@@ -488,18 +662,29 @@ const PrintProjectsFormWithSearchBar = () => {
 
 const PrintPackagesCards = () => {
 	let packageCards = `  `;
-
 	arrPackages.forEach((card) => {
 		//Each Package card is here
-		packageCards += `
-    
-      <div class="card package-card" id="${card.packagesID}" style="flex: 1 0 25%; width: 16.8em; margin: .5em 1em">
+		if (card.packageIcon === '') {
+			packageCards += `
+        <div class="card package-card" id="${card.packagesID}" style="flex: 0 0 25%; width: 16.8em; margin: .5em 1em">
+        <div class="card-body" id="overview-card-body">
+          <h6 class="card-title">${card.packageType}</h6>
+          <p class="overview-card-text">${card.packagesDescription}</p>
+          <button type="button" class="btn btn-danger btn-sm" id="${card.packagesID}">Delete</button>
+        </div>
+      </div>`;
+		}
+		else {
+			packageCards += `
+      <div class="card package-card" id="${card.packagesID}" style="flex: 0 0 25%; width: 16.8em; margin: .5em 1em;">
         <div class="card-body" id="overview-card-body">
           <h6 class="card-title"><img src="${card.packageIcon}" id="packages-icons" alt="${card.packageType} icon"> ${card.packageType}</h6>
           <p class="overview-card-text">${card.packagesDescription}</p>
           <a href="${card.packagesLink}" class="btn btn-secondary btn-sm" id="overview-btn">Learn More</a>
+          <button type="button" class="btn btn-danger btn-sm" id="${card.packagesID}">Delete</button>
         </div>
       </div>`;
+		}
 	});
 
 	PrintToDom('#packages-card-container', packageCards);
@@ -512,6 +697,45 @@ const PrintPackagesCards = () => {
 const PrintToDom = (divID, textToPrint) => {
 	const selectedDiv = document.querySelector(divID);
 	selectedDiv.innerHTML = textToPrint;
+};
+
+// Add new package card from form
+const getPackageFormInfo = (e) => {
+	e.preventDefault();
+
+	let packagesID = packagesCount++;
+	const packageType = document.querySelector('#packagesInputRepositoryName').value;
+	const packagesDescription = document.querySelector('#packages-textarea').value;
+
+	const formInputObject = {
+		packagesID,
+		packageIcon         : '',
+		packageType,
+		packagesDescription,
+		packagesLink        : '',
+		packagesAlpha       : ''
+	};
+
+	arrPackages.push(formInputObject);
+	PrintPackagesCards();
+
+	document.querySelector('.packages-form').reset();
+};
+
+const deletePackage = (e) => {
+	const targetType = e.target.type;
+	const targetIdNumber = parseInt(e.target.id);
+
+	if (targetType === 'button') {
+		let indexOfPackages = arrPackages.findIndex(
+			(package) => package.packagesID === targetIdNumber
+		);
+		if (indexOfPackages !== -1) {
+			arrPackages.splice(indexOfPackages, 1);
+		}
+	}
+
+	PrintPackagesCards();
 };
 
 // Add New Project
@@ -582,13 +806,11 @@ const deleteProject = (e) => {
 // Button Events
 
 const ButtonEvents = () => {
-	//     document.querySelector('#nav-bar-pinned-id').addEventListener('click', PrintPinnedCards);
-	//     document.querySelector('#nav-bar-repo-id').addEventListener('click', PrintRepoCardsWithSearchBar);
-	//     document.querySelector('#nav-bar-projects-id').addEventListener('click', PrintProjectsFormWithSearchBar);
-	//     document.querySelector('#nav-bar-packages-id').addEventListener('click', PrintPackagesCards);
 	document.querySelector('#projects-top-row').addEventListener('click', sortProjectSortButton);
 	document.querySelector('#projects-form-btn').addEventListener('click', getCreateNewProjectInfo);
 	document.querySelector('#projects-top-row').addEventListener('click', deleteProject);
+	document.querySelector('#packages-form-btn').addEventListener('click', getPackageFormInfo);
+	document.querySelector('#packages-card-container').addEventListener('click', deletePackage);
 };
 
 // init call()
@@ -597,9 +819,8 @@ const init = () => {
 
 	let x = location.pathname;
 
-	ButtonEvents();
-
 	if (x === '/index.html') {
+		PrintPinnedCards();
 	}
 	else if (x === '/repo.html') {
 		PrintRepoCardsWithSearchBar();
@@ -610,7 +831,8 @@ const init = () => {
 	else if (x === '/packages.html') {
 		PrintPackagesCards();
 	}
-	
+
+	ButtonEvents();
 
 };
 
