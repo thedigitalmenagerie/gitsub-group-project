@@ -209,17 +209,17 @@ const arrRepositories = [
 		repoTitle        : 'greys-anatomy-lorem-ipsum-generator',
 		repoLink         : 'https://github.com/thedigitalmenagerie/sorting-hat',
 		repoDescription  : "A lorem generator with medical terms and words from the show Grey's Anatomy.",
-		repoPinnedIcon   : './images/pinned-icon.png',
+		repoPinnedIcon   : './images/tack-1.png',
 		repoLanguageIcon : '../images/yellow-square.png',
-		repoStarIcon     : './images/star-icon.webp',
-		repoForkedIcon   : './images/forked-repo-icon.png',
+		repoStarIcon     : './images/star-2.png',
+		repoForkedIcon   : './images/fork-2.png',
 		repo3DotIcon     : './images/3-dot-icon.webp ',
 		repoLanguage     : 'javascript',
-		starsCount       : 8,
+		starsCount       : 168,
 		pinned           : false,
 		repoMITLicense   : false,
 		issuesNeedHelp   : 1,
-		repoLastUpdate   : '2021-02-07',
+		repoLastUpdate   : 7,
 		reposForked      : 10,
 		arrListOfButtons : [
 			'netlify',
@@ -235,17 +235,17 @@ const arrRepositories = [
 		repoTitle        : 'how-many-days-until',
 		repoLink         : 'https://github.com/thedigitalmenagerie/pet-adoption',
 		repoDescription  : 'A React countdown app of days between today and next year.',
-		repoPinnedIcon   : './images/pinned-icon.png',
+		repoPinnedIcon   : './images/tack-1.png',
 		repoLanguageIcon : '../images/yellow-square.png',
-		repoStarIcon     : './images/star-icon.webp',
-		repoForkedIcon   : './images/forked-repo-icon.png',
+		repoStarIcon     : './images/star-2.png',
+		repoForkedIcon   : './images/fork-2.png',
 		repo3DotIcon     : './images/3-dot-icon.webp ',
 		repoLanguage     : 'javascript',
-		starsCount       : 0,
+		starsCount       : 491,
 		pinned           : false,
 		repoMITLicense   : true,
 		issuesNeedHelp   : 0,
-		repoLastUpdate   : '2021-02-07',
+		repoLastUpdate   : 1,
 		reposForked      : 21,
 		arrListOfButtons : [
 			'react',
@@ -258,17 +258,17 @@ const arrRepositories = [
 		repoTitle        : 'httriri',
 		repoLink         : 'https://github.com/lindseysatterfield/sorting-hat ',
 		repoDescription  : 'HTTRiRi - HTTP Status Codes as Portrayed by Rihanna Gifs',
-		repoPinnedIcon   : './images/pinned-icon.png',
+		repoPinnedIcon   : './images/tack-1.png',
 		repoLanguageIcon : './images/blue-square-2.jpg',
-		repoStarIcon     : './images/star-icon.webp',
-		repoForkedIcon   : './images/forked-repo-icon.png',
+		repoStarIcon     : './images/star-2.png',
+		repoForkedIcon   : './images/fork-2.png',
 		repo3DotIcon     : './images/3-dot-icon.webp ',
 		repoLanguage     : 'TypeScript',
 		starsCount       : 37,
 		pinned           : false,
 		repoMITLicense   : true,
 		issuesNeedHelp   : 4,
-		repoLastUpdate   : '2021-02-07',
+		repoLastUpdate   : 6,
 		reposForked      : 12,
 		arrListOfButtons : [
 			'http',
@@ -283,17 +283,17 @@ const arrRepositories = [
 		repoTitle        : 'ambition-found-website',
 		repoLink         : 'https://github.com/lindseysatterfield/pet-adoption',
 		repoDescription  : 'Website for www.ambition.cor, micro-grant program to provide support for underrepresented people who need financial assistance purging professional development opportunities in the technology...',
-		repoPinnedIcon   : './images/pinned-icon.png',
+		repoPinnedIcon   : './images/tack-1.png',
 		repoLanguageIcon : '../images/yellow-square.png',
-		repoStarIcon     : './images/star-icon.webp',
-		repoForkedIcon   : './images/forked-repo-icon.png',
+		repoStarIcon     : './images/star-2.png',
+		repoForkedIcon   : './images/fork-2.png',
 		repo3DotIcon     : './images/3-dot-icon.webp',
 		repoLanguage     : 'javascript',
-		starsCount       : 7,
+		starsCount       : 32,
 		pinned           : false,
 		repoMITLicense   : true,
 		issuesNeedHelp   : 3,
-		repoLastUpdate   : '2021-02-07',
+		repoLastUpdate   : 2,
 		reposForked      : 45,
 		arrListOfButtons : [
 			'donation',
@@ -305,17 +305,17 @@ const arrRepositories = [
 		repoTitle        : 'honey-rae-sorting-hat',
 		repoLink         : 'https://github.com/thedigitalmenagerie/sorting-hat',
 		repoDescription  : "A lorem generator with medical terms and words from the show Grey's Anatomy.",
-		repoPinnedIcon   : './images/pinned-icon.png',
+		repoPinnedIcon   : './images/tack-1.png',
 		repoLanguageIcon : './images/red-square.png',
-		repoStarIcon     : './images/star-icon.webp',
-		repoForkedIcon   : './images/forked-repo-icon.png',
+		repoStarIcon     : './images/star-2.png',
+		repoForkedIcon   : './images/fork-2.png',
 		repo3DotIcon     : './images/3-dot-icon.webp',
 		repoLanguage     : 'HTML',
-		starsCount       : 8,
+		starsCount       : 76,
 		pinned           : true,
 		repoMITLicense   : false,
 		issuesNeedHelp   : 1,
-		repoLastUpdate   : '2021-02-07',
+		repoLastUpdate   : 5,
 		reposForked      : 11,
 		arrListOfButtons : [
 			'netlify',
@@ -331,17 +331,17 @@ const arrRepositories = [
 		repoTitle        : 'ls-sorting-hat',
 		repoLink         : 'https://github.com/lindseysatterfield/sorting-hat',
 		repoDescription  : "A lorem generator with medical terms and words from the show Grey's Anatomy.",
-		repoPinnedIcon   : './images/pinned-icon.png',
+		repoPinnedIcon   : './images/tack-1.png',
 		repoLanguageIcon : './images/blue-square-2.jpg',
-		repoStarIcon     : './images/star-icon.webp',
-		repoForkedIcon   : './images/forked-repo-icon.png',
+		repoStarIcon     : './images/star-2.png',
+		repoForkedIcon   : './images/fork-2.png',
 		repo3DotIcon     : './images/3-dot-icon.webp',
 		repoLanguage     : 'Typescript',
-		starsCount       : 8,
+		starsCount       : 21,
 		pinned           : false,
 		repoMITLicense   : false,
 		issuesNeedHelp   : 1,
-		repoLastUpdate   : '2021-02-07',
+		repoLastUpdate   : 7,
 		reposForked      : 51,
 		arrListOfButtons : [
 			'netlify',
@@ -357,17 +357,17 @@ const arrRepositories = [
 		repoTitle        : 'lindsey-pet-adoption',
 		repoLink         : 'https://github.com/lindseysatterfield/pet-adoption',
 		repoDescription  : "A lorem generator with medical terms and words from the show Grey's Anatomy.",
-		repoPinnedIcon   : './images/pinned-icon.png',
+		repoPinnedIcon   : './images/tack-1.png',
 		repoLanguageIcon : './images/red-square.png',
-		repoStarIcon     : './images/star-icon.webp',
-		repoForkedIcon   : './images/forked-repo-icon.png',
+		repoStarIcon     : './images/star-2.png',
+		repoForkedIcon   : './images/fork-2.png',
 		repo3DotIcon     : './images/3-dot-icon.webp',
 		repoLanguage     : 'HTML',
-		starsCount       : 8,
+		starsCount       : 103,
 		pinned           : true,
 		repoMITLicense   : false,
 		issuesNeedHelp   : 1,
-		repoLastUpdate   : '2021-02-07',
+		repoLastUpdate   : 10,
 		reposForked      : 7,
 		arrListOfButtons : [
 			'netlify',
@@ -380,20 +380,20 @@ const arrRepositories = [
 	},
 	{
 		repoID           : 7,
-		repoTitle        : 'dc-personal-bio-stie',
+		repoTitle        : 'dc-personal-bio-site',
 		repoLink         : 'https://github.com/danicrosby/personal-bio-site',
 		repoDescription  : "A lorem generator with medical terms and words from the show Grey's Anatomy.",
-		repoPinnedIcon   : './images/pinned-icon.png',
+		repoPinnedIcon   : './images/tack-1.png',
 		repoLanguageIcon : '../images/yellow-square.png',
-		repoStarIcon     : './images/star-icon.webp',
-		repoForkedIcon   : './images/forked-repo-icon.png',
+		repoStarIcon     : './images/star-2.png',
+		repoForkedIcon   : './images/fork-2.png',
 		repo3DotIcon     : './images/3-dot-icon.webp',
 		repoLanguage     : 'javascript',
-		starsCount       : 8,
+		starsCount       : 42,
 		pinned           : true,
 		repoMITLicense   : false,
 		issuesNeedHelp   : 1,
-		repoLastUpdate   : '2021-02-07',
+		repoLastUpdate   : 5,
 		reposForked      : 11,
 		arrListOfButtons : [
 			'netlify',
@@ -409,17 +409,17 @@ const arrRepositories = [
 		repoTitle        : 'dani-sorting-hat',
 		repoLink         : 'https://github.com/danicrosby/sorting-hat',
 		repoDescription  : "A lorem generator with medical terms and words from the show Grey's Anatomy.",
-		repoPinnedIcon   : './images/pinned-icon.png',
+		repoPinnedIcon   : './images/tack-1.png',
 		repoLanguageIcon : './images/red-square.png',
-		repoStarIcon     : './images/star-icon.webp',
-		repoForkedIcon   : './images/forked-repo-icon.png',
+		repoStarIcon     : './images/star-2.png',
+		repoForkedIcon   : './images/fork-2.png',
 		repo3DotIcon     : './images/3-dot-icon.webp',
 		repoLanguage     : 'HTML',
-		starsCount       : 8,
+		starsCount       : 16,
 		pinned           : false,
 		repoMITLicense   : false,
 		issuesNeedHelp   : 1,
-		repoLastUpdate   : '2021-02-07',
+		repoLastUpdate   : 2,
 		reposForked      : 16,
 		arrListOfButtons : [
 			'netlify',
@@ -435,17 +435,17 @@ const arrRepositories = [
 		repoTitle        : 'juan-sorting-hat',
 		repoLink         : 'https://github.com/JuanDavila1101/sorting-hat',
 		repoDescription  : "A lorem generator with medical terms and words from the show Grey's Anatomy.",
-		repoPinnedIcon   : './images/pinned-icon.png',
+		repoPinnedIcon   : './images/tack-1.png',
 		repoLanguageIcon : './images/blue-square-2.jpg',
-		repoStarIcon     : './images/star-icon.webp',
-		repoForkedIcon   : './images/forked-repo-icon.png',
+		repoStarIcon     : './images/star-2.png',
+		repoForkedIcon   : './images/fork-2.png',
 		repo3DotIcon     : './images/3-dot-icon.webp',
 		repoLanguage     : 'Typescript',
-		starsCount       : 8,
+		starsCount       : 12,
 		pinned           : true,
 		repoMITLicense   : false,
 		issuesNeedHelp   : 1,
-		repoLastUpdate   : '2021-02-07',
+		repoLastUpdate   : 7,
 		reposForked      : 60,
 				arrListOfButtons : [
 			'netlify',
@@ -525,8 +525,8 @@ const PrintProjectProfile = () => {
  <a href="https://twitter.com/home" style="color: white"><img src="./images/twitter light.webp" id="packages-icon-images">Twitter</a>
  <br>
 	 <h6>Highlights</h6>
-	 <a href="#" style="color: white"><img src="./images/_snowflake-256.webp" id="projects-icon-images">Arctic</a>
-	 <a href="#" style="color: white"><img src="./images/yellow star.webp" id="projects-icon-images">Github</a>
+	 <a href="#" style="color: white"><img src="./images/_snowflake-256.webp" id="packages-icon-images">Arctic</a>
+	 <a href="#" style="color: white"><img src="./images/yellow star.webp" id="packages-icon-images">Github</a>
 	 <a href="#" style="color: white"><img src="./images/pro star light.webp" id="packages-icon-images">Pro</a>
 	 <br>
 	 <h6>Organizations</h6>
@@ -597,15 +597,16 @@ const PrintPinnedCards = () => {
 			pinnedCards += `
 					<div class="card text-white bg-dark pinned-card" id="${card.repoID}" style="width: 27rem; height: 10em; margin: .2em">
 						<div class="card-body" id="overview-card-body">
-								<h6 class="card-title"><img src="${card.repoPinnedIcon}" style="width: 1em">${card.repoTitle}</h6>
+								<h6 class="card-title" style="font-size: 1em"><img src="${card.repoPinnedIcon}"  style="width: 2em; margin-right: 1em">${card.repoTitle}</h6>
 								<p class="overview-card-text">${card.repoDescription}</p>
 								<hr>
-								<div class="repoCardBottomContainer">
+								<div class="repoCardBottomContainer" style="font-size: .8em">
 									<div>
-										<img src="${card.repoLanguageIcon}" id="pinned-icons">${card.repoLanguage}
-										<img src="${card.repoStarIcon}" id="pinned-icons">${card.starsCount}
-										<img src="${card.repoForkedIcon}" id="pinned-icons">${card.reposForked}
+										<img src="${card.repoLanguageIcon}" id="pinned-icons" style="border-radius: 50%">${card.repoLanguage}
+										<img src="${card.repoStarIcon}" id="pinned-icons" style="margin-left: 2em">${card.starsCount}
+										<img src="${card.repoForkedIcon}" id="pinned-icons" style="margin-left: 2em">${card.reposForked}
 									</div>
+									<button type="button" class="btn btn-danger btn-sm" style="width: 6em; height: 3em; margin-left: 9em" id="${card.repoID}">Delete</button>
 								</div>
 						</div>
 					</div>`;
@@ -619,20 +620,28 @@ const PrintPinnedCards = () => {
 const PrintRepoCardsWithSearchBar = () => {
 	// add search bar to the top of the page
 
-	let repoCardsWithSearchBar = ``;
+	let repoCardsWithSearchBar = `<div class="sticky"><input id="repoSearchbar" onkeyup="searchRepos" type="text" name="search" placeholder="Find a repository..."
+																	<div class="sticky"><button type="button" class="btn btn-secondary btn-sm" id="searchButton">Search</button></div>`;
 
 	arrRepositories.forEach((card) => {
 		//Each Repo card is here
-		repoCardsWithSearchBar += `
-              <div class="card overview-card" id="${card.repoID}">
-                <div class="card-body" id="overview-card-body">
-                  <h6 class="card-title">${card.repoTitle}</h6>
-                  <p class="overview-card-text">${card.repoDescription}</p>
-                  <p class="buttons-container">${makeRepoButtons(card)}</p>
-                  <p class="repoCardBottomContainer"> ${card.repoLanguage} ${card.starsCount} ${card.issuesNeedHelp} issues needs help ${card.repoLastUpdate} Updated days ago
-                  </p>
-                </div>
-              </div> `;
+    repoCardsWithSearchBar += `
+								<div class="card overview-card" id="${card.repoID}">
+									<div class="card-body" id="overview-card-body">
+										<h6 class="card-title">${card.repoTitle}</h6>
+										<p class="overview-card-text">${card.repoDescription}</p>
+										<p class="buttons-container">${makeRepoButtons(card)}</p>
+										<div class="repoCardBottomContainer"> 
+										<div>
+											<img src="${card.repoLanguageIcon}" id="repo-icons" style="border-radius: 50%"> ${card.repoLanguage}
+											<img src="${card.repoStarIcon}" style="margin-left: 1em" id="repo-icons"> ${card.starsCount}
+											<img src="${card.repoForkedIcon}" style="margin-left: 1em" id="repo-icons">   ${card.reposForked} 
+											Updated ${card.repoLastUpdate} days ago
+											<img src="./images/github-graph.png" style="width: 12em; margin-left: 16em">
+										</div>
+									</div>
+								</div>
+							</div>  `;
 	});
 
 	PrintToDom('#repo-top-row', repoCardsWithSearchBar);
@@ -769,6 +778,7 @@ const newProjectFormCard = (e) => {
 	PrintToDom('#create-project-container', projectFormCard);
 }
 
+
 const getCreateNewProjectInfo = (e) => {
 	e.preventDefault();
 
@@ -839,6 +849,19 @@ const deleteProject = (e) => {
 	PrintProjectsFormWithSearchBar();
 };
 
+const deleteRepo = (e) => {
+	const targetType = e.target.type;
+	const targetIdNumber = parseInt(e.target.id);
+
+	if (targetType === 'button') {
+		let indexOfRepos = arrRepositories.findIndex((repo) => repo.repoID === targetIdNumber);
+		if (indexOfRepos !== -1) {
+			arrRepositories.splice(indexOfRepos, 1);
+		}
+	}
+	PrintPinnedCards();
+};
+
 
 const ButtonEvents = () => {
 
@@ -854,6 +877,10 @@ const ButtonEvents = () => {
 		document.querySelector('#packages-form-btn').addEventListener('click', getPackageFormInfo);
 		document.querySelector('#packages-card-container').addEventListener('click', deletePackage);
 	}
+	else if (x === '/' || x === '/index.html') {
+		document.querySelector('.repo-top-row').addEventListener('click', deleteRepo);
+	}
+	
 	
 	
 
@@ -864,7 +891,7 @@ const init = () => {
 
 	let x = location.pathname;
 
-	if (x === '/index.html') {
+	if (x === '/' || x === '/index.html') {
 		PrintPinnedCards();
 	}
 	else if (x === '/repo.html') {
