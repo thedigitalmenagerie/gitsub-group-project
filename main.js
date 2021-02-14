@@ -31,8 +31,6 @@ const arrOrganizations = [
 	}
 ];
 
-//#Packages
-
 const arrPackagesTypes = [
 	{
 		packageIcon : './images/docker.webp',
@@ -135,8 +133,6 @@ const person = {
 	sponsors                : arrSponsors
 };
 
-//#Packages
-
 let packagesCount = 6;
 const arrPackages = [
 	{
@@ -197,10 +193,6 @@ const arrPackages = [
 	}
 ];
 
-//#endPackages
-
-//#Repository
-
 const arrRepoLocations = [
 	'netlify',
 	'Jamstack',
@@ -227,17 +219,17 @@ const arrRepositories = [
 		repoLink         : 'https://github.com/thedigitalmenagerie/sorting-hat',
 		repoDescription  :
 			"A lorem generator with medical terms and words from the show Grey's Anatomy.",
-		repoPinnedIcon   : './images/pinned-icon.png',
+		repoPinnedIcon   : './images/tack-1.png',
 		repoLanguageIcon : '../images/yellow-square.png',
-		repoStarIcon     : './images/star-icon.webp',
-		repoForkedIcon   : './images/forked-repo-icon.png',
+		repoStarIcon     : './images/star-2.png',
+		repoForkedIcon   : './images/fork-2.png',
 		repo3DotIcon     : './images/3-dot-icon.webp ',
 		repoLanguage     : 'javascript',
-		starsCount       : 8,
+		starsCount       : 168,
 		pinned           : false,
 		repoMITLicense   : false,
 		issuesNeedHelp   : 1,
-		repoLastUpdate   : '2021-02-07',
+		repoLastUpdate   : 7,
 		reposForked      : 10,
 		arrListOfButtons : [
 			'netlify',
@@ -253,17 +245,17 @@ const arrRepositories = [
 		repoTitle        : 'how-many-days-until',
 		repoLink         : 'https://github.com/thedigitalmenagerie/pet-adoption',
 		repoDescription  : 'A React countdown app of days between today and next year.',
-		repoPinnedIcon   : './images/pinned-icon.png',
+		repoPinnedIcon   : './images/tack-1.png',
 		repoLanguageIcon : '../images/yellow-square.png',
-		repoStarIcon     : './images/star-icon.webp',
-		repoForkedIcon   : './images/forked-repo-icon.png',
+		repoStarIcon     : './images/star-2.png',
+		repoForkedIcon   : './images/fork-2.png',
 		repo3DotIcon     : './images/3-dot-icon.webp ',
 		repoLanguage     : 'javascript',
-		starsCount       : 0,
+		starsCount       : 491,
 		pinned           : false,
 		repoMITLicense   : true,
 		issuesNeedHelp   : 0,
-		repoLastUpdate   : '2021-02-07',
+		repoLastUpdate   : 1,
 		reposForked      : 21,
 		arrListOfButtons : [
 			'react',
@@ -276,17 +268,17 @@ const arrRepositories = [
 		repoTitle        : 'httriri',
 		repoLink         : 'https://github.com/lindseysatterfield/sorting-hat ',
 		repoDescription  : 'HTTRiRi - HTTP Status Codes as Portrayed by Rihanna Gifs',
-		repoPinnedIcon   : './images/pinned-icon.png',
+		repoPinnedIcon   : './images/tack-1.png',
 		repoLanguageIcon : './images/blue-square-2.jpg',
-		repoStarIcon     : './images/star-icon.webp',
-		repoForkedIcon   : './images/forked-repo-icon.png',
+		repoStarIcon     : './images/star-2.png',
+		repoForkedIcon   : './images/fork-2.png',
 		repo3DotIcon     : './images/3-dot-icon.webp ',
 		repoLanguage     : 'TypeScript',
 		starsCount       : 37,
 		pinned           : false,
 		repoMITLicense   : true,
 		issuesNeedHelp   : 4,
-		repoLastUpdate   : '2021-02-07',
+		repoLastUpdate   : 6,
 		reposForked      : 12,
 		arrListOfButtons : [
 			'http',
@@ -302,17 +294,17 @@ const arrRepositories = [
 		repoLink         : 'https://github.com/lindseysatterfield/pet-adoption',
 		repoDescription  :
 			'Website for www.ambition.cor, micro-grant program to provide support for underrepresented people who need financial assistance purging professional development opportunities in the technology...',
-		repoPinnedIcon   : './images/pinned-icon.png',
+		repoPinnedIcon   : './images/tack-1.png',
 		repoLanguageIcon : '../images/yellow-square.png',
-		repoStarIcon     : './images/star-icon.webp',
-		repoForkedIcon   : './images/forked-repo-icon.png',
+		repoStarIcon     : './images/star-2.png',
+		repoForkedIcon   : './images/fork-2.png',
 		repo3DotIcon     : './images/3-dot-icon.webp',
 		repoLanguage     : 'javascript',
-		starsCount       : 7,
+		starsCount       : 32,
 		pinned           : false,
 		repoMITLicense   : true,
 		issuesNeedHelp   : 3,
-		repoLastUpdate   : '2021-02-07',
+		repoLastUpdate   : 2,
 		reposForked      : 45,
 		arrListOfButtons : [
 			'donation',
@@ -325,17 +317,17 @@ const arrRepositories = [
 		repoLink         : 'https://github.com/thedigitalmenagerie/sorting-hat',
 		repoDescription  :
 			"A lorem generator with medical terms and words from the show Grey's Anatomy.",
-		repoPinnedIcon   : './images/pinned-icon.png',
+		repoPinnedIcon   : './images/tack-1.png',
 		repoLanguageIcon : './images/red-square.png',
-		repoStarIcon     : './images/star-icon.webp',
-		repoForkedIcon   : './images/forked-repo-icon.png',
+		repoStarIcon     : './images/star-2.png',
+		repoForkedIcon   : './images/fork-2.png',
 		repo3DotIcon     : './images/3-dot-icon.webp',
 		repoLanguage     : 'HTML',
-		starsCount       : 8,
+		starsCount       : 76,
 		pinned           : true,
 		repoMITLicense   : false,
 		issuesNeedHelp   : 1,
-		repoLastUpdate   : '2021-02-07',
+		repoLastUpdate   : 5,
 		reposForked      : 11,
 		arrListOfButtons : [
 			'netlify',
@@ -352,17 +344,17 @@ const arrRepositories = [
 		repoLink         : 'https://github.com/lindseysatterfield/sorting-hat',
 		repoDescription  :
 			"A lorem generator with medical terms and words from the show Grey's Anatomy.",
-		repoPinnedIcon   : './images/pinned-icon.png',
+		repoPinnedIcon   : './images/tack-1.png',
 		repoLanguageIcon : './images/blue-square-2.jpg',
-		repoStarIcon     : './images/star-icon.webp',
-		repoForkedIcon   : './images/forked-repo-icon.png',
+		repoStarIcon     : './images/star-2.png',
+		repoForkedIcon   : './images/fork-2.png',
 		repo3DotIcon     : './images/3-dot-icon.webp',
 		repoLanguage     : 'Typescript',
-		starsCount       : 8,
+		starsCount       : 21,
 		pinned           : false,
 		repoMITLicense   : false,
 		issuesNeedHelp   : 1,
-		repoLastUpdate   : '2021-02-07',
+		repoLastUpdate   : 7,
 		reposForked      : 51,
 		arrListOfButtons : [
 			'netlify',
@@ -379,17 +371,17 @@ const arrRepositories = [
 		repoLink         : 'https://github.com/lindseysatterfield/pet-adoption',
 		repoDescription  :
 			"A lorem generator with medical terms and words from the show Grey's Anatomy.",
-		repoPinnedIcon   : './images/pinned-icon.png',
+		repoPinnedIcon   : './images/tack-1.png',
 		repoLanguageIcon : './images/red-square.png',
-		repoStarIcon     : './images/star-icon.webp',
-		repoForkedIcon   : './images/forked-repo-icon.png',
+		repoStarIcon     : './images/star-2.png',
+		repoForkedIcon   : './images/fork-2.png',
 		repo3DotIcon     : './images/3-dot-icon.webp',
 		repoLanguage     : 'HTML',
-		starsCount       : 8,
+		starsCount       : 103,
 		pinned           : true,
 		repoMITLicense   : false,
 		issuesNeedHelp   : 1,
-		repoLastUpdate   : '2021-02-07',
+		repoLastUpdate   : 10,
 		reposForked      : 7,
 		arrListOfButtons : [
 			'netlify',
@@ -402,21 +394,21 @@ const arrRepositories = [
 	},
 	{
 		repoID           : 7,
-		repoTitle        : 'dc-personal-bio-stie',
+		repoTitle        : 'dc-personal-bio-site',
 		repoLink         : 'https://github.com/danicrosby/personal-bio-site',
 		repoDescription  :
 			"A lorem generator with medical terms and words from the show Grey's Anatomy.",
-		repoPinnedIcon   : './images/pinned-icon.png',
+		repoPinnedIcon   : './images/tack-1.png',
 		repoLanguageIcon : '../images/yellow-square.png',
-		repoStarIcon     : './images/star-icon.webp',
-		repoForkedIcon   : './images/forked-repo-icon.png',
+		repoStarIcon     : './images/star-2.png',
+		repoForkedIcon   : './images/fork-2.png',
 		repo3DotIcon     : './images/3-dot-icon.webp',
 		repoLanguage     : 'javascript',
-		starsCount       : 8,
+		starsCount       : 42,
 		pinned           : true,
 		repoMITLicense   : false,
 		issuesNeedHelp   : 1,
-		repoLastUpdate   : '2021-02-07',
+		repoLastUpdate   : 5,
 		reposForked      : 11,
 		arrListOfButtons : [
 			'netlify',
@@ -433,17 +425,17 @@ const arrRepositories = [
 		repoLink         : 'https://github.com/danicrosby/sorting-hat',
 		repoDescription  :
 			"A lorem generator with medical terms and words from the show Grey's Anatomy.",
-		repoPinnedIcon   : './images/pinned-icon.png',
+		repoPinnedIcon   : './images/tack-1.png',
 		repoLanguageIcon : './images/red-square.png',
-		repoStarIcon     : './images/star-icon.webp',
-		repoForkedIcon   : './images/forked-repo-icon.png',
+		repoStarIcon     : './images/star-2.png',
+		repoForkedIcon   : './images/fork-2.png',
 		repo3DotIcon     : './images/3-dot-icon.webp',
 		repoLanguage     : 'HTML',
-		starsCount       : 8,
+		starsCount       : 16,
 		pinned           : false,
 		repoMITLicense   : false,
 		issuesNeedHelp   : 1,
-		repoLastUpdate   : '2021-02-07',
+		repoLastUpdate   : 2,
 		reposForked      : 16,
 		arrListOfButtons : [
 			'netlify',
@@ -460,17 +452,17 @@ const arrRepositories = [
 		repoLink         : 'https://github.com/JuanDavila1101/sorting-hat',
 		repoDescription  :
 			"A lorem generator with medical terms and words from the show Grey's Anatomy.",
-		repoPinnedIcon   : './images/pinned-icon.png',
+		repoPinnedIcon   : './images/tack-1.png',
 		repoLanguageIcon : './images/blue-square-2.jpg',
-		repoStarIcon     : './images/star-icon.webp',
-		repoForkedIcon   : './images/forked-repo-icon.png',
+		repoStarIcon     : './images/star-2.png',
+		repoForkedIcon   : './images/fork-2.png',
 		repo3DotIcon     : './images/3-dot-icon.webp',
 		repoLanguage     : 'Typescript',
-		starsCount       : 8,
+		starsCount       : 12,
 		pinned           : true,
 		repoMITLicense   : false,
 		issuesNeedHelp   : 1,
-		repoLastUpdate   : '2021-02-07',
+		repoLastUpdate   : 7,
 		reposForked      : 60,
 		arrListOfButtons : [
 			'netlify',
@@ -483,9 +475,6 @@ const arrRepositories = [
 	}
 ];
 
-//#endRepository
-
-//#Projects
 let projectCount = 6;
 const arrProjects = [
 	{
@@ -493,7 +482,7 @@ const arrProjects = [
 		projectName        : 'Sorting Hat',
 		projectDescription : 'Lindsey Satterfield',
 		projectLink        : 'https://github.com/lindseysatterfield/sorting-hat/projects/1',
-		projectLastUpdate  : './images/last updated (clock).webp'
+		projectLastUpdate  : './images/clock-256.webp'
 	},
 	{
 		projectID          : 1,
@@ -501,100 +490,117 @@ const arrProjects = [
 		projectDescription : 'Group',
 		projectLink        :
 			'https://github.com/nss-evening-cohort-14/gitsub-e14-1-devs-to-ever-dev/projects',
-		projectLastUpdate  : './images/last updated (clock).webp'
+		projectLastUpdate  : './images/clock-256.webp'
 	},
 	{
 		projectID          : 2,
 		projectName        : 'Sorting Hat',
 		projectDescription : 'Honey-Rae Swan',
 		projectLink        : 'https://github.com/thedigitalmenagerie/sorting-hat/projects/1',
-		projectLastUpdate  : './images/last updated (clock).webp'
+		projectLastUpdate  : './images/clock-256.webp'
 	},
 	{
 		projectID          : 3,
 		projectName        : 'Sorting Hat',
 		projectDescription : 'Dani Crosby',
 		projectLink        : 'https://github.com/danicrosby/sorting-hat/projects',
-		projectLastUpdate  : './images/last updated (clock).webp'
+		projectLastUpdate  : './images/clock-256.webp'
 	},
 	{
 		projectID          : 4,
 		projectName        : 'My Goals',
 		projectDescription : 'Honey-Rae Swan',
 		projectLink        : 'https://github.com/users/thedigitalmenagerie/projects/1',
-		projectLastUpdate  : './images/last updated (clock).webp'
+		projectLastUpdate  : './images/clock-256.webp'
 	},
 	{
 		projectID          : 5,
 		projectName        : 'Pet Adoption',
 		projectDescription : 'Dani Crosby',
 		projectLink        : 'https://github.com/danicrosby/pet-adoption/projects',
-		projectLastUpdate  : './images/last updated (clock).webp'
+		projectLastUpdate  : './images/clock-256.webp'
 	}
 ];
 
-//#endProjects
+const PrintProjectProfile = () => {
+	let developerFormForm = ` <div class="container text-white bg-dark profile-container" id="profile-container">
+ <img src="./images/dr.t recent.jpeg" id="profile-pic"alt="Photo of Dr. T.">
+	 <h>Dr. T.</h>
+	 <h6 id="handle">NSS</h6>
+	 <p id="profile-bio">Hello, My name is Dr. T. I'm a teacher at Nashville Software School, currently teaching E14.<p>
+ <div class="container" id="profile-buttons">
+	 <a href="#" class="btn btn-warning btn-sm" id="follow-btn">Follow</a>
+	 <a href="#" class="btn btn-warning btn-sm" id="sponsor-btn">Sponsor</a>
+	 <a href="#" class="btn btn-warning btn-sm" id="more-btn">...</a>
+	 <br>
+ </div>
+ <a href="https://www.visitmusiccity.com/" style="color: white"><img src="./images/location-icon-256.webp" id="packages-icon-images">Nashville, TN</a>
+ <a href="#" style="color: white"><img src="./images/email light.webp" id="packages-icon-images">DrT@gmail.com</a>
+ <a href="https://www.drteresavasquez.com/" style="color: white"><img src="./images/link light.webp" id="packages-icon-images">drteresavasquez.com</a>
+ <a href="https://twitter.com/home" style="color: white"><img src="./images/twitter light.webp" id="packages-icon-images">Twitter</a>
+ <br>
+	 <h6>Highlights</h6>
+	 <a href="#" style="color: white"><img src="./images/_snowflake-256.webp" id="packages-icon-images">Arctic</a>
+	 <a href="#" style="color: white"><img src="./images/yellow star.webp" id="packages-icon-images">Github</a>
+	 <a href="#" style="color: white"><img src="./images/pro star light.webp" id="packages-icon-images">Pro</a>
+	 <br>
+	 <h6>Organizations</h6>
+	<div class="container" id="organization-profiles">
+	 <a href="https://github.com/nashville-software-school"><img src="./images/NSS-Logo.png" id="organization-icon-images" alt="NSS-Logo"></a>
+	 <a href="https://github.com/Urban-Green-Lab"><img src="./images/urban-green-icon.png" id="organization-icon-images" alt="urban-green-icon"></a>
+	 <a href="https://github.com/Autism-Possisble"><img src="./images/autism-possible.png" id="organization-icon-images" alt="autism-possible"></a>
+	 <a href="https://github.com/nss-evening-cohort-14"><img src="./images/cohort14.jpeg" id="organization-icon-images" alt="autism-possible"></a>
+	</div>
+		 <h6>Sponsors</h6>
+		<div class="container" id="sponsor-profiles">
+			<div class="sponsor-top-row">
+			 <img src="./images/honey-rae.jpeg" id="sponsor-icon-images" alt="placeholder image">
+			 <img src="./images/dani.jpeg" id="sponsor-icon-images" alt="placeholder image">
+			 <img src="./images/juan.jpeg" id="sponsor-icon-images" alt="placeholder image">
+			 <img src="./images/lindsey.jpeg" id="sponsor-icon-images" alt="placeholder image">
+		 </div>
+		 <div class="sponsor-bottom-row">
+			 <img src="./images/trinity.jpeg" id="sponsor-icon-images" alt="placeholder image">
+			 <img src="./images/Aja.jpeg" id="sponsor-icon-images" alt="placeholder image">
+			 <img src="./images/steve.png" id="sponsor-icon-images" alt="placeholder image">
+			 <img src="./images/wonder-woman.jpg" id="sponsor-icon-images" alt="placeholder image">
+		 </div>
+	 </div>
+`;
 
-//#Footer
-
-// const arrFooter = [
-// 	{
-// 		footerItem     : 'Terms',
-// 		footerItemLink : 'https://docs.github.com/en/github/site-policy/github-terms-of-service'
-// 	},
-// 	{
-// 		footerItem     : 'Privacy',
-// 		footerItemLink : 'https://docs.github.com/en/github/site-policy/github-privacy-statement'
-// 	},
-// 	{
-// 		footerItem     : 'Security',
-// 		footerItemLink : 'https://github.com/security'
-// 	},
-// 	{
-// 		footerItem     : 'Status',
-// 		footerItemLink : 'https://twitter.com/githubstatus'
-// 	},
-// 	{
-// 		footerItem     : 'Help',
-// 		footerItemLink : 'https://support.github.com/'
-// 	},
-// 	{
-// 		footerItem     : 'Contact GitHub',
-// 		footerItemLink : 'https://support.github.com/request'
-// 	},
-// 	{
-// 		footerItem     : 'Pricing',
-// 		footerItemLink : 'https://github.com/pricing'
-// 	},
-// 	{
-// 		footerItem     : 'API',
-// 		footerItemLink : 'https://docs.github.com/en/rest/overview/libraries'
-// 	},
-// 	{
-// 		footerItem     : 'Training',
-// 		footerItemLink : 'https://lab.github.com/'
-// 	},
-// 	{
-// 		footerItem     : 'Blog',
-// 		footerItemLink : 'https://pages.github.com/'
-// 	},
-// 	{
-// 		footerItem     : 'About',
-// 		footerItemLink : 'https://github.com/about'
-// 	}
-// ];
-
-//#endFooter
-
-const PrintProfile = () => {
-	let developerFormForm = ` `;
-
-	PrintToDom('#profile-container', developerFormForm);
+	PrintToDom('#left-container', developerFormForm);
 };
-const PrintNavBar = () => {
-	let navBar = ` `;
 
-	PrintToDom('#nav-container', navBar);
+const PrintProjectNavBar = () => {
+	let projectNavBar = `<section id="nav-container">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark"><a class="navbar-brand" href="index.html">Overview</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav">
+				<li class="nav-item active"><a class="nav-link" href="repo.html">Repositories</a></li>
+				<li class="nav-item"><a class="nav-link" href="projects.html">Projects <span class="sr-only"><img src="./images/github-cat4.webp" alt="github icon" id="navbar-icon"></a></span></a></li>
+				<li class="nav-item"><a class="nav-link" href="packages.html">Packages</a></li></ul></div></nav>
+</section>`;
+
+	PrintToDom('#project-nav-container', projectNavBar);
+};
+
+const PrintProjectFooter = () => {
+	let footer = `<ul><li><a href="https://docs.github.com/en/github/site-policy/github-terms-of-service" style="color: lightgray">Terms</a></li>
+	<li><a href="https://docs.github.com/en/github/site-policy/github-privacy-statement" style="color:lightgray"></a>Privacy</li>
+	<li><a href="https://github.com/security" style="color: lightgray">Security</a></li>
+	<li><a href="https://twitter.com/githubstatus" style="color: white">Status</a></li>
+	<li><a href="https://support.github.com/" style="color: lightgray"></a>Help</li>
+	<li><a href="https://github.com/"><img src="./images/github-cat4.webp" alt="github icon" id="github-icon"></a></li>
+	<li><a href="https://support.github.com/request" style="color: lightgray">Contact</a></li>
+	<li><a href="https://github.com/pricing" style="color: lightgray">Pricing</a></li>
+	<li><a href="https://docs.github.com/en/rest/pinned/libraries" style="color: lightgray"></a>API</li>
+	<li><a href="https://lab.github.com/" style="color: lightgray">Training</a></li>
+	<li><a href="https://pages.github.com/" style="color: lightgray"></a>Blog</li>
+	<li><a href="https://github.com/about" style="color: lightgray"></a>About</li>
+</ul>`;
+
+	PrintToDom('#footer-container', footer);
 };
 
 const PrintPinnedCards = () => {
@@ -605,15 +611,16 @@ const PrintPinnedCards = () => {
 			pinnedCards += `
 					<div class="card text-white bg-dark pinned-card" id="${card.repoID}" style="width: 27rem; height: 10em; margin: .2em">
 						<div class="card-body" id="overview-card-body">
-								<h6 class="card-title"><img src="${card.repoPinnedIcon}" style="width: 1em">${card.repoTitle}</h6>
+								<h6 class="card-title" style="font-size: 1em"><img src="${card.repoPinnedIcon}"  style="width: 2em; margin-right: 1em">${card.repoTitle}</h6>
 								<p class="overview-card-text">${card.repoDescription}</p>
 								<hr>
-								<div class="repoCardBottomContainer">
+								<div class="repoCardBottomContainer" style="font-size: .8em">
 									<div>
-										<img src="${card.repoLanguageIcon}" id="pinned-icons">${card.repoLanguage}
-										<img src="${card.repoStarIcon}" id="pinned-icons">${card.starsCount}
-										<img src="${card.repoForkedIcon}" id="pinned-icons">${card.reposForked}
+										<img src="${card.repoLanguageIcon}" id="pinned-icons" style="border-radius: 50%">${card.repoLanguage}
+										<img src="${card.repoStarIcon}" id="pinned-icons" style="margin-left: 2em">${card.starsCount}
+										<img src="${card.repoForkedIcon}" id="pinned-icons" style="margin-left: 2em">${card.reposForked}
 									</div>
+									<button type="button" class="btn btn-danger btn-sm" style="width: 6em; height: 3em; margin-left: 9em" id="${card.repoID}">Delete</button>
 								</div>
 						</div>
 					</div>`;
@@ -626,20 +633,28 @@ const PrintPinnedCards = () => {
 const PrintRepoCardsWithSearchBar = () => {
 	// add search bar to the top of the page
 
-	let repoCardsWithSearchBar = ``;
+	let repoCardsWithSearchBar = `<div class="sticky"><input id="repoSearchbar" onkeyup="searchRepos" type="text" name="search" placeholder="Find a repository..."
+																	<div class="sticky"><button type="button" class="btn btn-secondary btn-sm" id="searchButton">Search</button></div>`;
 
 	arrRepositories.forEach((card) => {
 		//Each Repo card is here
 		repoCardsWithSearchBar += `
-              <div class="card overview-card" id="${card.repoID}">
-                <div class="card-body" id="overview-card-body">
-                  <h6 class="card-title">${card.repoTitle}</h6>
-                  <p class="overview-card-text">${card.repoDescription}</p>
-                  <p class="buttons-container">${makeRepoButtons(card)}</p>
-                  <p class="repoCardBottomContainer"> ${card.repoLanguage} ${card.starsCount} ${card.issuesNeedHelp} issues needs help ${card.repoLastUpdate} Updated days ago
-                  </p>
-                </div>
-              </div> `;
+								<div class="card overview-card" id="${card.repoID}">
+									<div class="card-body" id="overview-card-body">
+										<h6 class="card-title">${card.repoTitle}</h6>
+										<p class="overview-card-text">${card.repoDescription}</p>
+										<p class="buttons-container">${makeRepoButtons(card)}</p>
+										<div class="repoCardBottomContainer"> 
+										<div>
+											<img src="${card.repoLanguageIcon}" id="repo-icons" style="border-radius: 50%"> ${card.repoLanguage}
+											<img src="${card.repoStarIcon}" style="margin-left: 1em" id="repo-icons"> ${card.starsCount}
+											<img src="${card.repoForkedIcon}" style="margin-left: 1em" id="repo-icons">   ${card.reposForked} 
+											Updated ${card.repoLastUpdate} days ago
+											<img src="./images/github-graph.png" style="width: 12em; margin-left: 16em">
+										</div>
+									</div>
+								</div>
+							</div>  `;
 	});
 
 	PrintToDom('#repo-top-row', repoCardsWithSearchBar);
@@ -658,15 +673,25 @@ const makeRepoButtons = (repoCard) => {
 	return repoButtons;
 };
 
-const PrintProjectsFormWithSearchBar = () => {
-	let projectCardsWithSearchBar = `<div><button type="button" class="btn btn-secondary btn-sm" id="sortButton">Sort</button></div><input id="projectSearchbar" onkeyup="searchProject" type="text" name="search" placeholder="Search projects..">`;
+const PrintProjectsFormWithSearchBar = (arrProjects) => {
+	let projectCardsWithSearchBar = `<div class="sticky"><input id="projectSearchbar" onkeyup="searchProject" class= "my2" type="text" name="search" placeholder="Search projects.."	<div class="dropdown">
+  <label for="sort">
+  </label>
+  <select id="sort">
+    <option value="title">Title</option>
+    <option value="author">Author</option>
+    <option value="newest">Newest</option>
+  </select>
+</div>
+</div>`;
 
 	arrProjects.forEach((card) => {
-		projectCardsWithSearchBar += `<div class="card project-card" id="${card.projectID}">
+		projectCardsWithSearchBar += `<div class="card project-card text-white bg-dark border-warning" id="${card.projectID}">
         <div class="card-body" id="overview-card-body">
-          <h6 class="card-title"><a href="${card.projectLink}">${card.projectName}</a></h6>
-          <p class="overview-card-text"><img src="${card.projectLastUpdate}" id="timeUpdated">${card.projectDescription}</p>
-					<button type="button" class="btn btn-secondary btn-sm" id="${card.projectID}">Delete</button>
+          <h4 class="card-title" style="color: white">${card.projectName}</h4>
+					<a href="${card.projectLink}" style="color:lightgray" class="mb-4">View</a>
+          <p class="overview-card-text"><img src="${card.projectLastUpdate}" id="timeUpdated">  ${card.projectDescription}</p>
+					<div class="btn-group mr-2" role="group"><button type="button" class="btn btn-danger btn-sm" class="mt-1" id="${card.projectID}">Delete</button></div>
         </div>
       </div>`;
 	});
@@ -704,16 +729,11 @@ const PrintPackagesCards = () => {
 	PrintToDom('#packages-card-container', packageCards);
 };
 
-// Print to DOM HERE
-// Print output to DOM = Document Object Model
-// divID = targeted ID to print to
-// textToPrint = the text we want to output to the specified ID
 const PrintToDom = (divID, textToPrint) => {
 	const selectedDiv = document.querySelector(divID);
 	selectedDiv.innerHTML = textToPrint;
 };
 
-// Add new package card from form
 const getPackageFormInfo = (e) => {
 	e.preventDefault();
 
@@ -769,9 +789,26 @@ const deletePackage = (e) => {
 // packageSearch();
 
 // Add New Project
+const newProjectFormCard = (e) => {
+	let projectFormCard = `<form class="projects-form pb-4">
+	<h3 id="h3-title">Create Project</h3>
+	<div class="form-group col-md-6 mb-1">
+		<label for="inputProjectName" class="mb-1 text-warning" id="form-label-name">Project Title</label>
+		<input type="text" class="form-control text-warning" id="inputProjectName" required></div>
+		<label for="inputProjectDescription" class="mb-1 text-warning" id="form-label-name">Author Name</label>
+		<input type="text" class="form-control" id="inputProjectDescription" required>
+		<label for="inputProjectLink" class="mb-1 text-warning" id="form-label-name">Project</label>
+		<input type="text" class="form-control" id="inputProjectLink" required>
+	<button type="submit" class="btn btn-danger my-3" id="projects-form-btn">Create Project</button>
+	</div>
+</form>`;
+
+	PrintToDom('#create-project-container', projectFormCard);
+};
 
 const getCreateNewProjectInfo = (e) => {
-	// e.preventDefault();
+	e.preventDefault();
+
 	let projectID = projectCount++;
 	const projectName = document.querySelector('#inputProjectName').value;
 	const projectDescription = document.querySelector('#inputProjectDescription').value;
@@ -790,27 +827,45 @@ const getCreateNewProjectInfo = (e) => {
 	PrintProjectsFormWithSearchBar();
 };
 
-// Add new Repo
-
-// Sort Projects
-
 const sortProjectSortButton = (e) => {
-	const targetType = e.target.type;
-	if (targetType === 'button') {
+	// const targetId = e.target.id;
+
+	let targetId = document.querySelector('#sort').value;
+
+	if (targetId === 'title') {
 		arrProjects.sort(
-			(a, b) => (a.projectName.toUpperCase() > b.projectName.toUpperCase() ? -1 : 1)
+			(a, b) => (a.projectName.toUpperCase() < b.projectName.toUpperCase() ? -1 : 1)
 		);
 	}
-	PrintProjectsFormWithSearchBar();
+	else if (targetId === 'author') {
+		arrProjects.sort(
+			(a, b) =>
+				a.projectDescription.toUpperCase() < b.projectDescription.toUpperCase() ? -1 : 1
+		);
+	}
+	else if (targetId === 'newest') {
+		arrProjects.sort(
+			(a, b) => (a.projectID.toUpperCase() < b.projectID.toUpperCase() ? -1 : 1)
+		);
+	}
+
+	PrintProjectsFormWithSearchBar(arrProjects);
 };
 
 const searchProjectsSearchBar = (e) => {
 	const input = document.querySelector('#projectSearchbar').value;
 	input = input.toLowerCase();
-	let x = document.querySelector;
-};
+	let x = document.querySelector(`${card.projectName}`).value;
 
-// Delete project
+	for (i = 0; i < x.length; i++) {
+		if (!x[i].innerHTML.toLowerCase().includes(input)) {
+			x[i].style.display = 'none';
+		}
+		else {
+			x[i].style.dispay = `${card.projectName}`;
+		}
+	}
+};
 
 const deleteProject = (e) => {
 	e.preventDefault();
@@ -827,13 +882,18 @@ const deleteProject = (e) => {
 	PrintProjectsFormWithSearchBar();
 };
 
-// Delete Repo
+const deleteRepo = (e) => {
+	const targetType = e.target.type;
+	const targetIdNumber = parseInt(e.target.id);
 
-// Handle search bar
-
-// Handle Sorting
-
-// Button Events
+	if (targetType === 'button') {
+		let indexOfRepos = arrRepositories.findIndex((repo) => repo.repoID === targetIdNumber);
+		if (indexOfRepos !== -1) {
+			arrRepositories.splice(indexOfRepos, 1);
+		}
+	}
+	PrintPinnedCards();
+};
 
 const ButtonEvents = () => {
 	let x = location.pathname;
@@ -846,26 +906,34 @@ const ButtonEvents = () => {
 			.querySelector('#projects-form-btn')
 			.addEventListener('click', getCreateNewProjectInfo);
 		document.querySelector('#projects-top-row').addEventListener('click', deleteProject);
+		document
+			.querySelector('#projectSearchbar')
+			.addEventListener('keyup', searchProjectsSearchBar);
 	}
 	else if (x === '/packages.html') {
 		document.querySelector('#packages-form-btn').addEventListener('click', getPackageFormInfo);
 		document.querySelector('#packages-card-container').addEventListener('click', deletePackage);
 	}
+	else if (x === '/' || x === '/index.html') {
+		document.querySelector('.repo-top-row').addEventListener('click', deleteRepo);
+	}
 };
-
-// init call()
 
 const init = () => {
 	let x = location.pathname;
 
-	if (x === '/index.html') {
+	if (x === '/' || x === '/index.html') {
 		PrintPinnedCards();
 	}
 	else if (x === '/repo.html') {
 		PrintRepoCardsWithSearchBar();
 	}
 	else if (x === '/projects.html') {
-		PrintProjectsFormWithSearchBar();
+		PrintProjectNavBar();
+		PrintProjectProfile();
+		PrintProjectFooter();
+		PrintProjectsFormWithSearchBar(arrProjects);
+		newProjectFormCard();
 	}
 	else if (x === '/packages.html') {
 		PrintPackagesCards();
