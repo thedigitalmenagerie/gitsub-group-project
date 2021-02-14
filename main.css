@@ -256,6 +256,13 @@ li a {
   overflow-y: scroll;
 }
 
+#projects-icon-images {
+    width: 8%;
+    border-radius: 50%;
+    margin-bottom: .5em;
+    padding-right: .2em;
+}
+
 /* Projects Page CSS HR */
 
 #projects-container {
@@ -284,6 +291,16 @@ li a {
 
 #projects-form-btn {
     font-size: 12px;
+}
+
+#navbar-icon {
+    width: 1em;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 /* REPOS */
