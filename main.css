@@ -254,7 +254,7 @@ form a {
 
 #packages-icons {
     width: 1em;
-  }
+  }  
 
 
 #packages-icon-images {
@@ -265,7 +265,7 @@ form a {
 }
 
 
-
+/* Projects Page CSS HR */
 
 /* PROJECTS PAGE CSS MODS */
 
@@ -290,10 +290,28 @@ form a {
   width: 1em;
 }
 
+#projects-icon-images {
+    width: 8%;
+    border-radius: 50%;
+    margin-bottom: .5em;
+    padding-right: .2em;
+  } 
+
 #projects-form-btn {
     font-size: 12px;
 }
 
+#navbar-icon {
+    width: 1em;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+/* REPOS */
 
 
 /* REPOS CSS MODS*/
