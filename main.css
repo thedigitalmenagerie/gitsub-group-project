@@ -232,8 +232,6 @@ form a {
     width: 3em;
 }
 
-
-
 /* PACKAGES PAGE CSS MODS */
 
 #packages-container {
@@ -264,9 +262,6 @@ form a {
     padding-right: .2em;
 }
 
-
-/* Projects Page CSS HR */
-
 /* PROJECTS PAGE CSS MODS */
 
 #projects-container {
@@ -284,7 +279,6 @@ form a {
     overflow: hidden;
     overflow-y: scroll;
 }
-
 
 #timeUpdated {
   width: 1em;
@@ -311,9 +305,6 @@ form a {
     top: 0;
 }
 
-/* REPOS */
-
-
 /* REPOS CSS MODS*/
 
 #repo-top-row, #pinned-cards {
@@ -332,8 +323,6 @@ form a {
     width: 1em;
     color: darkgrey;
 }
-
-
 
 /* FOOTER CONTAINER */
 

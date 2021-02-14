@@ -114,7 +114,8 @@ const person = {
 	personAddresses         : {
 		phisicalLocation : {
 			locationIcon    : './images/location.webp',
-			locationAddress :'https://www.google.com/maps?q=nashville+tn&um=1&ie=UTF-8&sa=X&ved=2ahUKEwia5sSqu93uAhVIo1kKHZS8BdgQ_AUoAXoECBsQAw'
+			locationAddress :
+				'https://www.google.com/maps?q=nashville+tn&um=1&ie=UTF-8&sa=X&ved=2ahUKEwia5sSqu93uAhVIo1kKHZS8BdgQ_AUoAXoECBsQAw'
 		},
 		gitHub           : {
 			gitHubIcon    : './images/location.webp',
@@ -138,15 +139,18 @@ const arrPackages = [
 		packagesID          : 0,
 		packageIcon         : './images/docker.webp',
 		packageType         : 'Docker',
-		packagesDescription :'A software platform used for building applications based on containers -- small and lightweight execution environments.',
-		packagesLink        :'https://www.docker.com/?utm_source=google&utm_medium=cpc&utm_campaign=dockerhomepage&utm_content=namer&utm_term=dockerhomepage&utm_budget=growth&gclid=Cj0KCQiAgomBBhDXARIsAFNyUqP7IuAWd7M9yGrY-D87ikBbLpSR4Mzd2RQtHIDalzpNadyjAlyg4kYaAoT_EALw_wcB',
+		packagesDescription :
+			'A software platform used for building applications based on containers -- small and lightweight execution environments.',
+		packagesLink        :
+			'https://www.docker.com/?utm_source=google&utm_medium=cpc&utm_campaign=dockerhomepage&utm_content=namer&utm_term=dockerhomepage&utm_budget=growth&gclid=Cj0KCQiAgomBBhDXARIsAFNyUqP7IuAWd7M9yGrY-D87ikBbLpSR4Mzd2RQtHIDalzpNadyjAlyg4kYaAoT_EALw_wcB',
 		packagesAlpha       : true
 	},
 	{
 		packagesID          : 1,
 		packageIcon         : './images/apache maven (feather).webp',
 		packageType         : 'Apache Maven',
-		packagesDescription : 'A default package manager used for the Java programming language and the Java runtime environment.',
+		packagesDescription :
+			'A default package manager used for the Java programming language and the Java runtime environment.',
 		packagesLink        : 'https://maven.apache.org/',
 		packagesAlpha       : true
 	},
@@ -154,7 +158,8 @@ const arrPackages = [
 		packagesID          : 2,
 		packageIcon         : './images/nuget-256.webp',
 		packageType         : 'NuGet',
-		packagesDescription : 'A free and open source package manager used for Microsoft development platforms uncluding .NET.',
+		packagesDescription :
+			'A free and open source package manager used for Microsoft development platforms uncluding .NET.',
 		packagesLink        : 'https://www.nuget.org/',
 		packagesAlpha       : true
 	},
@@ -162,7 +167,8 @@ const arrPackages = [
 		packagesID          : 3,
 		packageIcon         : './images/ruby.webp',
 		packageType         : 'RubyGems',
-		packagesDescription : 'A standard format for distributing Ruby programs and libraries used for the Ruby programming language.',
+		packagesDescription :
+			'A standard format for distributing Ruby programs and libraries used for the Ruby programming language.',
 		packagesLink        : 'https://rubygems.org/',
 		packagesAlpha       : true
 	},
@@ -170,7 +176,8 @@ const arrPackages = [
 		packagesID          : 4,
 		packageIcon         : './images/npm.webp',
 		packageType         : 'npm',
-		packagesDescription : 'A package manager for JavaScript included with Node.js npm makes it easy for developers to share and reuse code.',
+		packagesDescription :
+			'A package manager for JavaScript included with Node.js npm makes it easy for developers to share and reuse code.',
 		packagesLink        : 'https://www.nuget.org/',
 		packagesAlpha       : true
 	},
@@ -178,8 +185,10 @@ const arrPackages = [
 		packagesID          : 5,
 		packageIcon         : './images/docker.webp',
 		packageType         : 'Containers',
-		packagesDescription : 'A single place for your team to manage Docker images and decide who can see and access your images.',
-		packagesLink        : 'https://www.docker.com/resources/what-container?gclid=Cj0KCQiAgomBBhDXARIsAFNyUqMwxmzuSjtAKHOeyuUainBg3qxEksx9tDeBia3gWtnVAslZoQS32kAaApuBEALw_wcB',
+		packagesDescription :
+			'A single place for your team to manage Docker images and decide who can see and access your images.',
+		packagesLink        :
+			'https://www.docker.com/resources/what-container?gclid=Cj0KCQiAgomBBhDXARIsAFNyUqMwxmzuSjtAKHOeyuUainBg3qxEksx9tDeBia3gWtnVAslZoQS32kAaApuBEALw_wcB',
 		packagesAlpha       : false
 	}
 ];
@@ -208,7 +217,8 @@ const arrRepositories = [
 		repoID           : 0,
 		repoTitle        : 'greys-anatomy-lorem-ipsum-generator',
 		repoLink         : 'https://github.com/thedigitalmenagerie/sorting-hat',
-		repoDescription  : "A lorem generator with medical terms and words from the show Grey's Anatomy.",
+		repoDescription  :
+			"A lorem generator with medical terms and words from the show Grey's Anatomy.",
 		repoPinnedIcon   : './images/tack-1.png',
 		repoLanguageIcon : '../images/yellow-square.png',
 		repoStarIcon     : './images/star-2.png',
@@ -228,7 +238,7 @@ const arrRepositories = [
 			'medical',
 			'serverless',
 			'react'
-		],
+		]
 	},
 	{
 		repoID           : 1,
@@ -251,7 +261,7 @@ const arrRepositories = [
 			'react',
 			'countdown',
 			'hacktoberfest'
-		],
+		]
 	},
 	{
 		repoID           : 2,
@@ -276,13 +286,14 @@ const arrRepositories = [
 			'gifts',
 			'rihanna',
 			'hacktoberfest'
-		],
+		]
 	},
 	{
 		repoID           : 3,
 		repoTitle        : 'ambition-found-website',
 		repoLink         : 'https://github.com/lindseysatterfield/pet-adoption',
-		repoDescription  : 'Website for www.ambition.cor, micro-grant program to provide support for underrepresented people who need financial assistance purging professional development opportunities in the technology...',
+		repoDescription  :
+			'Website for www.ambition.cor, micro-grant program to provide support for underrepresented people who need financial assistance purging professional development opportunities in the technology...',
 		repoPinnedIcon   : './images/tack-1.png',
 		repoLanguageIcon : '../images/yellow-square.png',
 		repoStarIcon     : './images/star-2.png',
@@ -298,13 +309,14 @@ const arrRepositories = [
 		arrListOfButtons : [
 			'donation',
 			'landing-page'
-		],
+		]
 	},
 	{
 		repoID           : 4,
 		repoTitle        : 'honey-rae-sorting-hat',
 		repoLink         : 'https://github.com/thedigitalmenagerie/sorting-hat',
-		repoDescription  : "A lorem generator with medical terms and words from the show Grey's Anatomy.",
+		repoDescription  :
+			"A lorem generator with medical terms and words from the show Grey's Anatomy.",
 		repoPinnedIcon   : './images/tack-1.png',
 		repoLanguageIcon : './images/red-square.png',
 		repoStarIcon     : './images/star-2.png',
@@ -324,13 +336,14 @@ const arrRepositories = [
 			'medical',
 			'serverless',
 			'react'
-		],
+		]
 	},
 	{
 		repoID           : 5,
 		repoTitle        : 'ls-sorting-hat',
 		repoLink         : 'https://github.com/lindseysatterfield/sorting-hat',
-		repoDescription  : "A lorem generator with medical terms and words from the show Grey's Anatomy.",
+		repoDescription  :
+			"A lorem generator with medical terms and words from the show Grey's Anatomy.",
 		repoPinnedIcon   : './images/tack-1.png',
 		repoLanguageIcon : './images/blue-square-2.jpg',
 		repoStarIcon     : './images/star-2.png',
@@ -350,13 +363,14 @@ const arrRepositories = [
 			'medical',
 			'serverless',
 			'react'
-		],
+		]
 	},
 	{
 		repoID           : 6,
 		repoTitle        : 'lindsey-pet-adoption',
 		repoLink         : 'https://github.com/lindseysatterfield/pet-adoption',
-		repoDescription  : "A lorem generator with medical terms and words from the show Grey's Anatomy.",
+		repoDescription  :
+			"A lorem generator with medical terms and words from the show Grey's Anatomy.",
 		repoPinnedIcon   : './images/tack-1.png',
 		repoLanguageIcon : './images/red-square.png',
 		repoStarIcon     : './images/star-2.png',
@@ -376,13 +390,14 @@ const arrRepositories = [
 			'medical',
 			'serverless',
 			'react'
-		],
+		]
 	},
 	{
 		repoID           : 7,
 		repoTitle        : 'dc-personal-bio-site',
 		repoLink         : 'https://github.com/danicrosby/personal-bio-site',
-		repoDescription  : "A lorem generator with medical terms and words from the show Grey's Anatomy.",
+		repoDescription  :
+			"A lorem generator with medical terms and words from the show Grey's Anatomy.",
 		repoPinnedIcon   : './images/tack-1.png',
 		repoLanguageIcon : '../images/yellow-square.png',
 		repoStarIcon     : './images/star-2.png',
@@ -402,13 +417,14 @@ const arrRepositories = [
 			'medical',
 			'serverless',
 			'react'
-		],
+		]
 	},
 	{
 		repoID           : 8,
 		repoTitle        : 'dani-sorting-hat',
 		repoLink         : 'https://github.com/danicrosby/sorting-hat',
-		repoDescription  : "A lorem generator with medical terms and words from the show Grey's Anatomy.",
+		repoDescription  :
+			"A lorem generator with medical terms and words from the show Grey's Anatomy.",
 		repoPinnedIcon   : './images/tack-1.png',
 		repoLanguageIcon : './images/red-square.png',
 		repoStarIcon     : './images/star-2.png',
@@ -428,13 +444,14 @@ const arrRepositories = [
 			'medical',
 			'serverless',
 			'react'
-		],
+		]
 	},
 	{
 		repoID           : 9,
 		repoTitle        : 'juan-sorting-hat',
 		repoLink         : 'https://github.com/JuanDavila1101/sorting-hat',
-		repoDescription  : "A lorem generator with medical terms and words from the show Grey's Anatomy.",
+		repoDescription  :
+			"A lorem generator with medical terms and words from the show Grey's Anatomy.",
 		repoPinnedIcon   : './images/tack-1.png',
 		repoLanguageIcon : './images/blue-square-2.jpg',
 		repoStarIcon     : './images/star-2.png',
@@ -447,17 +464,16 @@ const arrRepositories = [
 		issuesNeedHelp   : 1,
 		repoLastUpdate   : 7,
 		reposForked      : 60,
-				arrListOfButtons : [
+		arrListOfButtons : [
 			'netlify',
 			'Jamstack',
 			'Lorem-ipsum-generator',
 			'medical',
 			'serverless',
 			'react'
-		],
-	},
+		]
+	}
 ];
-
 
 let projectCount = 6;
 const arrProjects = [
@@ -466,7 +482,7 @@ const arrProjects = [
 		projectName        : 'Sorting Hat',
 		projectDescription : 'Lindsey Satterfield',
 		projectLink        : 'https://github.com/lindseysatterfield/sorting-hat/projects/1',
-		projectLastUpdate  : './images/clock-256.webp',
+		projectLastUpdate  : './images/clock-256.webp'
 	},
 	{
 		projectID          : 1,
@@ -474,38 +490,37 @@ const arrProjects = [
 		projectDescription : 'Group',
 		projectLink        :
 			'https://github.com/nss-evening-cohort-14/gitsub-e14-1-devs-to-ever-dev/projects',
-		projectLastUpdate  : './images/clock-256.webp',
+		projectLastUpdate  : './images/clock-256.webp'
 	},
 	{
 		projectID          : 2,
 		projectName        : 'Sorting Hat',
 		projectDescription : 'Honey-Rae Swan',
 		projectLink        : 'https://github.com/thedigitalmenagerie/sorting-hat/projects/1',
-		projectLastUpdate  : './images/clock-256.webp',
+		projectLastUpdate  : './images/clock-256.webp'
 	},
 	{
 		projectID          : 3,
 		projectName        : 'Sorting Hat',
 		projectDescription : 'Dani Crosby',
 		projectLink        : 'https://github.com/danicrosby/sorting-hat/projects',
-		projectLastUpdate  : './images/clock-256.webp',
+		projectLastUpdate  : './images/clock-256.webp'
 	},
 	{
 		projectID          : 4,
 		projectName        : 'My Goals',
 		projectDescription : 'Honey-Rae Swan',
 		projectLink        : 'https://github.com/users/thedigitalmenagerie/projects/1',
-		projectLastUpdate  : './images/clock-256.webp',
+		projectLastUpdate  : './images/clock-256.webp'
 	},
 	{
 		projectID          : 5,
 		projectName        : 'Pet Adoption',
 		projectDescription : 'Dani Crosby',
 		projectLink        : 'https://github.com/danicrosby/pet-adoption/projects',
-		projectLastUpdate  : './images/clock-256.webp',
+		projectLastUpdate  : './images/clock-256.webp'
 	}
 ];
-
 
 const PrintProjectProfile = () => {
 	let developerFormForm = ` <div class="container text-white bg-dark profile-container" id="profile-container">
@@ -586,13 +601,12 @@ const PrintProjectFooter = () => {
 </ul>`;
 
 	PrintToDom('#footer-container', footer);
-}
+};
 
 const PrintPinnedCards = () => {
 	let pinnedCards = `  `;
 
 	arrRepositories.forEach((card) => {
-
 		if (card.pinned === true) {
 			pinnedCards += `
 					<div class="card text-white bg-dark pinned-card" id="${card.repoID}" style="width: 27rem; height: 10em; margin: .2em">
@@ -611,7 +625,6 @@ const PrintPinnedCards = () => {
 						</div>
 					</div>`;
 		}
-		
 	});
 
 	PrintToDom('#pinned-cards', pinnedCards);
@@ -625,7 +638,7 @@ const PrintRepoCardsWithSearchBar = () => {
 
 	arrRepositories.forEach((card) => {
 		//Each Repo card is here
-    repoCardsWithSearchBar += `
+		repoCardsWithSearchBar += `
 								<div class="card overview-card" id="${card.repoID}">
 									<div class="card-body" id="overview-card-body">
 										<h6 class="card-title">${card.repoTitle}</h6>
@@ -716,12 +729,10 @@ const PrintPackagesCards = () => {
 	PrintToDom('#packages-card-container', packageCards);
 };
 
-
 const PrintToDom = (divID, textToPrint) => {
 	const selectedDiv = document.querySelector(divID);
 	selectedDiv.innerHTML = textToPrint;
 };
-
 
 const getPackageFormInfo = (e) => {
 	e.preventDefault();
@@ -761,6 +772,23 @@ const deletePackage = (e) => {
 	PrintPackagesCards();
 };
 
+// Search for Package
+// const packageSearch = () => {
+// 	const PackagesSearchBar = document.querySelector('#packagesSearchBar');
+// 	let packages = arrPackages;
+// 	PackagesSearchBar.addEventListener('keyup', (e) => {
+// 		const searchString = e.target.value;
+// 		const filteredPackages = packages.filter((package) => {
+// 			return package.packageType.includes(searchString);
+// 		});
+// 	});
+// 	console.log(filteredPackages);
+// 	console.log(searchString);
+// };
+
+// packageSearch();
+
+// Add New Project
 const newProjectFormCard = (e) => {
 	let projectFormCard = `<form class="projects-form pb-4">
 	<h3 id="h3-title">Create Project</h3>
@@ -776,8 +804,7 @@ const newProjectFormCard = (e) => {
 </form>`;
 
 	PrintToDom('#create-project-container', projectFormCard);
-}
-
+};
 
 const getCreateNewProjectInfo = (e) => {
 	e.preventDefault();
@@ -793,14 +820,12 @@ const getCreateNewProjectInfo = (e) => {
 		projectName,
 		projectDescription,
 		projectLink,
-		projectLastUpdate,
-	}
+		projectLastUpdate
+	};
 
 	arrProjects.push(projectObj);
 	PrintProjectsFormWithSearchBar();
-
-}
-
+};
 
 const sortProjectSortButton = (e) => {
 	// const targetId = e.target.id;
@@ -808,30 +833,39 @@ const sortProjectSortButton = (e) => {
 	let targetId = document.querySelector('#sort').value;
 
 	if (targetId === 'title') {
-		arrProjects.sort((a, b) => (a.projectName.toUpperCase() < b.projectName.toUpperCase() ? -1 : 1));
-	} else if (targetId === 'author') {
-		arrProjects.sort((a, b) => (a.projectDescription.toUpperCase() < b.projectDescription.toUpperCase() ? -1 : 1));
-	} else if(targetId === 'newest') {
-		arrProjects.sort((a, b) => (a.projectID.toUpperCase() < b.projectID.toUpperCase() ? -1 : 1));
+		arrProjects.sort(
+			(a, b) => (a.projectName.toUpperCase() < b.projectName.toUpperCase() ? -1 : 1)
+		);
+	}
+	else if (targetId === 'author') {
+		arrProjects.sort(
+			(a, b) =>
+				a.projectDescription.toUpperCase() < b.projectDescription.toUpperCase() ? -1 : 1
+		);
+	}
+	else if (targetId === 'newest') {
+		arrProjects.sort(
+			(a, b) => (a.projectID.toUpperCase() < b.projectID.toUpperCase() ? -1 : 1)
+		);
 	}
 
 	PrintProjectsFormWithSearchBar(arrProjects);
 };
 
 const searchProjectsSearchBar = (e) => {
-	const input = document.querySelector('#projectSearchbar').value
+	const input = document.querySelector('#projectSearchbar').value;
 	input = input.toLowerCase();
-	let x = document.querySelector(`${card.projectName}`).value
+	let x = document.querySelector(`${card.projectName}`).value;
 
 	for (i = 0; i < x.length; i++) {
 		if (!x[i].innerHTML.toLowerCase().includes(input)) {
-			x[i].style.display = "none";
-		} else { 
-			x[i].style.dispay = `${card.projectName}`
+			x[i].style.display = 'none';
+		}
+		else {
+			x[i].style.dispay = `${card.projectName}`;
 		}
 	}
-}
-
+};
 
 const deleteProject = (e) => {
 	e.preventDefault();
@@ -843,7 +877,6 @@ const deleteProject = (e) => {
 		if (indexOfProject !== -1) {
 			arrProjects.splice(indexOfProject, 1);
 		}
-		
 	}
 
 	PrintProjectsFormWithSearchBar();
@@ -862,16 +895,20 @@ const deleteRepo = (e) => {
 	PrintPinnedCards();
 };
 
-
 const ButtonEvents = () => {
-
 	let x = location.pathname;
 
 	if (x === '/projects.html') {
-		document.querySelector('#projects-top-row').addEventListener('click', sortProjectSortButton);
-		document.querySelector('#projects-form-btn').addEventListener('click', getCreateNewProjectInfo);
+		document
+			.querySelector('#projects-top-row')
+			.addEventListener('click', sortProjectSortButton);
+		document
+			.querySelector('#projects-form-btn')
+			.addEventListener('click', getCreateNewProjectInfo);
 		document.querySelector('#projects-top-row').addEventListener('click', deleteProject);
-		document.querySelector('#projectSearchbar').addEventListener('keyup', searchProjectsSearchBar);
+		document
+			.querySelector('#projectSearchbar')
+			.addEventListener('keyup', searchProjectsSearchBar);
 	}
 	else if (x === '/packages.html') {
 		document.querySelector('#packages-form-btn').addEventListener('click', getPackageFormInfo);
@@ -880,15 +917,9 @@ const ButtonEvents = () => {
 	else if (x === '/' || x === '/index.html') {
 		document.querySelector('.repo-top-row').addEventListener('click', deleteRepo);
 	}
-	
-	
-	
-
 };
 
-
 const init = () => {
-
 	let x = location.pathname;
 
 	if (x === '/' || x === '/index.html') {
@@ -909,7 +940,6 @@ const init = () => {
 	}
 
 	ButtonEvents();
-
 };
 
 init();
