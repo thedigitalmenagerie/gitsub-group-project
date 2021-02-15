@@ -10,6 +10,7 @@
 </head>
 
 <!-- BODY CONTAINER -->
+
 <body>
 
     <!-- MAIN CONTAINER -->
@@ -29,9 +30,29 @@
 
                 <!-- NAV CONTAINER -->
                 <div class="container text-white bg-dark nav-card-container" id="nav-card-container"></div>
-
+                <br>
                 <!-- REPOS CONTAINER -->
                 <div class="container text-white bg-dark overview-container" id="overview-container">
+
+                    <div class="repo-form">
+                        <input type="text" id="repoSearchBar" name="search" placeholder="Find a repository" />
+                        <form id="sortingForm">
+                            <select id="sortingRepoBy">
+                              <option value="srtByID">ID</option>
+                              <option value="srtByRepoName">Repository Name</option>
+                              <option value="srtBylenguage">lenguage</option>
+                            </select>
+                            <button href="#" role="button" class="btn btn-primary btn-sm" id="btnSortRepoBy">Sort</button>
+                        </form>
+
+                        <form id="ascendDescendForm">
+                            <select id="repoAscendDecend">
+                              <option value="srtAscending">Ascending</option>
+                              <option value="srtDescending">Descending</option>
+                            </select>
+                            <button href="#" role="button" class="btn btn-primary btn-sm" id="btnAscendingDescendbutton">Asc/Desc</button>
+                        </form>
+                    </div>
 
                     <!-- CARD CONTAINER -->
                     <div class="row align-items-start text-white bg-dark repo-top-row" id="repo-top-row"></div>
@@ -46,16 +67,16 @@
                         <p id="form-text">Great repository names are short and memorable. Need inspiration? How about <a href="#">reimagined-disco</a>?</p>
                         <div class="form-group col-md-9 mb-1">
                             <label for="inputDescription" class="mb-1" id="form-description-title">Description (optional)</label>
-                            <textarea class="form-control" id="overview-textarea" rows="5"></textarea></div>
+                            <textarea class="form-control" id="repo-textarea" rows="5"></textarea></div>
                         <button type="submit" class="btn btn-success mb-1" id="form-btn">Create Repository</button>
                     </form>
                 </div>
 
-                </div>
+            </div>
 
 
             <!-- END RIGHT CONTAINER -->
-            </div>
+        </div>
 
 
         <!-- END OUTER CONTAINER -->
