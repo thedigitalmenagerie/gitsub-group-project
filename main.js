@@ -704,15 +704,8 @@ const makeRepoButtons = (repoCard) => {
 	return repoButtons;
 };
 
-const PrintProjectsFormWithSearchBar = (arrProjects) => {
+const PrintProjectsFormWithSearchBar = () => {
 	let projectCardsWithSearchBar = `<div class="sticky"><input id="projectSearchbar" onkeyup="searchProject" class= "my2" type="text" name="search" placeholder="Search projects.."	<div class="dropdown">
-  <label for="sort">
-  </label>
-  <select id="sort">
-    <option value="title">Title</option>
-    <option value="author">Author</option>
-    <option value="newest">Newest</option>
-  </select>
 </div>
 </div>`;
 
@@ -854,8 +847,9 @@ const newProjectFormCard = (e) => {
 };
 
 const getCreateNewProjectInfo = (e) => {
+	
 	e.preventDefault();
-
+  
 	let projectID = projectCount++;
 	const projectName = document.querySelector('#inputProjectName').value;
 	const projectDescription = document.querySelector('#inputProjectDescription').value;
@@ -869,7 +863,7 @@ const getCreateNewProjectInfo = (e) => {
 		projectLink,
 		projectLastUpdate
 	};
-
+	console.log(projectName);
 	arrProjects.push(projectObj);
 	PrintProjectsFormWithSearchBar();
 };
@@ -896,7 +890,7 @@ const sortProjectSortButton = (e) => {
 		);
 	}
 
-	PrintProjectsFormWithSearchBar(arrProjects);
+	PrintProjectsFormWithSearchBar();
 };
 
 const searchProjectsSearchBar = (e) => {
@@ -986,7 +980,7 @@ const init = () => {
 		PrintNavBar();
 		PrintProfile();
 		PrintFooter();
-		PrintProjectsFormWithSearchBar(arrProjects);
+		PrintProjectsFormWithSearchBar();
 		newProjectFormCard();
 	}
 	else if (x === '/packages.html') {
