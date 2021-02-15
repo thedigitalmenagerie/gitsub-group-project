@@ -513,7 +513,7 @@ const PrintPinnedCards = () => {
 	arrRepositories.forEach((card) => {
 		if (card.pinned === true) {
 			pinnedCards += `
-						<div class="card text-white bg-dark pinned-card" id="${card.repoID}" style="width: 27rem; height: 10em; margin: .2em">
+						<div class="card text-white bg-dark pinned-card" id="${card.repoID}" style="width: 25em; height: 10em; margin: .2em">
 							<div class="card-body" id="overview-card-body">
 									<h6 class="card-title" style="font-size: 1em"><img src="${card.repoPinnedIcon}"  style="width: 2em; margin-right: 1em">${card.repoTitle}</h6>
 									<p class="overview-card-text">${card.repoDescription}</p>
@@ -691,12 +691,10 @@ const SortRepositoriesBy = (e) => {
 };
 
 const PrintProjectsFormWithSearchBar = () => {
-	let projectCardsWithSearchBar = `
-		<div class="sticky"><input id="projectSearchbar" onkeyup="searchProject" class= "my2" type="text" name="search" placeholder="Search projects.."	<div class="dropdown"></div>`;
+	let projectCardsWithSearchBar = ``;
 
 	arrProjects.forEach((card) => {
-		projectCardsWithSearchBar += `
-			<div class="card project-card text-white bg-dark border-warning" id="${card.projectID}">
+		projectCardsWithSearchBar += `<div class="card project-card text-white bg-dark border-secondary" id="${card.projectID}">
         <div class="card-body" id="overview-card-body">
           <h4 class="card-title" style="color: white">${card.projectName}</h4>
 					<a href="${card.projectLink}" style="color:lightgray" class="mb-4">View</a>
@@ -799,7 +797,6 @@ const newPackageFormCard = (e) => {
 	PrintToDom('#create-project-container', packageFormCard);
 };
 
-// Search for Package
 const packageSearch = (e) => {
 	e.preventDefault();
 	const searchBar = document.querySelector('#packagesSearchBar').value;
@@ -830,7 +827,7 @@ const newProjectFormCard = (e) => {
 
 const getCreateNewProjectInfo = (e) => {
 	e.preventDefault();
-
+  
 	let projectID = projectCount++;
 	const projectName = document.querySelector('#inputProjectName').value;
 	const projectDescription = document.querySelector('#inputProjectDescription').value;
@@ -844,46 +841,11 @@ const getCreateNewProjectInfo = (e) => {
 		projectLink,
 		projectLastUpdate
 	};
+	console.log(projectName);
 	arrProjects.push(projectObj);
 	PrintProjectsFormWithSearchBar();
-};
 
-const sortProjectSortButton = (e) => {
-	let targetId = document.querySelector('#sort').value;
-
-	if (targetId === 'title') {
-		arrProjects.sort(
-			(a, b) => (a.projectName.toUpperCase() < b.projectName.toUpperCase() ? -1 : 1)
-		);
-	}
-	else if (targetId === 'author') {
-		arrProjects.sort(
-			(a, b) =>
-				a.projectDescription.toUpperCase() < b.projectDescription.toUpperCase() ? -1 : 1
-		);
-	}
-	else if (targetId === 'newest') {
-		arrProjects.sort(
-			(a, b) => (a.projectID.toUpperCase() < b.projectID.toUpperCase() ? -1 : 1)
-		);
-	}
-
-	PrintProjectsFormWithSearchBar();
-};
-
-const searchProjectsSearchBar = (e) => {
-	const input = document.querySelector('#projectSearchbar').value;
-	input = input.toLowerCase();
-	let x = document.querySelector(`${card.projectName}`).value;
-
-	for (i = 0; i < x.length; i++) {
-		if (!x[i].innerHTML.toLowerCase().includes(input)) {
-			x[i].style.display = 'none';
-		}
-		else {
-			x[i].style.display = `${card.projectName}`;
-		}
-	}
+	document.querySelector('.projects-form').reset();
 };
 
 const deleteProject = (e) => {
@@ -919,16 +881,9 @@ const ButtonEvents = () => {
 	let x = location.pathname;
 
 	if (x === '/projects.html') {
-		document
-			.querySelector('#projects-top-row')
-			.addEventListener('click', sortProjectSortButton);
-		document
-			.querySelector('#projects-form-btn')
-			.addEventListener('click', getCreateNewProjectInfo);
+		document.querySelector('#projects-form-btn').addEventListener('click', getCreateNewProjectInfo);
 		document.querySelector('#projects-top-row').addEventListener('click', deleteProject);
-		document
-			.querySelector('#projectSearchbar')
-			.addEventListener('keyup', searchProjectsSearchBar);
+		document.querySelector('#projectSearchbar').addEventListener('keyup', searchProjectsSearchBar);
 	}
 	else if (x === '/packages.html') {
 		document.querySelector('#packages-form-btn').addEventListener('click', getPackageFormInfo);
@@ -943,9 +898,7 @@ const ButtonEvents = () => {
 		document.querySelector('#repo-top-row').addEventListener('click', UpdateStar);
 		document.querySelector('#repoSearchBar').addEventListener('keyup', RepoSearchBarEvent);
 		document.querySelector('#btnSortRepoBy').addEventListener('click', SortRepositoriesBy);
-		document
-			.querySelector('#btnAscendingDescendbutton')
-			.addEventListener('click', SortRepositoriesBy);
+		document.querySelector('#btnAscendingDescendbutton').addEventListener('click', SortRepositoriesBy);
 	}
 };
 
