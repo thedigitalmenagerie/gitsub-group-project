@@ -504,7 +504,7 @@ const PrintPinnedCards = () => {
 											<img src="${card.repoStarIcon}" id="pinned-icons" style="margin-left: 2em">${card.starsCount}
 											<img src="${card.repoForkedIcon}" id="pinned-icons" style="margin-left: 2em">${card.reposForked}
 										</div>
-										<button type="button" class="btn btn-danger btn-sm" style="width: 6em; height: 3em; margin-left: 9em" id="${card.repoID}">Delete</button>
+										<button type="button" class="btn btn-danger btn-sm" style="width: 6em; height: 3em; margin-left: 7em" id="${card.repoID}">Delete</button>
 									</div>
 							</div>
 						</div>`;
