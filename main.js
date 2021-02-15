@@ -717,7 +717,7 @@ const PrintPackagesCards = () => {
 		//Each Package card is here
 		if (card.packageIcon === '') {
 			packageCards += `
-        <div class="card package-card" id="${card.packagesID}" style="flex: 0 0 25%; width: 16.8em; margin: .5em 1em">
+        <div class="card package-card text-white bg-dark" id="${card.packagesID}"style="flex: 0 0 25%; width: 16.8em; margin: .5em 1em;">
         <div class="card-body" id="overview-card-body">
           <h6 class="card-title">${card.packageType}</h6>
           <p class="overview-card-text">${card.packagesDescription}</p>
@@ -727,7 +727,7 @@ const PrintPackagesCards = () => {
 		}
 		else {
 			packageCards += `
-      <div class="card package-card" id="${card.packagesID}" style="flex: 0 0 25%; width: 16.8em; margin: .5em 1em;">
+      <div class="card package-card text-white bg-dark" id="${card.packagesID}" style="flex: 0 0 25%; width: 16.8em; margin: .5em 1em;">
         <div class="card-body" id="overview-card-body">
           <h6 class="card-title"><img src="${card.packageIcon}" id="packages-icons" alt="${card.packageType} icon"> ${card.packageType}</h6>
           <p class="overview-card-text">${card.packagesDescription}</p>
@@ -782,6 +782,22 @@ const deletePackage = (e) => {
 	}
 
 	PrintPackagesCards();
+};
+
+const newPackageFormCard = (e) => {
+	let packageFormCard = `<form class="packages-form pb-4">
+  <h3 id="h3-title">Create a new project</h3>
+  <div class="form-group col-md-6 mb-1">
+    <label for="inputRepositoryName" class="mb-1" id="form-label-name">Project Board</label>
+    <input type="text" class="form-control" id="packagesInputRepositoryName" required></div>
+    <p id="form-text">Coordinate, track, and update your work in one place, so projects stay transparent and on schedule.</p>
+    <div class="form-group col-md-9 mb-1">
+    <label for="inputDescription" class="mb-1" id="form-description-title">Description (optional)</label>
+    <textarea class="form-control" id="packages-textarea" rows="5"></textarea></div>
+  <button type="submit" class="btn btn-success mb-1" id="packages-form-btn">Create Project</button>
+</form>`;
+
+	PrintToDom('#create-project-container', packageFormCard);
 };
 
 // Search for Package
@@ -956,6 +972,7 @@ const init = () => {
 	else if (x === '/packages.html') {
 		PrintNavBar();
 		PrintProfile();
+		newPackageFormCard();
 		PrintPackagesCards();
 		PrintFooter();
 	}
