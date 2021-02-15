@@ -585,7 +585,7 @@ const PrintNavBar = () => {
 	PrintToDom('#nav-card-container', NavBar);
 };
 
-const PrintProjectFooter = () => {
+const PrintFooter = () => {
 	let footer = `<ul><li><a href="https://docs.github.com/en/github/site-policy/github-terms-of-service" style="color: lightgray">Terms</a></li>
 	<li><a href="https://docs.github.com/en/github/site-policy/github-privacy-statement" style="color:lightgray"></a>Privacy</li>
 	<li><a href="https://github.com/security" style="color: lightgray">Security</a></li>
@@ -925,21 +925,24 @@ const init = () => {
 	if (x === '/' || x === '/index.html') {
 		PrintNavBar();
 		PrintPinnedCards();
+		PrintFooter();
 	}
 	else if (x === '/repo.html') {
 		PrintNavBar();
 		PrintRepoCardsWithSearchBar();
+		PrintFooter();
 	}
 	else if (x === '/projects.html') {
 		PrintNavBar();
 		PrintProjectProfile();
-		PrintProjectFooter();
+		PrintFooter();
 		PrintProjectsFormWithSearchBar(arrProjects);
 		newProjectFormCard();
 	}
 	else if (x === '/packages.html') {
 		PrintNavBar();
 		PrintPackagesCards();
+		PrintFooter();
 	}
 
 	ButtonEvents();

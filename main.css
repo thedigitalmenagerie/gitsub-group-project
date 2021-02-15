@@ -203,24 +203,24 @@ form a {
     overflow-y: scroll;
 }
 
-#overview-footer-container {
+#footer-container {
     display: flex;
     justify-content: space-around;
     border-top: 1px solid orange;
     padding: 1em;
 }
 
-#overview-footer-container li {
+#footer-container li {
     list-style-type: none;
     display: inline;
 }
 
-#overview-footer-container li {
+#footer-container li {
     margin: 1.5em;
     color: darkgrey;
 }
 
-#overview-footer-container li a {
+#footer-container li a {
     font-size: 1em;
     color: darkgrey;
 }
@@ -325,25 +325,3 @@ form a {
 }
 
 /* FOOTER CONTAINER */
-
-#footer-container {
-    display: flex;
-    justify-content: space-around;
-    border-top: 1px solid orange;
-    padding: 1em;
-}
-
-#footer-container li {
-    list-style-type: none;
-    display: inline;
-}
-
-#footer-container li {
-    margin: 1.5em;
-    color: darkgrey;
-}
-
-li a {
-    font-size: 1em;
-    color: black;
-}
