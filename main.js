@@ -571,8 +571,8 @@ const PrintProjectProfile = () => {
 	PrintToDom('#left-container', developerFormForm);
 };
 
-const PrintProjectNavBar = () => {
-	let projectNavBar = `<section id="nav-container">
+const PrintNavBar = () => {
+	let NavBar = `<section id="nav-container">
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark"><a class="navbar-brand" href="index.html">Overview</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 		<div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -582,7 +582,7 @@ const PrintProjectNavBar = () => {
 				<li class="nav-item"><a class="nav-link" href="packages.html">Packages</a></li></ul></div></nav>
 </section>`;
 
-	PrintToDom('#project-nav-container', projectNavBar);
+	PrintToDom('#nav-card-container', NavBar);
 };
 
 const PrintProjectFooter = () => {
@@ -923,19 +923,22 @@ const init = () => {
 	let x = location.pathname;
 
 	if (x === '/' || x === '/index.html') {
+		PrintNavBar();
 		PrintPinnedCards();
 	}
 	else if (x === '/repo.html') {
+		PrintNavBar();
 		PrintRepoCardsWithSearchBar();
 	}
 	else if (x === '/projects.html') {
-		PrintProjectNavBar();
+		PrintNavBar();
 		PrintProjectProfile();
 		PrintProjectFooter();
 		PrintProjectsFormWithSearchBar(arrProjects);
 		newProjectFormCard();
 	}
 	else if (x === '/packages.html') {
+		PrintNavBar();
 		PrintPackagesCards();
 	}
 
