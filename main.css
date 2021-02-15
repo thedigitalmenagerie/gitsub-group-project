@@ -98,7 +98,7 @@ a {
     height: 100%;
 }
 
-#nav-container {
+#nav-card-container {
     display: flex;
     justify-content: flex-start;
     /* border: 1px solid blue; */
