@@ -1,7 +1,6 @@
 main {
     display: flex;
     flex-direction: column;
-    /* border: 1px solid green; */
 }
 
 #outer-container {
@@ -16,7 +15,6 @@ main {
 #left-container {
     display: flex;
     justify-content: center;
-    /* border: 1px solid hotpink; */
     width: 20%;
     height: 100%;
     margin-left: 5em;
@@ -26,10 +24,9 @@ main {
     display: flex;
     flex-flow: column wrap;
     align-content: flex-start;
-    /* border: 1px solid blue; */
     width: 100%;
     height: 100%;
-    margin-top: .5em;
+    margin-top: 0.5em;
 }
 
 #profile-pic {
@@ -41,14 +38,14 @@ main {
 
 a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 12px;
 }
 
 #profile-bio {
     font-size: 12px;
-    margin-bottom: -.2em;
-    margin-top: .2em;
+    margin-bottom: -0.2em;
+    margin-top: 0.2em;
 }
 
 #profile-buttons {
@@ -60,13 +57,11 @@ a {
     font-size: 10px;
 }
 
-
 #organization-icon-images {
     width: 18%;
     border-radius: 50%;
-    margin-bottom: -.2em;
+    margin-bottom: -0.2em;
 }
-
 
 #sponsors {
     display: flex;
@@ -86,14 +81,12 @@ a {
 }
 
 
-
 /* <!-- RIGHT SIDE CONTAINER --> */
 
 #right-container {
     display: flex;
     flex-direction: column;
-    /* border: 1px solid hotpink; */
-    padding: .5em;
+    padding: 0.5em;
     width: 70%;
     height: 100%;
 }
@@ -101,7 +94,6 @@ a {
 #nav-card-container {
     display: flex;
     justify-content: flex-start;
-    /* border: 1px solid blue; */
     width: 100%;
     height: 2em;
     margin-bottom: 1em;
@@ -111,7 +103,6 @@ a {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    /* border: 1px solid blue; */
     width: 100%;
     height: 28em;
     margin-bottom: 1em;
@@ -121,7 +112,6 @@ a {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    /* border: 1px solid slategrey; */
     width: 100%;
     height: 100%;
     margin-bottom: 1em;
@@ -134,12 +124,7 @@ a {
 }
 
 
-
 /* FORMS */
-
-form {
-    /* border: 1px red solid; */
-}
 
 form label {
     font-weight: 600;
@@ -156,15 +141,15 @@ form a {
 }
 
 #form-label-name {
-    font-size: .8em;
+    font-size: 0.8em;
 }
 
 #form-text {
-    font-size: .8em;
+    font-size: 0.8em;
 }
 
 #form-description-title {
-    font-size: .8em;
+    font-size: 0.8em;
 }
 
 #form-btn {
@@ -172,15 +157,13 @@ form a {
 }
 
 
+/* OVERVIEW-PINNED CARD PAGE CSS MODS */
 
-/* OVERVIEW PAGE CSS MODS */
 #pinned-icons {
     width: 1.1em;
-    margin: .5em;
-    color: white;
-}
-#overview-card {
-    width: 16.8em;
+    margin: 0.5em;
+    background-color: lightgrey;
+    border-radius: 50%;
 }
 
 .overview-card-text {
@@ -188,14 +171,13 @@ form a {
 }
 
 #overview-btn {
-    font-size: .7em;
+    font-size: 0.7em;
 }
 
 .pinned-card {
     border: 1px solid rgb(78, 78, 78);
     color: 1px solid rgb(59, 57, 57);
 }
-
 
 #pinned-cards {
     max-height: 25em;
@@ -225,53 +207,48 @@ form a {
     color: darkgrey;
 }
 
-
-/* ICONS */
-
 #github-icon {
     width: 3em;
 }
 
+
 /* PACKAGES PAGE CSS MODS */
 
 #packages-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  /* border: 4px solid blue; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 #packages-card-container {
-  display: flex;
-  flex-wrap: wrap;
-  /* border: 3px brown solid; */
-  max-height: 25em;
-  overflow: hidden;
-  overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 25em;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 
 #packages-icons {
     width: 1em;
-  }  
-
+}
 
 #packages-icon-images {
     width: 8%;
     border-radius: 50%;
-    margin-bottom: .5em;
-    padding-right: .2em;
+    margin-bottom: 0.5em;
+    padding-right: 0.2em;
 }
+
 
 /* PROJECTS PAGE CSS MODS */
 
 #projects-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  /* border: 1px solid blue; */
-  width: 100%;
-  height: 28em;
-  margin-bottom: 1em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 28em;
+    margin-bottom: 1em;
 }
 
 #projects-top-row {
@@ -281,15 +258,15 @@ form a {
 }
 
 #timeUpdated {
-  width: 1em;
+    width: 1em;
 }
 
 #projects-icon-images {
     width: 8%;
     border-radius: 50%;
-    margin-bottom: .5em;
-    padding-right: .2em;
-  } 
+    margin-bottom: 0.5em;
+    padding-right: 0.2em;
+}
 
 #projects-form-btn {
     font-size: 12px;
@@ -305,9 +282,11 @@ form a {
     top: 0;
 }
 
+
 /* REPOS CSS MODS*/
 
-#repo-top-row, #pinned-cards {
+#repo-top-row,
+#pinned-cards {
     max-height: 25em;
     overflow: hidden;
     overflow-y: scroll;
@@ -319,9 +298,13 @@ form a {
     flex-flow: row wrap;
 }
 
-#repo-icons  {
+#repo-icons {
     width: 1em;
     color: darkgrey;
 }
 
-/* FOOTER CONTAINER */
+.repo-form {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: start;
+}
