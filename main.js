@@ -705,12 +705,14 @@ const makeRepoButtons = (repoCard) => {
 };
 
 const PrintProjectsFormWithSearchBar = () => {
-	let projectCardsWithSearchBar = `<div class="sticky"><input id="projectSearchbar" onkeyup="searchProject" class= "my2" type="text" name="search" placeholder="Search projects.."	<div class="dropdown">
-</div>
-</div>`;
+	let projectCardsWithSearchBar = `<div><input id="projectSearchbar" onkeyup="searchProject" class= "ml-5" type="text" name="search" placeholder="Search projects.." /><div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+  <button type="button" class="btn btn-warning" id="title">Title</button>
+  <button type="button" class="btn btn-warning" id="author">Author</button>
+  <button type="button" class="btn btn-warning" id="newest">Newest</button>
+</div></div>`;
 
 	arrProjects.forEach((card) => {
-		projectCardsWithSearchBar += `<div class="card project-card text-white bg-dark border-warning" id="${card.projectID}">
+		projectCardsWithSearchBar += `<div class="card project-card text-white bg-dark border-secondary" id="${card.projectID}">
         <div class="card-body" id="overview-card-body">
           <h4 class="card-title" style="color: white">${card.projectName}</h4>
 					<a href="${card.projectLink}" style="color:lightgray" class="mb-4">View</a>
@@ -866,12 +868,12 @@ const getCreateNewProjectInfo = (e) => {
 	console.log(projectName);
 	arrProjects.push(projectObj);
 	PrintProjectsFormWithSearchBar();
+
+	document.querySelector('.projects-form').reset();
 };
 
 const sortProjectSortButton = (e) => {
-	// const targetId = e.target.id;
-
-	let targetId = document.querySelector('#sort').value;
+	const targetId = e.target.id;
 
 	if (targetId === 'title') {
 		arrProjects.sort(
@@ -886,7 +888,7 @@ const sortProjectSortButton = (e) => {
 	}
 	else if (targetId === 'newest') {
 		arrProjects.sort(
-			(a, b) => (a.projectID.toUpperCase() < b.projectID.toUpperCase() ? -1 : 1)
+			(a, b) => (a.projectID.valueOf() > b.projectID.valueOf() ? -1 : 1)
 		);
 	}
 
@@ -894,18 +896,28 @@ const sortProjectSortButton = (e) => {
 };
 
 const searchProjectsSearchBar = (e) => {
-	const input = document.querySelector('#projectSearchbar').value;
-	input = input.toLowerCase();
-	let x = document.querySelector(`${card.projectName}`).value;
+	const projectsList = document.querySelector('#projects-top-row');
+	const searchBar = document.querySelector('#projectSearchbar');
 
-	for (i = 0; i < x.length; i++) {
-		if (!x[i].innerHTML.toLowerCase().includes(input)) {
-			x[i].style.display = 'none';
-		}
-		else {
-			x[i].style.dispay = `${card.projectName}`;
-		}
-	}
+	let gHProjects = [];
+
+	searchBar.addEventListener('keyup', (e) => {
+		const searchString = e.target.value.toLowerCase();
+		const filteredProjects = gHProjects.filter((project) => {
+			return (
+				project.projectName.toLowerCase().includes(searchString) || project.projectDescription.toLowerCase().includes(searchString)
+			);
+		});
+		displayProjects(filteredProjects);
+	});
+	const displayProjects = (project) => {
+		const htmlString = projects.map((project) => {
+			return ('#projects-top-row')
+		})
+		.join('');
+		projectsList.innerHTML = htmlString;
+	};
+	loadProjects();
 };
 
 const deleteProject = (e) => {
@@ -940,16 +952,10 @@ const ButtonEvents = () => {
 	let x = location.pathname;
 
 	if (x === '/projects.html') {
-		document
-			.querySelector('#projects-top-row')
-			.addEventListener('click', sortProjectSortButton);
-		document
-			.querySelector('#projects-form-btn')
-			.addEventListener('click', getCreateNewProjectInfo);
+		document.querySelector('#projects-top-row').addEventListener('click', sortProjectSortButton);
+		document.querySelector('#projects-form-btn').addEventListener('click', getCreateNewProjectInfo);
 		document.querySelector('#projects-top-row').addEventListener('click', deleteProject);
-		document
-			.querySelector('#projectSearchbar')
-			.addEventListener('keyup', searchProjectsSearchBar);
+		document.querySelector('#projectSearchbar').addEventListener('keyup', searchProjectsSearchBar);
 	}
 	else if (x === '/packages.html') {
 		document.querySelector('#packages-form-btn').addEventListener('click', getPackageFormInfo);
