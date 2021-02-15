@@ -729,7 +729,7 @@ const PrintPackagesCards = () => {
 		//Each Package card is here
 		if (card.packageIcon === '') {
 			packageCards += `
-        <div class="card package-card text-white bg-dark" id="${card.packagesID}"style="flex: 0 0 25%; width: 16.8em; margin: .5em 1em;">
+        <div class="card package-card text-dark" id="${card.packagesID}"style="flex: 0 0 25%; width: 16.8em; margin: .5em 1em; background-color: #CDCDCD;">
         <div class="card-body" id="overview-card-body">
           <h6 class="card-title">${card.packageType}</h6>
           <p class="overview-card-text">${card.packagesDescription}</p>
@@ -739,7 +739,7 @@ const PrintPackagesCards = () => {
 		}
 		else {
 			packageCards += `
-      <div class="card package-card text-white bg-dark" id="${card.packagesID}" style="flex: 0 0 25%; width: 16.8em; margin: .5em 1em;">
+      <div class="card package-card text-dark" id="${card.packagesID}" style="flex: 0 0 25%; width: 16.8em; margin: .5em 1em; background-color: #CDCDCD;">
         <div class="card-body" id="overview-card-body">
           <h6 class="card-title"><img src="${card.packageIcon}" id="packages-icons" alt="${card.packageType} icon"> ${card.packageType}</h6>
           <p class="overview-card-text">${card.packagesDescription}</p>
@@ -813,20 +813,27 @@ const newPackageFormCard = (e) => {
 };
 
 // Search for Package
-// const packageSearch = () => {
-// 	const PackagesSearchBar = document.querySelector('#packagesSearchBar');
-// 	let packages = arrPackages;
-// 	PackagesSearchBar.addEventListener('keyup', (e) => {
-// 		const searchString = e.target.value;
-// 		const filteredPackages = packages.filter((package) => {
-// 			return package.packageType.includes(searchString);
-// 		});
-// 	});
-// 	console.log(filteredPackages);
-// 	console.log(searchString);
-// };
+const packageSearch = () => {
+	const searchBar = document.querySelector('#packagesSearchBar');
+	const packageCard = document.querySelector('.package-card');
 
-// packageSearch();
+	searchBar.addEventListener('keyup', (e) => {
+		const searchString = e.target.value.toLowerCase();
+		const filtered = arrPackages.filter((package) => {
+			return package.packageType.toLowerCase().includes(searchString);
+		});
+
+		if (filtered) {
+			packageCard.style.display = 'block';
+		}
+		else {
+			packageCard.style.display = 'none';
+		}
+
+		console.log(filtered);
+	});
+	PrintPackagesCards();
+};
 
 // Add New Project
 const newProjectFormCard = (e) => {
@@ -847,9 +854,8 @@ const newProjectFormCard = (e) => {
 };
 
 const getCreateNewProjectInfo = (e) => {
-	
 	e.preventDefault();
-  
+
 	let projectID = projectCount++;
 	const projectName = document.querySelector('#inputProjectName').value;
 	const projectDescription = document.querySelector('#inputProjectDescription').value;
@@ -989,6 +995,7 @@ const init = () => {
 		newPackageFormCard();
 		PrintPackagesCards();
 		PrintFooter();
+		packageSearch();
 	}
 
 	ButtonEvents();
